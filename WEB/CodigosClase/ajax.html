@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./jquery-3.3.1.min.js"></script>
+    <title>AJAX</title>
+    <script>
+        $(document).ready(function(){
+            $("#formAX").submit(function(e){
+                e.preventDefault();
+                $.ajax({
+                    method:"post",
+                    url:"ajax.php",
+                    data:{nombre:$("input#nombre").val()},
+                    cache:false,
+                    success:function(resp){
+                        alert(resp);
+                        $("#respAX").html(resp);
+                    }
+                });
+            })
+        });
+    </script>
+</head>
+<body>
+    <div id="respAX">
+        
+    </div>
+    <form id="formAX">  
+        <label>Nombre:</label>
+        <input type="text" name="nombre" id ="nombre">
+        <button type="submit">Enviar</button>
+
+    </form>
+    
+</body>
+</html>
