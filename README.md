@@ -1,2 +1,2 @@
 # brokenerk.github.io
-Web &amp;&amp; fun
+Ejercicios, programas y aplicaciones web personales.
