@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chat general</title>
+	 <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { font: 13px Helvetica, Arial; }
+      form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; }
+      form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
+      form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+      #messages { list-style-type: none; margin: 0; padding: 0; }
+      #messages li { padding: 5px 10px; }
+      #messages li:nth-child(odd) { background: #eee; }
+    </style>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="./assets/css/estilo.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="./css/estilos.css">
+	<link rel="stylesheet" href="./css/code.css">
+	<link rel="stylesheet" href="./materialize/css/materialize.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="./materialize/js/materialize.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    </head>
+<body>
+	<!-------------------------------------------------------->
+	<!------------------ PANEL GENERAL ----------------------->
+	<!-------------------------------------------------------->
+	<div class="panelGeneral">
+		<!-------------------------->
+		<!--  PANEL IZQUIERDA     -->
+		<!-------------------------->
+		<div class="panelChat">
+			<!---------->
+			<!-- CHAT -->
+			<!---------->
+			<div class="chat">
+				<ul id="messages"></ul>
+			</div>
+			
+			<!------------>
+			<!-- EMOJIS -->
+			<!------------>
+			<div class="emojis">
+				
+			</div>
+
+			<!-------------------->
+			<!-- CAMPO DE TEXTO -->
+			<!-------------------->
+			<div class="campoTexto">
+				<form action="">
+			      <input id="m" autocomplete="off" /><button>Send</button>
+			    </form>
+			</div>
+
+		</div>
+
+		<!-------------------------->
+		<!--   PANEL USUARIOS     -->
+		<!-------------------------->
+		<div class="usuarios">
+			
+		</div>
+	</div>
+
+	<script src="/cliente.js"></script>
+</body>
+</html>
