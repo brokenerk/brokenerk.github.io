@@ -12,12 +12,19 @@ $(function () {
     socket.emit('chat message', msj);
     $('#messages').append($('<li>').text(msj));
     $('#m').val('');
+    console.log(msj);
     return false;
   });
 
   //Recibe del servidor los mensajes de otros clientes
   socket.on('chat message', function(msg){
-    $('#messages').append($('<li>').text(msg));
+    if(msg == 'user connected') {
+      console.log("New user");
+      $('#users').append($('<li>').text(msg));
+    }
+    else {
+      $('#messages').append($('<li>').text(msg));      
+    }
   });
   
 });

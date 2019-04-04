@@ -3,7 +3,7 @@
 	height: 100%;
 	display: flex;
 	flex-direction: row;
-	background: black;
+	/*background: black;*/
 }
 
 /*******************************/
@@ -13,23 +13,15 @@
 	display: flex;
 	flex: 1;
 	flex-grow: 8;
-	background: #66B9BF;
 	flex-direction: column;
 }
 
-.mensajes {
-	display: flex;
-	flex: 1;
-	flex-grow: 6;
-	flex-direction: column;
-	background: pink;
-}
 .emojis {
 	display: flex;
 	flex: 1;
 	flex-grow: 2;
 	/*flex-direction: column;*/
-	background: #66B9BF;
+	background: pink;
 }
 .texto {
 	display: flex;
@@ -45,55 +37,110 @@
 	flex-grow: 5;
 	flex-direction: row;
 	align-items: center;
-	background: #000; 
+	background: #ffff; 
 }
-/**************************************/
-/************ PARA FORM **************/
-.input {
-	display: flex;
-	flex: 1;
-	flex-grow: 5;
-}
-.b-send {
-	align-self: center;
-	display: flex;
-	flex: 1;
-	flex-grow: 1;
-}
-
-
-.b-file {
-	align-self: center;
-	display: flex;
-	flex: 1;
-	flex-grow: 1;
-}
-
-/************************************/
-/******* PARA LOS USUARIOS *********/
-/**********************************/
-.right {
-	display: flex;
-	flex: 1;
-	flex-grow: 2;
-	background: #07889B;
-	flex-direction: column;
-}
-
-body { 
-	font: 13px Helvetica, Arial; 
-}
-
 #messages { 
+    overflow: auto;
+	background: #ffff;
+	display: flex;
+	flex: 1;
+	flex-grow: 6;
+	flex-direction: column;
 	list-style-type: none; 
 	margin: 0; 
 	padding: 0; 
 }
 
 #messages li { 
+	display: flex;;
+	flex: 1;
+	height: : 5%;
 	padding: 5px 10px; 
+	text-align: center;
 }
 
 #messages li:nth-child(odd) { 
+	display: flex;
+	flex: 1;
 	background: #eee; 
 }
+
+
+/**************************************/
+/************ PARA FORM **************/
+.input {
+	display: flex;
+	flex: 1;
+	flex-grow: 5;
+	padding: 15px; 
+}
+.b-send {
+	align-self: center;
+	display: flex;
+	flex: 1;
+	flex-grow: 1;
+	background-color: #66B9BF; /* Green */
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 5%;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 21px;
+}
+
+.b-file {
+	align-self: center;
+	display: flex;
+	flex: 1;
+	flex-grow: 1;
+
+	background-color: #737373; /* Green */
+	border: none;
+	color: white;
+	padding: 10px 10px;
+	border-radius: 5%;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 21px;
+}
+
+/************************************/
+/******* PARA LOS USUARIOS *********/
+/**********************************/
+.right {
+	
+}
+
+#users { 
+	background: #07889B;
+    overflow: auto;
+	display: flex;
+	flex: 1;
+	flex-grow: 2;
+	flex-direction: column;
+	list-style-type: none; 
+	margin: 0; 
+	padding: 0; 
+}
+
+#users li { 
+	display: flex;;
+	flex: 1;
+	height: : 5%;
+	padding: 5px 5px; 
+	text-align: center;
+}
+
+#users li:nth-child(odd) { 
+	display: flex;
+	flex: 1;
+	background: #eee; 
+}
+
+body { 
+	font: 13px Helvetica, Arial; 
+}
+
