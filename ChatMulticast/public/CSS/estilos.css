@@ -55,6 +55,7 @@
 	flex-grow: 5;
 }
 .b-send {
+	align-self: center;
 	display: flex;
 	flex: 1;
 	flex-grow: 1;
@@ -62,6 +63,7 @@
 
 
 .b-file {
+	align-self: center;
 	display: flex;
 	flex: 1;
 	flex-grow: 1;
