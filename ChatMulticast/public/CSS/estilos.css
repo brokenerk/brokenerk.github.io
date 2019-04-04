@@ -1,43 +1,85 @@
-.general {
-	box-sizing: border-box; 
+.container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	background: black;
 }
-.usuarios {
-	margin: 0; padding: 0; box-sizing: border-box; 
-	width: 20%;
-	background: blue;
+
+/*******************************/
+/******* PARA EL CHAT *********/
+/*****************************/
+.left {
+	display: flex;
+	flex: 1;
+	flex-grow: 8;
+	background: #66B9BF;
+	flex-direction: column;
 }
-.container { 
-	margin: 0; padding: 0; box-sizing: border-box; 
-	width: 80%;
+
+.mensajes {
+	display: flex;
+	flex: 1;
+	flex-grow: 6;
+	flex-direction: column;
 	background: pink;
 }
-.usuarios {
-	width: 100px;	
-} 
+.emojis {
+	display: flex;
+	flex: 1;
+	flex-grow: 2;
+	/*flex-direction: column;*/
+	background: #66B9BF;
+}
+.texto {
+	display: flex;
+	flex: 1;
+	flex-grow: 1;
+	flex-direction: row;
+	background: pink;
+	align-items: center;
+}
+.form {
+	display: flex;
+	flex: 1;
+	flex-grow: 5;
+	flex-direction: row;
+	align-items: center;
+	background: #000; 
+}
+/**************************************/
+/************ PARA FORM **************/
+.input {
+	display: flex;
+	flex: 1;
+	flex-grow: 5;
+}
+.b-send {
+	display: flex;
+	flex: 1;
+	flex-grow: 1;
+}
+
+
+.b-file {
+	display: flex;
+	flex: 1;
+	flex-grow: 1;
+}
+
+/************************************/
+/******* PARA LOS USUARIOS *********/
+/**********************************/
+.right {
+	display: flex;
+	flex: 1;
+	flex-grow: 2;
+	background: #07889B;
+	flex-direction: column;
+}
+
 body { 
 	font: 13px Helvetica, Arial; 
-}
-
-form { 
-	background: #000; 
-	padding: 3px; 
-	position: fixed; 
-	bottom: 0; 
-	width: 80%; 
-}
-
-form input { 
-	border: 0; 
-	padding: 10px; 
-	width: 88%; 
-	margin-right: .5%; 
-}
-
-form button { 
-	width: 10%; 
-	background: rgb(130, 224, 255); 
-	border: none; 
-	padding: 10px; 
 }
 
 #messages { 
