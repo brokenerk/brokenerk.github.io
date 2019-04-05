@@ -2,9 +2,6 @@
   <head>
     <title>Chat</title>
     <link rel="stylesheet" href="./css/estilos.css">
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="/cliente.js"></script>
   </head>
   <body>
     <!------------------------->
@@ -34,11 +31,9 @@
           <!---------- Texto ------------>
           <!------------------------------>
           <div class="texto">
-            <form class="form" action=""> 
-              <input class="input" id="m" autocomplete="off" />
-              <button class="b-send">Enviar</button>  
-            </form>
-            <button class="b-file">File</button>
+            <input class="input" id="m" autocomplete="off" />
+            <button class="b-send" id="enviarMensaje">Enviar</button>  
+            <button class="b-file" id="enviarArchivo">File</button>
           </div>
 
       </div>
@@ -49,6 +44,10 @@
       <ul id="users">
       </ul>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/cliente.js"></script>
 
   
   </body>
