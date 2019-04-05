@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>Chat</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+  </head>
+  <body>
+    <!------------------------->
+    <!--------- CHAT ---------->
+    <!------------------------->
+    <div class="container">
+      
+      <!-------------------------->
+      <!---------- Left ---------->
+      <!-------------------------->
+      <div class="left">
+
+          <!------------------------------>
+          <!---------- Mensajes ---------->
+          <!------------------------------>
+          <ul id="messages">
+          </ul>
+
+          <!------------------------------>
+          <!---------- Emojis ------------>
+          <!------------------------------>
+          <div class="emojis">
+            
+          </div>
+
+          <!------------------------------>
+          <!---------- Texto ------------>
+          <!------------------------------>
+          <div class="texto">
+            <input class="input" id="m" autocomplete="off" />
+            <button class="b-send" id="enviarMensaje">Enviar</button>  
+            <input type="file" id="file" class="b-file" id="enviarArchivo">
+          </div>
+
+      </div>
+
+      <!------------------------->
+      <!--------- USER ---------->
+      <!------------------------->
+      <ul id="users">
+      </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/chatPublico.js"></script>
+
+  
+  </body>
+</html>

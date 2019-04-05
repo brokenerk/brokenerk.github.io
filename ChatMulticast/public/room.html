@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Chat</title>
+    <title>Private Room</title>
     <link rel="stylesheet" href="./css/estilos.css">
   </head>
   <body>
@@ -33,7 +33,7 @@
           <div class="texto">
             <input class="input" id="m" autocomplete="off" />
             <button class="b-send" id="enviarMensaje">Enviar</button>  
-            <button class="b-file" id="enviarArchivo">File</button>
+            <input type="file" id="file" class="b-file" id="enviarArchivo">
           </div>
 
       </div>
@@ -47,7 +47,7 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="/socket.io/socket.io.js"></script>
-    <script src="/cliente.js"></script>
+    <script src="/room.js"></script>
 
   
   </body>
