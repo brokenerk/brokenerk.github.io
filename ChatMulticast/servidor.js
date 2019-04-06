@@ -1,11 +1,12 @@
 var express = require("express");
 var app = express();
-var path = require("path")
-var server = require("http").createServer(app);
+var server = require("http").Server(app);
 var io = require("socket.io")(server);
+var siofu = require("socketio-file-upload");
 
 //Construye el HTML del cliente
 app.use(express.static("public"));
+app.use(siofu.router);
 
 app.get('/', function(req, res){
   res.sendFile(__dirname + "/public/login.html");
@@ -34,7 +35,6 @@ function sendAllUsersOnline(io, socket){
 //Escucha las peticiones de los clientes conectados
 io.on("connection", function(socket){
 	console.log("Cliente conectado");
-
 	sendAllUsersOnline(io, socket);
 
 	//Se conecta un cliente
@@ -56,7 +56,7 @@ io.on("connection", function(socket){
 		socket.broadcast.emit("chat message", {
 			nickname: socket.nickname,
 			msg: msg
-			});
+		});
 	});
 
 	//El cliente se desconecta
@@ -67,5 +67,27 @@ io.on("connection", function(socket){
 	    socket.broadcast.emit("user disconnected", socket.nickname);
 	    sendAllUsersOnline(socket);
   	});
+
+  	//Preparamos la lectura de archivos que se vayan subiendo
+	var uploader = new siofu();
+	uploader.dir = __dirname + "/public/uploads";
+	uploader.listen(socket);
+
+	//El archivo subido se guardo en el servidor
+	uploader.on("saved", function(e){
+		console.log(e.file);
+	})
+
+	//Ocurrio un error al guardar archivos
+	uploader.on("error", function(e){
+		console.log("Error: " + e);
+	})
+
+	//El cliente envia un link de descarga
+	socket.on("chat file", function(linkMsj){
+		console.log("Link recibido. Enviando...");
+		//El servidor envia el link a todos los demas
+		socket.broadcast.emit("chat file", linkMsj);
+	});
 });
 

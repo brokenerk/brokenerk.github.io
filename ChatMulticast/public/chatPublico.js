@@ -1,5 +1,6 @@
 $(function () {
   var socket = io();
+  var rootPath = "http://localhost:3000/";
 
   //Para obtener el nickname desde GET
   function getParameterByName(name) {
@@ -11,7 +12,6 @@ $(function () {
 
   var nickname = getParameterByName("nickname");
   socket.emit("user connected", nickname);
-
   console.log("Enviando nickname al servidor");
 
   //Muestra los usuarios online
@@ -22,7 +22,8 @@ $(function () {
 
     for(var i = 0; i < users.length; i++){
         if(users[i].localeCompare(nickname) != 0){
-          $("#users").append($('<li id="' + users[i] + '"><button><a href="http://localhost:3000/room?from=' + nickname + '&to=' + users[i] + '" target="_blank">' + users[i] + '</a></button></li>'));
+          // --------------- AQUI HAY QUE APLICAR CSS
+          $("#users").append($('<li id="' + users[i] + '"><button><a href="' + rootPath + 'room?from=' + nickname + '&to=' + users[i] + '" target="_blank">' + users[i] + '</a></button></li>'));
         }
       }
   });
@@ -33,8 +34,9 @@ $(function () {
     var msj = $("#m").val();
 
     if(msj != ""){
-      //Envia mensajes a otros clientes
       socket.emit("chat message", msj);
+
+      /* --------------- AQUI HAY QUE APLICAR CSS*/
       $("#messages").append($("<li>").text(nickname + ": " +msj));
       $("#m").val("");
     }
@@ -44,7 +46,8 @@ $(function () {
   socket.on("user connected", function(newNickname){
     console.log("Usuario: " + newNickname + " conectado"); 
 
-    $("#users").append($('<li id="' + newNickname + '"><button><a href="http://localhost:3000/room?from=' + nickname + '&to=' + newNickname + '" target="_blank">' + newNickname + '</a></button></li>'));
+    /* --------------- AQUI HAY QUE APLICAR CSS*/
+    $("#users").append($('<li id="' + newNickname + '"><button><a href="' + rootPath + 'room?from=' + nickname + '&to=' + newNickname + '" target="_blank">' + newNickname + '</a></button></li>'));
     $("#messages").append($("<li>").text(newNickname + " se ha conectado"));
   });
 
@@ -52,6 +55,7 @@ $(function () {
   socket.on("user disconnected", function(nickname){
     console.log("Usuario: " + nickname + " desconectado");
 
+    /* --------------- AQUI HAY QUE APLICAR CSS*/
     $("#messages").append($("<li>").text(nickname + " se ha desconectado"));
     $("#" + nickname).remove();
   });
@@ -60,7 +64,46 @@ $(function () {
   socket.on("chat message", function(data){
     console.log("Msj: " + data.msg + " de: " + data.nickname);
 
+    /* --------------- AQUI HAY QUE APLICAR CSS*/
     $("#messages").append($("<li>").text(data.nickname + ": " + data.msg));      
   });
-  
+
+  //Recibe del servidor los links de descarga
+  socket.on("chat file", function(data){
+    console.log("Link: " + data);
+    $("#messages").append($(data));     
+  });
+
+  // ---------------------- Subir archivos
+  var uploader = new SocketIOFileUpload(socket);
+  //Con esto automaticamente carga y sube el archivo :3
+  document.getElementById('subir').addEventListener("click", uploader.prompt, false);
+
+  //Muestra el progreso de subida
+  uploader.addEventListener("progress", function(e){
+    var nombre = e.file.name;
+    var tam = e.file.size;
+    var porcentaje = parseInt(e.bytesLoaded / e.file.size * 100);
+    console.log("Nombre: " + nombre);
+    console.log("Tam: " + tam);
+    console.log("Subiendo: " + porcentaje + "%");
+
+    /* --------------- AQUI HAY QUE APLICAR CSS (ALERT O CUADRO DE DIALOGO PARA TENER ENTRETENIDO AL CLIENTE)*/
+    $("#messages").append($("<li>").text("Enviando " + nombre + " de " + tam + " bytes: " + porcentaje + "%")); 
+  })
+
+  //Envia link de descarga a otros clientes una vez finalizada la subida
+  uploader.addEventListener("complete", function(e){
+    console.log(e.success);
+
+    if(e.succes != 1){
+      var nombre = e.file.name;
+      var tam = e.file.size;
+      /* --------------- AQUI HAY QUE APLICAR CSS*/
+      var msjFile = '<li>' + nickname + ': ' + '<a href="' + rootPath + 'uploads/' + nombre + '" download>' + nombre + '. ' + tam + ' bytes</a></li>';
+      
+      socket.emit("chat file", msjFile);
+      $("#messages").append($(msjFile)); 
+    }
+  })
 });
