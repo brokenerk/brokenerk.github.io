@@ -23,7 +23,7 @@ $(function () {
     for(var i = 0; i < users.length; i++){
         if(users[i].localeCompare(nickname) != 0){
           // --------------- AQUI HAY QUE APLICAR CSS
-          $("#users").append($('<li id="' + users[i] + '"><button><a href="' + rootPath + 'room?from=' + nickname + '&to=' + users[i] + '" target="_blank">' + users[i] + '</a></button></li>'));
+          $("#users").append($('<li id="' + users[i] + '"><a class="button" href="' + rootPath + 'room?from=' + nickname + '&to=' + users[i] + '" target="_blank">' + users[i] + '</a></li>'));
         }
       }
   });
@@ -47,7 +47,7 @@ $(function () {
     console.log("Usuario: " + newNickname + " conectado"); 
 
     /* --------------- AQUI HAY QUE APLICAR CSS*/
-    $("#users").append($('<li id="' + newNickname + '"><button><a href="' + rootPath + 'room?from=' + nickname + '&to=' + newNickname + '" target="_blank">' + newNickname + '</a></button></li>'));
+    $("#users").append($('<li id="' + newNickname + '"><a class="button" href="' + rootPath + 'room?from=' + nickname + '&to=' + newNickname + '" target="_blank">' + newNickname + '</a></li>'));
     $("#messages").append($("<li>").text(newNickname + " se ha conectado"));
   });
 

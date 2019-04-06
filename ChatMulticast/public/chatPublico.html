@@ -2,6 +2,8 @@
   <head>
     <title>Chat</title>
     <link rel="stylesheet" href="./css/estilos.css">
+
+    <link rel="stylesheet" href="./fontAwesome/css/all.min.css">
   </head>
   <body>
     <!------------------------->
@@ -32,9 +34,9 @@
           <!------------------------------>
           <div class="texto">
 
-            <input class="input" id="m" autocomplete="off" />
-            <button class="b-send" id="enviarMensaje">Enviar</button>  
-            <button class="b-file" id="subir">Subir Archivo</button>
+            <input class="input" id="m" autocomplete="off" placeholder="Escribe un mensaje..." />
+            <button class="b-send" id="enviarMensaje"><i class="fa fa-paper-plane"></i> Enviar</button>  
+            <button class="b-file" id="subir"><i class="fa fa-paperclip"></i> Adjuntar</button>
           </div>
 
       </div>
@@ -46,6 +48,7 @@
       </ul>
     </div>
 
+    <script src="/fontAwesome/js/all.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="/siofu/client.js"></script>

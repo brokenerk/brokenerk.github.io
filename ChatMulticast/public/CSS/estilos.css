@@ -21,14 +21,14 @@
 	flex: 1;
 	flex-grow: 2;
 	/*flex-direction: column;*/
-	background: pink;
+	background: #82b1ff;
 }
 .texto {
 	display: flex;
 	flex: 1;
 	flex-grow: 1;
 	flex-direction: row;
-	background: pink;
+	background: #82b1ff;
 	align-items: center;
 }
 .form {
@@ -52,18 +52,19 @@
 }
 
 #messages li { 
-	display: flex;;
-	flex: 1;
 	height: : 5%;
 	padding: 5px 10px; 
-	text-align: center;
 }
 
 #messages li:nth-child(odd) { 
-	display: flex;
-	flex: 1;
-	background: #eee; 
+	color: white;
+	background: #0288d1; 
 }
+
+#messages a{
+	color: #80cbc4;
+}
+
 
 
 /**************************************/
@@ -72,22 +73,23 @@
 	display: flex;
 	flex: 1;
 	flex-grow: 5;
-	padding: 15px; 
+	padding: 10px;
+	font: 18px Trebuchet MS; 
 }
 .b-send {
 	align-self: center;
 	display: flex;
 	flex: 1;
 	flex-grow: 1;
-	background-color: #66B9BF; /* Green */
+	background-color: #1565c0; /* Green */
 	border: none;
 	color: white;
-	padding: 10px 20px;
-	border-radius: 5%;
+	padding: 10px 0px;
+	border-radius: 2%;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 21px;
+	font-size: 20px;
 }
 
 .b-file {
@@ -96,15 +98,15 @@
 	flex: 1;
 	flex-grow: 1;
 
-	background-color: #737373; /* Green */
+	background-color: #006064; /* Green */
 	border: none;
 	color: white;
-	padding: 10px 10px;
-	border-radius: 5%;
+	padding: 10px 0px;
+	border-radius: 2%;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 21px;
+	font-size: 20px;
 }
 
 /************************************/
@@ -115,7 +117,7 @@
 }
 
 #users { 
-	background: #07889B;
+	background: #1565c0;
     overflow: auto;
 	display: flex;
 	flex: 1;
@@ -126,21 +128,23 @@
 	padding: 0; 
 }
 
-#users li { 
-	display: flex;;
-	flex: 1;
-	height: : 5%;
-	padding: 5px 5px; 
-	text-align: center;
-}
 
-#users li:nth-child(odd) { 
+.button { 
 	display: flex;
 	flex: 1;
-	background: #eee; 
+	flex-grow: 1;
+	background-color: #1976d2; /* Green */
+	border: none;
+	color: white;
+	padding: 10px 80px;
+	border-radius: 2%;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 18px;
 }
 
 body { 
-	font: 13px Helvetica, Arial; 
+	font: 15px Trebuchet MS; 
 }
 
