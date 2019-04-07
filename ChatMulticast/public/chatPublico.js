@@ -1,31 +1,28 @@
-$(function () {
-  var socket = io();
-  var rootPath = "http://localhost:3000/";
+function abrirSalaPrivada(rootPath){
+  var newRoom = window.open(rootPath + "room/?private=1", "_blank");
+  if (newRoom) 
+    newRoom.focus();
+  else 
+    alert('Por favor active los pop-ups del navegador');
+}
 
-  //Para obtener el nickname desde GET
-  function getParameterByName(name) {
-    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-    results = regex.exec(location.search);
-    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-  } 
-
-  var nickname = getParameterByName("nickname");
+function chatPublico(socket, rootPath, nickname){
+  
   socket.emit("user connected", nickname);
   console.log("Enviando nickname al servidor");
 
   //Muestra los usuarios online
   socket.on("display users", function(users){
-    console.log("Recibiendo usuarios: " + users); 
+  console.log("Recibiendo usuarios: " + users); 
 
-    $("#users li").remove();
+  $("#users li").remove();
 
-    for(var i = 0; i < users.length; i++){
-        if(users[i].localeCompare(nickname) != 0){
-          // --------------- AQUI HAY QUE APLICAR CSS
-          $("#users").append($('<li id="' + users[i] + '"><a class="button" href="' + rootPath + 'room?from=' + nickname + '&to=' + users[i] + '" target="_blank">' + users[i] + '</a></li>'));
-        }
+  for(var i = 0; i < users.length; i++){
+      if(users[i].localeCompare(nickname) != 0){
+        // --------------- AQUI HAY QUE APLICAR CSS
+        $("#users").append($('<li class="users"><button class="btn-users" id="' + users[i] + '">' + users[i] + '</button></li>'));
       }
+    }
   });
 
   //Envia mensajes
@@ -42,12 +39,9 @@ $(function () {
     }
   });
 
-  //Agrega a los usuarios cuando se conecten
+ // Agrega a los usuarios cuando se conecten
   socket.on("user connected", function(newNickname){
     console.log("Usuario: " + newNickname + " conectado"); 
-
-    /* --------------- AQUI HAY QUE APLICAR CSS*/
-    $("#users").append($('<li id="' + newNickname + '"><a class="button" href="' + rootPath + 'room?from=' + nickname + '&to=' + newNickname + '" target="_blank">' + newNickname + '</a></li>'));
     $("#messages").append($("<li>").text(newNickname + " se ha conectado"));
   });
 
@@ -71,10 +65,31 @@ $(function () {
   //Recibe del servidor los links de descarga
   socket.on("chat file", function(data){
     console.log("Link: " + data);
+
     $("#messages").append($(data));     
   });
 
-  // ---------------------- Subir archivos
+  // -------------------- CHAT PRIVADO
+  //Iniciar chat privado con algun usuario
+  $(document).on("click", ".btn-users", function(){
+    var to = $(this).attr("id");
+    console.log("Enviando solicitud de chat privado a: " + to);
+
+    socket.emit("start private", {
+      from: nickname,
+      to: to
+    });
+    abrirSalaPrivada(rootPath);
+  });
+
+  //Se recibe una solicitud para iniciar un chat privado, se une
+  socket.on("start private chat", function(room){
+    console.log("Recibida solicitud para unirse al chat privado de: " + room.from);
+    socket.emit("to joins", room.id);
+    abrirSalaPrivada(rootPath);
+  });
+
+  // ---------------------- SUBIR ARCHIVOS
   var uploader = new SocketIOFileUpload(socket);
   //Con esto automaticamente carga y sube el archivo :3
   document.getElementById('subir').addEventListener("click", uploader.prompt, false);
@@ -90,7 +105,7 @@ $(function () {
 
     /* --------------- AQUI HAY QUE APLICAR CSS (ALERT O CUADRO DE DIALOGO PARA TENER ENTRETENIDO AL CLIENTE)*/
     $("#messages").append($("<li>").text("Enviando " + nombre + " de " + tam + " bytes: " + porcentaje + "%")); 
-  })
+  });
 
   //Envia link de descarga a otros clientes una vez finalizada la subida
   uploader.addEventListener("complete", function(e){
@@ -105,5 +120,5 @@ $(function () {
       socket.emit("chat file", msjFile);
       $("#messages").append($(msjFile)); 
     }
-  })
-});
+  });
+} 
