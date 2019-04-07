@@ -12,12 +12,12 @@ app.get('/', function(req, res){
   res.sendFile(__dirname + "/public/login.html");
 });
 
-app.get('/chatPublico', function(req, res){
-  res.sendFile(__dirname + "/public/chatPublico.html");
+app.get('/publico', function(req, res){
+  res.sendFile(__dirname + "/public/publico.html");
 });
 
-app.get('/room', function(req, res){
-  res.sendFile(__dirname + "/public/room.html");
+app.get('/privado', function(req, res){
+  res.sendFile(__dirname + "/public/privado.html");
 });
 
 server.listen(3000, function(){
@@ -25,9 +25,11 @@ server.listen(3000, function(){
 });
 
 var usersOnline = [];
-var socketID = {};
+var socketIDPublico = {};
+var socketIDPrivado = {};
 var idGrupal = 'idGrupal';
 
+// ################## CHAT PUBLICO ####################
 function sendAllUsersOnline(io, socket){
 	console.log("Enviando usuarios " + usersOnline);
 	io.emit("display users", usersOnline);
@@ -35,42 +37,8 @@ function sendAllUsersOnline(io, socket){
 
 //Escucha las peticiones de los clientes conectados
 io.on("connection", function(socket){
-	console.log("Cliente conectado");
-	sendAllUsersOnline(io, socket);
 
-	//Se conecta un cliente
-	socket.on("user connected", function(nickname){
-		socket.nickname = nickname;
-		usersOnline.push(socket.nickname);
-		socketID[socket.nickname] = socket.id;
-		socket.join(idGrupal);
-
-		console.log(socket.nickname + " conectado. ID: " + socketID[socket.nickname]);
-		socket.broadcast.to(idGrupal).emit("user connected", socket.nickname);
-
-		sendAllUsersOnline(io, socket);
-	});
-
-	//El cliente envia un mensaje
-	socket.on("chat message", function(msg){
-		console.log("Msj recibido de: " + socket.nickname + ". Enviando...");
-		//El servidor envia el mensaje a todos los demas
-		socket.broadcast.to(idGrupal).emit("chat message", {
-			nickname: socket.nickname,
-			msg: msg
-		});
-	});
-
-	//El cliente se desconecta
-	socket.on("disconnect", function(){
-		//El servidor notifica todos los demas
-		console.log(socket.nickname + " desconectado");
-		usersOnline.splice(usersOnline.indexOf(socket.nickname), 1);
-	    socket.broadcast.to(idGrupal).emit("user disconnected", socket.nickname);
-	    sendAllUsersOnline(socket);
-  	});
-
-  	//Preparamos la lectura de archivos que se vayan subiendo
+	// ################## SUBIDA DE ARCHIVOS ####################
 	var uploader = new siofu();
 	uploader.dir = __dirname + "/public/uploads";
 	uploader.listen(socket);
@@ -85,33 +53,103 @@ io.on("connection", function(socket){
 		console.log("Error: " + e);
 	})
 
-	//El cliente envia un link de descarga
-	socket.on("chat file", function(linkMsj){
-		console.log("Link recibido. Enviando...");
-		//El servidor envia el link a todos los demas
-		socket.broadcast.to(idGrupal).emit("chat file", linkMsj);
+	//Se conecta un cliente
+	socket.on("user connected", function(nickname){
+		if(nickname in usersOnline){
+			console.log("Usuario ya registrado");
+		}
+		else{
+			socket.nickname = nickname;
+			socket.privado = 0;
+			socketIDPublico[socket.nickname] = socket.id;
+			usersOnline.push(socket.nickname);
+
+			console.log(socket.nickname + " conectado. ID: " + socket.id + ". Privado = " + socket.privado);
+			
+			socket.broadcast.emit("user connected", socket.nickname);
+			sendAllUsersOnline(io, socket);
+		}
+		
 	});
 
-	//########################## CHAT PRIVADO #################################
-
-	//Un cliente quiere iniciar un chat privado con otro
-	socket.on("start private", function(room){
-		console.log(room.from + " quiere iniciar un chat privado con " + room.to);
-		//El remitente se une al chat privado
-		var idRoom = socketID[room.from] + socketID[room.to];
-		socket.join(idRoom);
-		//UNICAMENTE enviamos solicitud al destinatario
-		socket.broadcast.to(socketID[room.to]).emit("start private chat", {
-			from: room.from,
-			to: room.from,
-			id: idRoom
+	//El cliente envia un mensaje
+	socket.on("chat message", function(msg){
+		console.log("Msj recibido de: " + socket.nickname + ". Enviando...");
+		
+		//El servidor envia el mensaje a todos los demas
+		socket.broadcast.emit("chat message", {
+			nickname: socket.nickname,
+			msg: msg
 		});
 	});
 
-	//El destinatario se une al chat privado
-	socket.on("to joins", function(idRoom){
-		console.log("Chat privado: " + idRoom + " lleno.");
-		socket.join(idRoom);
+	//El cliente se desconecta
+	socket.on("disconnect", function(){
+		//El servidor notifica todos los demas
+		if(socket.privado == 1){
+			socket.privado = 0;
+			console.log(socket.nickname + " abandono una sala privada. Privado = " + socket.privado);
+			
+			socket.broadcast.emit("user leaves", socket.nickname);
+		}
+		else{
+			console.log(socket.nickname + " desconectado. Privado = " + socket.privado);
+			
+			usersOnline.splice(usersOnline.indexOf(socket.nickname), 1);
+			socket.broadcast.emit("user disconnected", socket.nickname);
+			sendAllUsersOnline(socket);
+		}
+  	});
+
+	//El cliente envia un link de descarga
+	socket.on("chat file", function(linkMsj){
+		console.log("Link recibido. Enviando...");
+		
+		//El servidor envia el link a todos los demas
+		socket.broadcast.emit("chat file", linkMsj);
 	});
+
+	//########################## CHAT PRIVADO #################################
+	//Un cliente quiere iniciar un chat privado con otro
+	socket.on("start private", function(room){
+		console.log(room.from + " quiere iniciar un chat privado con " + room.to);
+
+		//Enviamos solicitud al destinatario
+		socket.to(socketIDPublico[room.to]).emit("start private chat", {
+			from: room.from,
+			to: room.to,
+		});
+	});
+
+	//Se registran los nuevos IDs de socket privados 
+	socket.on("private IDs", function(nickname){
+		socket.nickname = nickname;
+		socket.privado = 1;
+		console.log(socket.nickname + " unido a chat privado con nueva ID: " + socket.id + ". Privado = " + socket.privado);
+		
+		socketIDPrivado[socket.nickname] = socket.id;
+	});
+
+	//El cliente envia un mensaje privado
+	socket.on("private chat message", function(data){
+		console.log("Msj privado recibido de: " + socket.nickname + ". Enviando a " + data.to);
+		
+		var id = socketIDPrivado[data.to];
+		//El servidor envia el mensaje a todos los demas
+		socket.to(id).emit("private chat message", {
+			nickname: socket.nickname,
+			msg: data.msg
+		});
+	});
+
+	//El cliente envia un link de descarga privado
+	socket.on("private chat file", function(data){
+		console.log("Link privado recibido. Enviando...");
+		var id = socketIDPrivado[data.to];
+		//El servidor envia el link a todos los demas
+		socket.to(id).emit("private chat file", data.link);
+	});
+
+
 });
 

@@ -1,6 +1,8 @@
 $(function () {
-  var socket = io();
   var rootPath = "http://localhost:3000/";
+  var socket = io();
+  // ---------------------- SUBIR ARCHIVOS
+  var uploader = new SocketIOFileUpload(socket);
 
   //Para obtener el nickname desde GET
   function getParameterByName(name) {
@@ -10,15 +12,15 @@ $(function () {
     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
   } 
 
-  var privado = getParameterByName("private");
+  var private = getParameterByName("private");
   var nickname = getParameterByName("nickname");
+  var from = getParameterByName("from");
+  var to = getParameterByName("to");
 
-  if(privado == 0){
-    chatPublico(socket, rootPath, nickname);
+  if(private == 0){
+    publico(socket, rootPath, nickname, uploader);
   }
   else{
-    room();
+    privado(socket, rootPath, from, to, uploader);
   }
-
-  
 });
