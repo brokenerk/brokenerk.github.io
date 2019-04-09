@@ -92,7 +92,7 @@
 
 #messages-private li:nth-child(odd) { 
 	color: white;
-	background: #0288d1; 
+	background: #a3c2c2; 
 }
 
 #messages-private a{
@@ -149,7 +149,7 @@
 }
 
 #users { 
-	background: #1565c0;
+	background: #07889B;
     overflow: auto;
 	display: flex;
 	flex: 1;

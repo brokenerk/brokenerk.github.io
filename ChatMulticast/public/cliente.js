@@ -17,10 +17,10 @@ $(function () {
   var from = getParameterByName("from");
   var to = getParameterByName("to");
 
-  if(private == 0){
+  if(private == 0) {
     publico(socket, rootPath, nickname, uploader);
   }
-  else{
+  else {
     privado(socket, rootPath, from, to, uploader);
   }
 });

@@ -1,8 +1,8 @@
-function ajustarScroll(){
+function ajustarScroll() {
   $("#messages-private")[0].scrollTop = $("#messages-private")[0].scrollHeight;
 }
 
-function privado(socket, rootPath, from, to, uploader){
+function privado(socket, rootPath, from, to, uploader) {
   socket.emit("private IDs", from);
   $("#users-private").append($('<li class="users"><button class="btn-users">' + from + '</button></li>'));
   $("#users-private").append($('<li class="users"><button class="btn-users">' + to + '</button></li>'));
@@ -10,7 +10,7 @@ function privado(socket, rootPath, from, to, uploader){
   $("#messages-private").append($("<li>").text(to + " se ha unido a la sala privada")); 
   ajustarScroll()
   
-  //Envia mensajes
+  // Envia mensajes
   $("#enviarMensaje-private").click(function(e){
     e.preventDefault();
     var msj = $("#m-private").val();
@@ -28,7 +28,7 @@ function privado(socket, rootPath, from, to, uploader){
     }
   });
 
-  //Recibe del servidor los mensajes de otros clientes
+  // Recibe del servidor los mensajes de otros clientes
   socket.on("private chat message", function(data){
     console.log("Msj: " + data.msg + " de: " + data.nickname);
 
@@ -40,8 +40,8 @@ function privado(socket, rootPath, from, to, uploader){
   // ---------------------- SUBIR ARCHIVOS
   document.getElementById('subir-private').addEventListener("click", uploader.prompt, false);
 
-  //Muestra el progreso de subida
-  uploader.addEventListener("progress", function(e){
+  // Muestra el progreso de subida
+  uploader.addEventListener("progress", function(e) {
     var nombre = e.file.name;
     var tam = e.file.size;
     var porcentaje = parseInt(e.bytesLoaded / e.file.size * 100);
@@ -55,7 +55,7 @@ function privado(socket, rootPath, from, to, uploader){
   });
 
   //Envia link de descarga a otros clientes una vez finalizada la subida
-  uploader.addEventListener("complete", function(e){
+  uploader.addEventListener("complete", function(e) {
     console.log(e.success);
 
     if(e.succes != 1){
@@ -74,14 +74,14 @@ function privado(socket, rootPath, from, to, uploader){
     }
   });
 
-  //Recibe del servidor los links de descarga
+  // Recibe del servidor los links de descarga
   socket.on("private chat file", function(data){
     console.log("Link: " + data);
 
     $("#messages-private").append($(data));     
   });
 
-  //Usuario abandona el chat privado
+  // Usuario abandona el chat privado
   socket.on("user leaves", function(leaver){
     console.log("Usuario abandono: " + leaver);
 
