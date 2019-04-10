@@ -16,12 +16,21 @@
 	flex-direction: column;
 }
 
-.emojis {
+#emojis {
 	display: flex;
 	flex: 1;
 	flex-grow: 2;
+	flex-wrap: wrap;
 	/*flex-direction: column;*/
-	background: #82b1ff;
+	background: #ffffff;
+}
+#emojis li { 
+	/*height: : 5%;*/
+	padding: 10px 10px; 
+}
+
+#emojis li:nth-child(odd) { 
+	color: white;
 }
 
 .emojis-private {
