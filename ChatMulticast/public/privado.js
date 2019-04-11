@@ -96,7 +96,7 @@ function privado(socket, rootPath, from, to, uploader) {
     e.preventDefault();
     var msj = $("#m-private").val();
 
-    if(msj != ""){
+    if(msj != "") {
       socket.emit("private chat message", {
         to: to,
         msg: msj
@@ -138,7 +138,7 @@ function privado(socket, rootPath, from, to, uploader) {
   uploader.addEventListener("complete", function(e) {
     console.log(e.success);
 
-    if(e.succes != 1){
+    if(e.succes != 1) {
       var nombre = e.file.name;
       var tam = e.file.size;
 
@@ -155,17 +155,19 @@ function privado(socket, rootPath, from, to, uploader) {
       }
       console.log("extension: " + aux);
       if(aux === ".PNG" || aux == ".jpg" || aux == ".png" || aux == ".jpeg" || aux == ".JPEG") {
-        var msjFile = '<li>' + nickname + ': ' + '<img class = "imagen-chat" src="' + rootPath + 'uploads/' + nombre + '"></li>';
-         $("#messages-private").append($(msjFile)); 
+        var msjFile = '<li>' + from + ': ' + '<img class = "imagen-chat" src="' + rootPath + 'uploads/' + nombre + '"></li>';
+        socket.emit("private chat file", {
+          link: msjFile,
+          to: to
+        }); 
+        $("#messages-private").append($(msjFile)); 
       }    
 
-      /* --------------- AQUI HAY QUE APLICAR CSS*/
       var msjFile = '<li>' + from + ': ' + '<a href="' + rootPath + 'uploads/' + nombre + '" download>' + nombre + '. ' + tam + ' bytes</a></li>';      
       socket.emit("private chat file", {
         link: msjFile,
         to: to
       });
-
       $("#messages-private").append($(msjFile)); 
       ajustarScroll()
     }

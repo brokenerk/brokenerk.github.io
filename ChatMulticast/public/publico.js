@@ -254,6 +254,7 @@ $(document).on("click", ".btn-users", function() {
         console.log("Envio mi imagen a MOSTRAR CHAT YA SE ENVIO SEGUN"); 
         $("#messages").append($(msjFile));
       }    
+      
       var msjFile = '<li>' + nickname + ': ' + '<a href="' + rootPath + 'uploads/' + nombre + '" download>' + nombre + '. ' + tam + ' bytes</a></li>';
       socket.emit("chat file", msjFile);
       $("#messages").append($(msjFile)); 
