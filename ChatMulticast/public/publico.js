@@ -100,7 +100,7 @@ function publico(socket, rootPath, nickname, uploader) {
   // Agregamos el titulo
 
   socket.emit("user connected", nickname);
-  $("#messages").append($("<li style=background:#52de7a; >").text(nickname + " bienvenido al chat público" + String.fromCodePoint(emojis[2]))); 
+  $("#messages").append($("<li style=background:#52de7a; >").text(nickname + " bienvenid@ al chat público" + String.fromCodePoint(emojis[2]))); 
   console.log("Enviando nickname al servidor");
  
   // Muestra los usuarios online
@@ -138,6 +138,22 @@ function publico(socket, rootPath, nickname, uploader) {
       $("#messages").append($("<li>").text(nickname + ": " +msj));
       $("#m").val("");
       ajustarScroll();
+    }
+  });
+
+  //Envia mensajes al presionar Enter
+  $(window).keydown(function(e) {
+    if (e.which === 13) {
+        e.preventDefault();
+      var msj = $("#m").val();
+
+      if(msj != ""){
+        socket.emit("chat message", msj);
+
+        $("#messages").append($("<li>").text(nickname + ": " +msj));
+        $("#m").val("");
+        ajustarScroll();
+      }
     }
   });
 
@@ -180,7 +196,6 @@ function publico(socket, rootPath, nickname, uploader) {
     $("#messages").append($(data));   
     ajustarScroll();  
   });
-
 
 /************************************************************************/
 /*                        CHAT PRIVADO                                  */

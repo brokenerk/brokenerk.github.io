@@ -109,8 +109,8 @@
 	background: #527a7a; 
 }
 
-#messages a{
-	color: #80cbc4;
+#messages li a{
+	color: #ef5350;
 }
 
 #messages-private { 

@@ -108,6 +108,26 @@ function privado(socket, rootPath, from, to, uploader) {
     }
   });
 
+
+  //Envia mensajes al presionar Enter
+  $(window).keydown(function(e) {
+    if (e.which === 13) {
+      e.preventDefault();
+      var msj = $("#m-private").val();
+
+      if(msj != "") {
+        socket.emit("private chat message", {
+          to: to,
+          msg: msj
+        });
+
+        $("#messages-private").append($("<li>").text(from + ": " + msj));
+        $("#m-private").val("");
+        ajustarScroll()
+      }
+    }
+  });
+
   // Recibe del servidor los mensajes de otros clientes
   socket.on("private chat message", function(data) {
     console.log("Msj: " + data.msg + " de: " + data.nickname);
