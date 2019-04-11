@@ -12,17 +12,28 @@
 .left {
 	display: flex;
 	flex: 1;
-	flex-grow: 8;
+	flex-grow: 9;
 	flex-direction: column;
+}
+
+/*******************************/
+/**     EMOJIS PUBLICO 		**/
+/*****************************/
+.emojis-container {
+	display: flex;
+	flex-grow: 4;
+	flex : 1;
+	background: #a3c2c2;
+	overflow: auto;
 }
 
 #emojis {
 	display: flex;
 	flex: 1;
-	flex-grow: 2;
+	/*flex-grow: 2;*/
 	flex-wrap: wrap;
-	/*flex-direction: column;*/
-	background: #ffffff;
+	background: #a3c2c2;
+	list-style-type: none; 
 }
 #emojis li { 
 	/*height: : 5%;*/
@@ -33,19 +44,39 @@
 	color: white;
 }
 
-.emojis-private {
+/*******************************/
+/**     EMOJIS PRIVADO 		**/
+/*****************************/
+.emojis-container-privado {
+	display: flex;
+	flex-grow: 4;
+	flex : 1;
+	background: #a3c2c2;
+	overflow: auto;
+}
+
+#emojis-privado {
 	display: flex;
 	flex: 1;
-	flex-grow: 2;
-	/*flex-direction: column;*/
-	background: #82b1ff;
+	/*flex-grow: 2;*/
+	flex-wrap: wrap;
+	background: #a3c2c2;
+	list-style-type: none; 
+}
+#emojis-privado li { 
+	/*height: : 5%;*/
+	padding: 10px 10px; 
+}
+
+#emojis-privado li:nth-child(odd) { 
+	color: white;
 }
 .texto {
 	display: flex;
 	flex: 1;
 	flex-grow: 1;
 	flex-direction: row;
-	background: #82b1ff;
+	background: #a3c2c2;
 	align-items: center;
 }
 .form {
@@ -75,7 +106,7 @@
 
 #messages li:nth-child(odd) { 
 	color: white;
-	background: #0288d1; 
+	background: #527a7a; 
 }
 
 #messages a{
@@ -108,6 +139,16 @@
 	color: #80cbc4;
 }
 
+#li-barra {
+	background: pink;
+	display: flex;
+	flex: 1;
+	flex-grow: 1;
+	flex-direction: row;
+	list-style-type: none; 
+	margin: 0; 
+	padding: 0;	
+}
 /**************************************/
 /************ PARA FORM **************/
 .input {
@@ -122,11 +163,11 @@
 	display: flex;
 	flex: 1;
 	flex-grow: 1;
-	background-color: #1565c0; /* Green */
+	background-color: #52987a; 
 	border: none;
 	color: white;
 	padding: 10px 0px;
-	border-radius: 2%;
+	border-radius: 10%;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
@@ -138,27 +179,21 @@
 	display: flex;
 	flex: 1;
 	flex-grow: 1;
-
-	background-color: #006064; /* Green */
+	background-color: #006064;
 	border: none;
 	color: white;
 	padding: 10px 0px;
-	border-radius: 2%;
+	border-radius: 10%;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	font-size: 20px;
 }
-
 /************************************/
 /******* PARA LOS USUARIOS *********/
 /**********************************/
-.right {
-	
-}
-
 #users { 
-	background: #07889B;
+	background: #527a7a;
     overflow: auto;
 	display: flex;
 	flex: 1;
@@ -170,7 +205,7 @@
 }
 
 #users-private { 
-	background: #1565c0;
+	background: #527a7a;
     overflow: auto;
 	display: flex;
 	flex: 1;
@@ -181,23 +216,49 @@
 	padding: 0; 
 }
 
-
-.btn-users { 
+#users-li {
 	display: flex;
 	flex: 1;
 	flex-grow: 1;
-	background-color: #1976d2; /* Green */
+	background-color: #527a7a;
+	flex-direction: row;
 	border: none;
-	color: white;
-	padding: 10px 80px;
+	height: 20%
 	border-radius: 2%;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 18px;
 }
 
+.btn-users { 
+	display: flex;
+	flex: 1;
+	flex-grow: 4;
+	background-color: #527a7a; /* Green */
+	border: none;
+	color: white;
+	width: 80%;
+	height: 20%
+	border-radius: 2%;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 21px;
+}
+.titleOnline {
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 21px;	
+}
 body { 
 	font: 15px Trebuchet MS; 
+}
+.imagen-chat {
+	align-self: center;
+	display: flex;
+	flex: 1;
+	flex-grow: 5;
 }
 
