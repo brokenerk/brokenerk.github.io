@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="./validetta/dist/validetta.min.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="./fontawesome/css/all.min.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="./materialize/css/materialize.min.css" rel="stylesheet" type="text/css" media="screen">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="./validetta/dist/validetta.min.js"></script>
+    <script type="text/javascript" src="./materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="./validetta/localization/validettaLang-es-ES.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#frmLogin").validetta({
+                bubblePosition: 'bottom',
+                bubbleGapTop: 10,
+                bubbleGapLeft: -5,
+                onValid: function(e){
+                    e.preventDefault();
+                    alert($("#usuario").val());
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <form id="frmLogin">
+        <div class="row">
+            <div class="col s12 m6 input-field">
+                <i class="fa fa-user prefix"></i>
+                <label>Usuario:</label>
+                <input type="text" id="usuario" name="usuario" 
+                data-validetta="required">
+            </div>
+            <div class="col s12 m6 input-field">
+                    <i class="fa fa-key prefix"></i>
+                    <label>Contrasena:</label>
+                    <input type="password" id="contrasena" name="contrasena" 
+                    data-validetta="required">
+            </div>
+        </div>
+        <div class="row">
+            <input type=submit>
+        </div>
+        </form>
+    </div>
+    
+</body>
+</html>
