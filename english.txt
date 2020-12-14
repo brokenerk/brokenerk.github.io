@@ -1,9 +1,3 @@
-About Me
-
-Projects
-
-My Resume
-
 Welcome. I'm Enrique Ramos Diaz
 
 Switch to Spanish
@@ -20,8 +14,6 @@ Technician Degree in Computation at CECyT No. 8 - IPN
 
 My first ever serious and proffesional project. <b>I worked 6 months for the IPN as web developer on its institutional systems</b>. My principal contributions were for the <b>SIG@</b> (Institutional Administrative Management System), where all the mexican IPN's offices carry out the registration of information related to the <b>financial, accounting, human capital and material resources processes</b> of the institute. This means working with money, so we had to be very careful.
 I was highly involved on the updates, maintenance and reengineering of the <b>accounting modules</b>, both backend and frontend.
-
-TAKE A LOOK
 
 This is an attempt to implement the first half of the components of a compiler: we implemented a <b>lexical analyzer</b> of Deterministic Finite Automatas through tokens, and 6 parsers: creation of Deterministic Finite Automatas and Grammars using <b>recursive descent analysis, LL(1), LR(0), LR(1) and LALR</b>. Also, we offer <b>operations with Non deterministic Finite Automatas (NFA)</b>. <br/>Each automata will be displayed in a graphic form.
 
@@ -53,7 +45,7 @@ Text is in spanish.
 This project is special for me, because it was my first ever serious project in the area! It's a CECyT 8's excursions manager that allows to teachers and directives to create and supervise these with a group of students in the IPN high school. When all the information is entered, the system generates all the formats needed by the directorate in Word format.<br/>
 It was a huge idea because before Cobra, all the documents were filled out by hand, making the process so stressful and slow. <br/>Despite being a basic programation, I'll always have affection for this project.
 
-his is an android app that displays in our mobile device <b>the measurements of room temperature and needle angle sensors in real time</b>. Alongside there's an Arduino program (an Arduino is connected to the sensors' circuit) that receives the analogic signal of the measure and converts it to a digital one.  <br/>The communication between the android device and the arduino is via Bluetooth.<br/>
+This is an android app that displays in our mobile device <b>the measurements of room temperature and needle angle sensors in real time</b>. Alongside there's an Arduino program (an Arduino is connected to the sensors' circuit) that receives the analogic signal of the measure and converts it to a digital one.  <br/>The communication between the android device and the arduino is via Bluetooth.<br/>
 Circuit, electronic components, application, arduino code and full documentation are available on Github repo.
 
 A 3D Kepler's model of our solar system desktop Java application. <br/>It displays the planets, some moons, comets and asteroids, and of course the sun. <br/>Also, you can get information in an HTML tab and a video starts playing when you choose one of the planets or the sun. <br/>It supports network functions with sockets, so you can stream the application in other devices at the same time, for an exposition for example.
