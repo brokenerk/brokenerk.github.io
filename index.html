@@ -28,15 +28,16 @@
 			      	<div class="collapse navbar-collapse" id="navbarResponsive">
 			       		<ul class="navbar-nav ml-auto">
 			          		<li class="nav-item active">
-				            	<a class="nav-link text-white" href="">About Me
+				            	<a class="nav-link text-white" href="">
+				            		<div id="aboutMeContainer"></div>
 				              		<span class="sr-only">(current)</span>
 				            	</a>
 			         		</li>
 				            <li class="nav-item">
-								<a class="nav-link text-white" href="#projects">Projects</a>
+								<a class="nav-link text-white projectsContainer" href="#projects"></a>
 				            </li>
 							<li class="nav-item">
-				            	<a class="nav-link text-white" href="./cv.pdf" target="_blank">My Resume</a>
+				            	<a class="nav-link text-white resumeContainer" href="#" target="_blank"></a>
 				          	</li>
 			        	</ul>
 			      	</div>
@@ -53,13 +54,22 @@
 					</div>
 					<div class="col-12 col-sm-12 col-md-9 col-lg-9">
 						<br/>
-						<h3>Welcome. My name's Enrique Ramos Diaz.</h3>
-						<span><i>Everything that lives is designed to end. <br/>We are perpetually trapped in a never-ending spiral of life and death. <br/>Is this a curse? Or some kind of punishment? <br/>I often think about the god who blessed us with this cryptic puzzle<br/>...and wonder if we'll ever get the chance to kill him.</i></span>
+						<div class="row">
+							<div class="col-12 col-sm-12 col-md-9 col-lg-9">
+								<h3 id="infoContainer0"></h3>
+							</div>
 
-						<p class="text-right">- 2B. NieR: Automata (2017) Yoko Taro</p>
+							<div class="col-12 col-sm-12 col-md-3 col-lg-3">
+								<div class="custom-control custom-switch">
+									<input type="checkbox" class="custom-control-input" id="languageSwitch">
+									<label class="custom-control-label" for="languageSwitch" id="infoContainer1"></label>
+								</div>
+							</div>
+						</div>
+						
+						<p id="infoContainer2"></p>
 
-						<p>Technician Degree in Computation at CECyT No. 8 - IPN<br/>
-						Bachelor of Science in Computers Systems Engineering at ESCOM - IPN</p>
+						<p id="infoContainer3"></p>
 
 						<div class="row">
 							<div class="col-3 col-sm-3 col-md-1 col-lg-1" style="padding-top: 1rem;">
@@ -104,7 +114,7 @@
 
 							<div class="col-12 col-sm-12 col-md-3 col-lg-3" style="padding-top: 1rem;">
 								<span><center>
-							  		<a class="btn btn-dark" href="./cv.pdf" target="_blank">My Resume</a>
+							  		<a class="btn btn-dark resumeContainer" href="#" target="_blank"></a>
 								</center></span>
 							</div>
 
@@ -116,7 +126,7 @@
 			</div>
 			<!-- Projects -->
 
-			<h1>Projects</h1><br/>
+			<h1 class="projectsContainer"></h1><br/>
 
 			<div class="card-deck">
 				<div class="card">
@@ -127,8 +137,7 @@
 				    		<div class="col-10 col-sm-10 col-md-10 col-lg-10" style="padding-top: 0.2rem;"><h5 class="card-title">IPN SIG@ Contable</h5></div>
 				    	</div>
 
-			      		<p class="card-text">My first ever serious and proffesional project. <b>I worked 6 months for the IPN as web developer on its institutional systems</b>. My principal contributions were for the <b>SIG@</b> (Institutional Administrative Management System), where all the mexican IPN's offices carry out the registration of information related to the <b>financial, accounting, human capital and material resources processes</b> of the institute. This means working with money, so we had to be very careful.
-			      		I was highly involved on the updates, maintenance and reengineering of the <b>accounting modules</b>, both backend and frontend.</p>
+			      		<p class="card-text" id="infoContainer4"></p>
 
 			      		<div class="mt-auto">
 				      		<span class="badge badge-success">ColdFusion</span>
@@ -145,7 +154,7 @@
 			    	<div class="card-footer text-center">
 			      		<div class="row">
 							<div class="col-12 col-sm-12 col-md-12 col-lg-12">
-					      		<a class="btn btn-success" href="https://www.siga.ipn.mx/" target="_blank">TAKE A LOOK</a>
+					      		<a class="btn btn-success takeLookContainer" href="https://www.siga.ipn.mx/" target="_blank"></a>
 					      	</div>
 				      	</div>
 			    	</div>
@@ -159,7 +168,7 @@
 				    		<div class="col-10 col-sm-10 col-md-10 col-lg-10" style="padding-top: 0.2rem;"><h5 class="card-title">Compiler</h5></div>
 				    	</div>
 
-			      		<p class="card-text">This is an attempt to implement the first half of the components of a compiler: we implemented a <b>lexical analyzer</b> of Deterministic Finite Automatas through tokens, and 6 parsers: creation of Deterministic Finite Automatas and Grammars using <b>recursive descent analysis, LL(1), LR(0), LR(1) and LALR</b>. Also, we offer <b>operations with Non deterministic Finite Automatas (NFA)</b>. <br/>Each automata will be displayed in a graphic form.</p>
+			      		<p class="card-text" id="infoContainer5"></p>
 
 			      		<div class="mt-auto">
 				      		<span class="badge badge-primary">Flask</span>
@@ -181,7 +190,7 @@
 								</a>
 							</div>
 							<div class="col-12 col-sm-12 col-md-6 col-lg-6">
-					      		<a class="btn btn-primary" href="https://com-piler.herokuapp.com/" target="_blank">TAKE A LOOK</a>
+					      		<a class="btn btn-primary takeLookContainer" href="https://com-piler.herokuapp.com/" target="_blank"></a>
 					      	</div>
 				      	</div>
 			    	</div>
@@ -195,7 +204,7 @@
 				    		<div class="col-10 col-sm-10 col-md-10 col-lg-10" style="padding-top: 0.2rem;"><h5 class="card-title">Shopping Cart</h5></div>
 				    	</div>
 
-				      	<p class="card-text">A basic shopping cart: it allows you to create an account, edit your personal info such as address, login as an user that can add products to his cart, see, edit the amount or remove the products from it, proceed to checkout and even purchase the order. <br/>The system allows real credit cards and make charges, so keep in mind that!</p>
+				      	<p class="card-text" id="infoContainer6"></p>
 
 				      	<div class="mt-auto">
 					      	<span class="badge badge-dark">Hibernate</span>
@@ -215,7 +224,7 @@
 								</a>
 							</div>
 							<div class="col-12 col-sm-12 col-md-6 col-lg-6">
-					      		<a class="btn btn-dark" href="https://shopping-cart-wad.herokuapp.com/products" target="_blank">TAKE A LOOK</a>
+					      		<a class="btn btn-dark takeLookContainer" href="https://shopping-cart-wad.herokuapp.com/products" target="_blank"></a>
 					      	</div>
 				      	</div>
 				    </div>
@@ -232,10 +241,7 @@
 				    		<div class="col-10 col-sm-10 col-md-10 col-lg-10" style="padding-top: 0.2rem;"><h5 class="card-title">Academic Program Management System</h5></div>
 				    	</div>
 
-				      	<p class="card-text">This is a web project where I worked with all of my classmates in the Softare Engineering subject at ESCOM. The purpose was to improve the creation, upgrade and review of universities' Academic Programs in the IPN, and it would be for real clients: the head of the Superior Education Directorate (DES).<br/>
-				      	It allows different types of users, each one with their functionalities. When an Academic Program is ready, the system generates the format in PDF for their publishing in the IPN tabloid.
-				      	<br/>
-				      	Tested with SONAR. Full documentation (spanish), backend, frontend and tests repositories above.<br/></p>
+				      	<p class="card-text" id="infoContainer7"></p>
 
 				      	<div class="mt-auto">
 					      	<span class="badge badge-danger">Spring</span>
@@ -259,7 +265,7 @@
 								</a>
 							</div>
 							<div class="col-12 col-sm-12 col-md-6 col-lg-6">
-					      		<a class="btn btn-danger" href="https://softwareengineerescom.gitlab.io/APMS/public/login" target="_blank">TAKE A LOOK</a>
+					      		<a class="btn btn-danger takeLookContainer" href="https://softwareengineerescom.gitlab.io/APMS/public/login" target="_blank"></a>
 					      	</div>
 				      	</div>
 				    </div>
@@ -273,9 +279,7 @@
 				    		<div class="col-10 col-sm-10 col-md-10 col-lg-10" style="padding-top: 0.2rem;"><h5 class="card-title">Random Seed</h5></div>
 				    	</div>
 
-			      		<p class="card-text">This is the web implementation of the <b>Random Seed Algorithm</b>, used to solve complex linear programming problems.<br/>
-			      		Of course, it's a iterative algorithm based on a number of populations, each one with the same size. So, with this tool you can enter the populations info, the restrictions and the objective function.<br/>
-			      		It will display all the iterations and found the most accurate result.</p>
+			      		<p class="card-text" id="infoContainer8"></p>
 
 			      		<div class="mt-auto">
 				      		<span class="badge badge-info">Flask</span>
@@ -296,7 +300,7 @@
 								</a>
 							</div>
 							<div class="col-12 col-sm-12 col-md-6 col-lg-6">
-					      		<a class="btn btn-info" href="https://random-mctd.herokuapp.com/" target="_blank">TAKE A LOOK</a>
+					      		<a class="btn btn-info takeLookContainer" href="https://random-mctd.herokuapp.com/" target="_blank"></a>
 					      	</div>
 				      	</div>
 			    	</div>
@@ -310,7 +314,7 @@
 				    		<div class="col-10 col-sm-10 col-md-10 col-lg-10" style="padding-top: 0.2rem;"><h5 class="card-title">Multicast Chat</h5></div>
 				    	</div>
 
-			      		<p class="card-text">This is a simple public chat room that allows you to send and receive text messages, images and also file links via multicast. All you have to do is login with an username. <br/>Also, if you want a private chat, you have to select the user you want to begin the conversation, and a new tab will open. <br/>Dont forget to allow pop-ups!</p>
+			      		<p class="card-text" id="infoContainer9"></p>
 
 			      		<div class="mt-auto">
 				      		<span class="badge badge-success">Node.js</span>
@@ -331,7 +335,7 @@
 								</a>
 							</div>
 							<div class="col-12 col-sm-12 col-md-6 col-lg-6">
-					      		<a class="btn btn-success" href="https://chat-multicast.herokuapp.com/" target="_blank">TAKE A LOOK</a>
+					      		<a class="btn btn-success takeLookContainer" href="https://chat-multicast.herokuapp.com/" target="_blank"></a>
 					      	</div>
 				      	</div>
 			    	</div>
@@ -348,7 +352,7 @@
 				    		<div class="col-10 col-sm-10 col-md-10 col-lg-10" style="padding-top: 0.2rem;"><h5 class="card-title">Star Cluster</h5></div>
 				    	</div>
 
-			      		<p class="card-text">This is a unfinished project that implements the <b>Brute Force Star Cluster Algorithm</b>. <br/>From a big population of stars in the sky (actually any bunch of points in a 2D space), it finds the two of them with the minimum distance between each other. We put an animation of how the algorithm is supossed to be working when it calculates the distance from point to point. <br/>As you can imagine, is zero optimized and takes a lot of time... but looks pretty good! </p>
+			      		<p class="card-text" id="infoContainer10"></p>
 
 			      		<div class="mt-auto">
 				      		<span class="badge badge-primary">Vis.js</span>
@@ -369,7 +373,7 @@
 								</a>
 							</div>
 							<div class="col-12 col-sm-12 col-md-6 col-lg-6">
-					      		<a class="btn btn-primary" href="./projects/CumuloEstrellas/index.html" target="_blank">TAKE A LOOK</a>
+					      		<a class="btn btn-primary takeLookContainer" href="./projects/CumuloEstrellas/index.html" target="_blank"></a>
 					      	</div>
 				      	</div>
 			    	</div>
@@ -383,7 +387,7 @@
 				    		<div class="col-10 col-sm-10 col-md-10 col-lg-10" style="padding-top: 0.2rem;"><h5 class="card-title">Sniffer</h5></div>
 				    	</div>
 
-			      		<p class="card-text">A network packet analyzer Java application, better known as sniffer. With the jnetpcap library, the application catches frames, classifies it with it's corresponding protocol and show it's headers. The application show a graph with the statics of all the packets caught. <br/>Also, you can configure the network card of your device, set filters and import/export frames in .pcap files.</p>
+			      		<p class="card-text" id="infoContainer11"></p>
 
 			      		<div class="mt-auto">
 				      		<span class="badge badge-light">Java</span>
@@ -410,7 +414,7 @@
 				    		<div class="col-10 col-sm-10 col-md-10 col-lg-10" style="padding-top: 0.2rem;"><h5 class="card-title">Organize An Event</h5></div>
 				    	</div>
 
-			      		<p class="card-text">A web system to control assistance and documents to an academic ceremony. It allows us to pass assistance using bar codes and QR inside the web app. <br/>Also, it allows us to get the statistics of the event (in PDF), generate the prizes for the guests in PDF as well and send their invitations via email, and to have differents types fo users (normal and admins).</p>
+			      		<p class="card-text" id="infoContainer12"></p>
 
 			      		<div class="mt-auto">
 				      		<span class="badge badge-dark">React</span>
@@ -443,7 +447,7 @@
 				    		<div class="col-10 col-sm-10 col-md-10 col-lg-10" style="padding-top: 0.2rem;"><h5 class="card-title">SAEEB</h5></div>
 				    	</div>
 
-				      	<p class="card-text">This is a web system prototype for academic managing of students from elementary schools in Mexico. <br/>The account created will be managed by the student's parents and it will allows to schedule of appoinments with the teachers, check the student grades, send emails or notes between de teachers and parents, update the student academic and personal info, and also generate the student's global grades in PDF.</p>
+				      	<p class="card-text" id="infoContainer13"></p>
 
 				      	<div class="mt-auto">
 					      	<span class="badge badge-danger">PHP</span>
@@ -470,7 +474,7 @@
 				    		<div class="col-10 col-sm-10 col-md-10 col-lg-10" style="padding-top: 0.2rem;"><h5 class="card-title">HTTP Server</h5></div>
 				    	</div>
 
-			      		<p class="card-text">A basic HTTP server developed in Java that allows GET, POST, HEAD and DELETE requests and give their responses with it's respective headers; each one of them contains apprpiate data such as the response state, date of response, and MIME type if the petition is a resource, such as files, pdfs, images, music, videos, etc. <br/>It manages error codes like 404, 403 and 501. <br/>The server has a load balancer.</p>
+			      		<p class="card-text" id="infoContainer14"></p>
 
 			      		<div class="mt-auto">
 				      		<span class="badge badge-warning">Java</span>
@@ -496,9 +500,7 @@
 				    		<div class="col-10 col-sm-10 col-md-10 col-lg-10" style="padding-top: 0.2rem;"><h5 class="card-title">AllJeux Controller</h5></div>
 				    	</div>
 
-				      	<p class="card-text">This isn't a project like the others showed. In fact, it's a prototype of a controller device for people with only one hand or with a disability that don't let them play videogames in a conventional way. There is a lof of designs of it and has it's own business plan, that of course you can read next, also we had already do all our company called AllJeux. <br/>We made a little webpage for marketing but only the front-end is finished, check it out!
-				      	<br/>
-				      	Text is in spanish.</p>
+				      	<p class="card-text" id="infoContainer15"></p>
 
 				      	<div class="mt-auto">
 					      	<span class="badge badge-info">Protoype</span>
@@ -520,7 +522,7 @@
 								</a>
 							</div>
 							<div class="col-12 col-sm-12 col-md-6 col-lg-6">
-					      		<a class="btn btn-info" href="./projects/AllJeux/index.html" target="_blank">TAKE A LOOK</a>
+					      		<a class="btn btn-info takeLookContainer" href="./projects/AllJeux/index.html" target="_blank"></a>
 					      	</div>
 				      	</div>
 				    </div>
@@ -537,8 +539,7 @@
 				    		<div class="col-10 col-sm-10 col-md-10 col-lg-10" style="padding-top: 0.2rem;"><h5 class="card-title">Cobra 4.3</h5></div>
 				    	</div>
 
-			      		<p class="card-text">This project is special for me, because it was my first ever serious project in the area! It's a CECyT 8's excursions manager that allows to teachers and directives to create and supervise these with a group of students in the IPN high school. When all the information is entered, the system generates all the formats needed by the directorate in Word format.<br/>
-			      		It was a huge idea because before Cobra, all the documents were filled out by hand, making the process so stressful and slow. <br/>Despite being a basic programation, I'll always have affection for this project.</p>
+			      		<p class="card-text" id="infoContainer16"></p>
 
 			      		<div class="mt-auto">
 					      	<span class="badge badge-primary">VisualBasic</span>
@@ -559,7 +560,7 @@
 								</a>
 							</div>
 							<div class="col-12 col-sm-12 col-md-6 col-lg-6">
-					      		<a class="btn btn-primary" href="./projects/cobra4.3-installer.zip">DOWNLOAD IT</a>
+					      		<a class="btn btn-primary downloadItContainer" href="./projects/cobra4.3-installer.zip"></a>
 					      	</div>
 				      	</div>
 			    	</div>
@@ -573,10 +574,7 @@
 				    		<div class="col-10 col-sm-10 col-md-10 col-lg-10" style="padding-top: 0.2rem;"><h5 class="card-title">Sensor measurer</h5></div>
 				    	</div>
 
-				      	<p class="card-text">This is an android app that displays in our mobile device <b>the measurements of room temperature and needle angle sensors in real time</b>. Alongside there's an Arduino program (an Arduino is connected to the sensors' circuit) that receives the analogic signal of the measure and converts it to a digital one.  <br/>The communication between the android device and the arduino is via Bluetooth.
-				      	<br/>
-				      	Circuit, electronic components, application, arduino code and full documentation are available on Github repo.
-				      	</p>
+				      	<p class="card-text" id="infoContainer17"></p>
 
 				      	<div class="mt-auto">
 					      	<span class="badge badge-dark">Arduino</span>
@@ -595,7 +593,7 @@
 								</a>
 							</div>
 							<div class="col-12 col-sm-12 col-md-6 col-lg-6">
-					      		<a class="btn btn-dark" href="./projects/sensors.zip">DOWNLOAD IT</a>
+					      		<a class="btn btn-dark downloadItContainer" href="./projects/sensors.zip"></a>
 					      	</div>
 				      	</div>
 				    </div>
@@ -609,7 +607,7 @@
 				    		<div class="col-10 col-sm-10 col-md-10 col-lg-10" style="padding-top: 0.2rem;"><h5 class="card-title">3D Solar System</h5></div>
 				    	</div>
 
-			      		<p class="card-text">A 3D Kepler's model of our solar system desktop Java application. <br/>It displays the planets, some moons, comets and asteroids, and of course the sun. <br/>Also, you can get information in an HTML tab and a video starts playing when you choose one of the planets or the sun. <br/>It supports network functions with sockets, so you can stream the application in other devices at the same time, for an exposition for example.</p>
+			      		<p class="card-text" id="infoContainer18"></p>
 
 			      		<div class="mt-auto">
 				      		<span class="badge badge-warning">Java</span>
@@ -640,8 +638,11 @@
 		</div>
 	</body>
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="./static/mdb/js/bootstrap.min.js"></script>
+	<script src="./index.js"></script>
 	<!--<script src="./static/mdb/js/mdb.min.js"></script>-->
+
+	<input id="prueba"></input>
 </html>
