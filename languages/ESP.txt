@@ -3,13 +3,13 @@ Bienvenido. Soy Enrique Ramos Diaz.
 Cambiar a Ingl&eacute;s
 
 Apasionado por el machine learning.<br/>
-Conf&iacute;o que en un futuro cercano la inteligencia artificial ser&aacute; el n&uacute;cleo de todos los sistemas de producci&oacute;n del mundo en cada &aacute;mbito conocido.<br/>
+Conf&iacute;o que en un futuro cercano la inteligencia artificial ser&aacute; el n&uacute;cleo de todos los sistemas de producci&oacute;n del mundo para todas las &aaacute;reas.<br/>
 Aprender y descubrir nuevas tecnolog&iacute;as y diferentes formas de hacer una misma cosa es lo que hace para m&iacute; el campo de sistemas computacionales tan interesante, importante y emocionante.<br/>
-Fuerte creeyente de que el talento natural esta bien, pero el trabajo duro y la perseverancia para mejorar es mejor.<br/>
+Fuerte creeyente de que el talento natural esta bien, pero el trabajo duro y la perseverancia es mejor.<br/>
 Si quieres que algo este bien hecho, h&aacute;zlo t&uacute; mismo.<br/>
 Amo la m&uacute;, los deportes, el arte y el cine.
 
-Ingeniero en Sistemas Computacionales egresado de la ESCOM - IPN
+Ingeniero en Sistemas Computacionales egresado de la ESCOM - IPN<br/>
 T&eacute;cnico en Computaci&oacute;n egresado del CECyT No. 8 - IPN
 
 Mi primer proyecto profesional. <b>Trabaj&eacute; 6 meses para el IPN como desarrollador web on sus sistemas institucionales</b>. Mis principales contribuciones fueron en <b>SIG@</b> (Sistema Institucional de Gesti&oacute;n Administrativa), en donde todas las dependencias mexicanas del IPN llevan a cabo el registro de la informaci&oacute;n relacionado a los <b>procesos financieros, contables, de capital humano y recursos materiales</b> del instituto. Esto implicaba trabajar con dinero, por lo que debiamos ser muy cuidadosos.
