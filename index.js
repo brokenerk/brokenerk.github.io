@@ -6,21 +6,21 @@ $(document).ready(function() {
         if(this.checked) {
         	//Spanish
         	toSpanish();
-        	getInfo("spanish"); 
+        	getInfo("ESP"); 
         }
         else {
         	//English
         	toEnglish();
-        	getInfo("english"); 
+        	getInfo("ENG"); 
         }       
     });
 
     toEnglish();
-    getInfo("english"); 
+    getInfo("ENG"); 
 });
 
 function getInfo(language) {
-	fetch("https://brokenerk.github.io/" + language + ".txt").then(response => response.text()).then((data) => {
+	fetch("https://brokenerk.github.io/languages/" + language + ".txt").then(response => response.text()).then((data) => {
 		var res = data.split("\n\n");
 		for (var i = 0; i < res.length; i++) {
 			$("#infoContainer" + i).html(res[i]);
