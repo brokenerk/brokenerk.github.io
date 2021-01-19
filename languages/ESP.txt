@@ -1,6 +1,6 @@
-Bienvenido. Soy Enrique Ramos Diaz
-
 Cambiar a Ingl&eacute;s
+
+Bienvenido. Soy Enrique Ramos Diaz
 
 Apasionado por el machine learning.<br/>
 Conf&iacute;o que en un futuro cercano la inteligencia artificial ser&aacute; el n&uacute;cleo de todos los sistemas de producci&oacute;n del mundo.<br/>
@@ -12,17 +12,14 @@ Amo la m&uacute;sica, los deportes, el arte y el cine.
 Ingeniero en Sistemas Computacionales egresado de la ESCOM - IPN<br/>
 T&eacute;cnico en Computaci&oacute;n egresado del CECyT No. 8 - IPN
 
-Mi primer proyecto profesional. <b>Trabaj&eacute; 6 meses para el IPN como desarrollador web en sus sistemas institucionales</b>. Mis principales contribuciones fueron en <b>SIG@</b> (Sistema Institucional de Gesti&oacute;n Administrativa), en donde todas las dependencias mexicanas del IPN llevan a cabo el registro de la informaci&oacute;n relacionado a los <b>procesos financieros, contables, de capital humano y recursos materiales</b> del instituto. Esto implicaba trabajar con dinero, por lo que deb&iacute;amos ser muy cuidadosos.
-Estuve altamente involucrado en las actualizaciones, mantenimiento y reingenier&iacute;a del <b>m&oacute;dulo de contabilidad</b>, tanto en backend como en frontend.
+<b>Trabaj&eacute; 6 meses para el IPN como desarrollador web en sus sistemas institucionales</b>. Mis principales contribuciones fueron en <b>SIG@</b> (Sistema Institucional de Gesti&oacute;n Administrativa), en donde todas las dependencias mexicanas del IPN llevan a cabo el registro de la informaci&oacute;n relacionado a los <b>procesos financieros, contables, de capital humano y recursos materiales</b> del instituto. Estuve altamente involucrado en las actualizaciones, mantenimiento y reingenier&iacute;a del <b>m&oacute;dulo de contabilidad</b> como desarrollador fullstack.
 
 Esta es una implementaci&oacute;n tentativa de la primera mitad de los componentes de un compilador: implementamos un <b>analizador l&eacute;xico</b> de Aut&oacute;matas Finitos Deterministas por medio de tokens, y 6 analizadores sint&aacute;cticos: creaci&oacute;n de Aut&oacute;matas Finitos Deterministas y Gram&aacute;ticas utilizando <b>an&aacute;lisis descendiente recursivo, LL(1), LR(0), LR(1) y LALR</b>. Adem&aacute;s, brindamos <b>operaciones con Aut&oacute;matas Finitos No Deterministas (NFA)</b>.<br/>
 Cada aut&oacute;mata se despliega en su forma gr&aacute;fica.
 
 Un carrito de compras b&aacute;sico: permite crear una cuenta, editar informaci&oacute;n personal como lo es el domicilio, acceder como un usuario que puede agregar productos a su carrito, ver y editar la cantidad de estos, removerlos del carrito, proceder al pago e incluso comprar la orden.<br/> El sistema permite tarjetas de cr&eacute;dito reales y realizar cargos, ¡as&iacute; que t&eacute;ngalo en mente!
 
-Este es un proyecto web en donde trabaj&eacute; con todos mis compa&ntilde;eros de la materia de Ingenier&iacute;a de Software en ESCOM. El objetivo era mejorar la creaci&oacute;n, actualizaci&oacute;n y revisi&oacute;n de los Programas Acad&eacute;micos de las escuelas de nivel superior del IPN, y era destinado a clientes reales: el encargado de la Direcci&oacute;n de Educaci&oacute;n Superior (DES).<br/>
-Permite distintos tipos de usuario, cada uno con sus funciones. Cuando un Programa Acad&eacute;mico esta listo, el sistema genera su formato en PDF para su publicaci&oacute;n en la Gaceta Polit&eacute;cnica.<br/>
-Probado con SONAR. Los repositorios con la documentaci&oacute;n completa (espa&ntilde;ol), backend, frontend y pruebas disponibles a continuaci&oacute;n.
+Este es un proyecto web en donde trabaj&eacute; con todos mis compa&ntilde;eros de la materia de Ingenier&iacute;a de Software en ESCOM. El objetivo era mejorar la creaci&oacute;n, actualizaci&oacute;n y revisi&oacute;n de los Programas Acad&eacute;micos de las escuelas de nivel superior del IPN, y era destinado a clientes reales: el encargado de la Direcci&oacute;n de Educaci&oacute;n Superior (DES). Cuando un Programa Acad&eacute;mico esta listo, el sistema genera su formato en PDF para su publicaci&oacute;n en la Gaceta Polit&eacute;cnica. Probado con SONAR. Los repositorios con la documentaci&oacute;n completa (espa&ntilde;ol), backend, frontend y pruebas disponibles a continuaci&oacute;n.
 
 Esta es la implementaci&oacute;n web del <b>Algoritmo de Semilla Aleatoria</b>, utilizado para resolver problemas complejos de programaci&oacute;n lineal.<br/>
 Es un algoritmo iterativo basado en un n&uacute;mero de poblaciones, cada una del mismo tama&ntilde;o. Por lo tanto, en esta herramienta se puede ingresar la infomaci&oacute;n de las poblaciones, las restricciones y la funci&oacute;n objetivo.<br/>
@@ -32,9 +29,8 @@ Esta es una sala de chat p&uabute;blica com&uacute;n que permite enviar y recibi
 Incluso, si se desea una sala de chat privada, puede seleccionar al usuario con el que se quiera iniciar dicha conversaci&oacute;n, y una nueva ventana se abrir&aacute;.<br/>
 ¡No olvide permitir los pop-ups!
 
-Este es un proyecto incompleto que implementa el <b>Algoritmo de C&uacute;mulo de Estrellas por Fuerza Bruta</b>. <br/>
-De una gran cantidad de estrellas en el cielo (que realmente son una gran cantidad de puntos en un espacio 2D), el algoritmo encuentra aquellas dos de entre todas que tengan la distancia minima entre ellas. Pusimos una animaci&oacute;n de como el algoritmo deber&iacute;a trabajar cuando calcula la distancia entre cada uno de los puntos. <br/>
-Como puede imaginarse, no esta nada optimizada y el proceso toma mucho tiempo... ¡pero al menos se ve muy bien!
+Este es un proyecto que implementa el <b>Algoritmo de C&uacute;mulo de Estrellas por Fuerza Bruta</b>. <br/>
+De una gran cantidad de estrellas en el cielo (que realmente son una gran cantidad de puntos en un espacio 2D), el algoritmo encuentra aquellas dos de entre todas que tengan la distancia minima entre ellas. Pusimos una animaci&oacute;n de como el algoritmo deber&iacute;a trabajar cuando calcula la distancia entre cada uno de los puntos.
 
 Una aplicaci&oacute;n analizadora de paquetes de red en Java, mejor conocida como sniffer. Con ayuda de la librer&iacute;a jnetpcap, la aplicaci&oacute;n captura tramas de red, las clasifica por su protocolo y muestra sus cabeceras. La aplicaci&oacute;n muestra una gr&aacute;fica con las estad&iacute;sticas de todos los paquetes capturados. <br/>
 Adem&aacute;s se puede configurar la tarjeta de red del dispositivo, establecer filtros e importar/exportar tramas en archivos con formato .pcap.
@@ -53,8 +49,7 @@ Este no es un proyecto como los mostrados anteriormente. De hecho, este es un pr
 Hicimos una pequeña p&aacute;gina web para marketing pero solamente el frontend est&aacute; terminado, !dale un vistazo!<br/>
 El texto est&aacute; en espa&ntilde;ol.
 
-Este proyecto es especial para mi porque fue mi primer proyecto serio en el &aacute;rea. Es un software de gestor de visitas para alumnos del CECyT No. 8 - IPN que permite a los maestros y directivos crear y supervisar dichas excursiones. Cuando toda la informaci&oacute;n es ingresada, el sistema genera todos los formatos necesitados por la direcci&oacute;n en formato de Word. <br/>
-Fue una gran idea porque antes de Cobra, todos los documentos eran llenados a mano, haciendo este proceso muy estresante y lento. <br/> A pesar de haber sido una programaci&oacute;n muy b&aacute;sica, siempre le tendr&eacute; afecto a este sistema.
+Un software de gestor de visitas para alumnos del CECyT No. 8 - IPN que permite a los maestros y directivos crear y supervisar dichas excursiones. Cuando toda la informaci&oacute;n es ingresada, el sistema genera todos los formatos necesitados por la direcci&oacute;n en formato de Word. Fue una gran idea porque antes de Cobra, todos los documentos eran llenados a mano, haciendo este proceso muy estresante y lento.
 
 Esta es una aplicaci&oacute;n para Android que muestra en un dispositivo m&oacute;vil (celular) <b>medidas de sensores para la temperatura ambiental y el &aacute;ngulo de una aguja en tiempo real</b>. Junto a este hay un programa en Arduino (una tarjeta Arduino esta conectada a los sensores) que recibe las se&ntilde;ales anal&oacute;gicas de los sensores y las convierte en digitales. <br/>
 La comunicaci&oacute;n entre el dispositivo Android y la tarjeta Arduino es mediante Bluetooth.<br/>
@@ -64,3 +59,9 @@ Una aplicaci&oacute;n de escritorio en Java con el modelo del sistema solar de K
 Muestra los planetas, algunas lunas, cometas, asteroides y por supuesto el Sol. <br/>
 Se puede obtener informaci&oacute;n relacionado a un planeta o al Sol en un panel HTML y un video comenzar&aacute; a reproducirse cuando alguno de estos es seleccionado. <br/>
 Soporta funcionalidades de red con sockets, por lo que se puede transmitir la aplicaci&oacute;n en otros dispositivos al mismo tiempo, para una exposici&oacute;n por ejemplo.
+
+<b>Sistema distribuido</b> que permite visualizar las pantallas de hasta 30 computadoras remotas en paralelo desde un equipo central. Las capturas de pantalla se actualizan cada 5 segundos y se puede seleccionar su calidad. Utiliza <b>el protocolo Solicitud-Respuesta (sockets UDP mejorados)</b> para que la informaci&oacute;n no se pierda ni llegue repetida, garantizando el envio y recibo de las im&aacute;genes. Perfecto para utilizarse en laboratorios de computadoras para monitorear todas al mismo tiempo. Implementado con el <b>servidor web Mongoose</b>.
+
+<b>Sistema distribuido</b> que analiza libros en el idioma espa&ntilde;ol en forma de archivos de texto plano. Por medio de 4 servidores distintos extrae todas las palabras de este, las contabiliza y despues las compara con las 10 mil palabras más frecuentes utilizadas en el espa&ntilde;ol. Mientras m&aacute;s palabras de este listado tenga el libro, mejor porcentaje de comprensi&oacute;n para el lector tendr&aacute;. Implementado con el <b>servidor web Mongoose y el protocolo Solicitud-Respuesta por medio de sockets UDP mejorados</b>.
+
+Este es un sistema de <b>publicidad personalizada a clientes</b> de la empresa de bebidas <b>BubbleTown</b> utilizando <b>vision por computadora y aprendizaje profundo</b>. Por medio de una c&aacute;mara se obtiene video del exterior del local de BubbleTown, despues se extraen y procesan im&aacute;genes del mismo para ser analizadas con 3 <b>redes neuronales convolucionales</b> para detectar <b>rostros</b> y, a partir de estos, <b>la edad, el g&eacute;nero y la personalidad</b> de un cliente potencial. Con base a estos parametros, se le <b>recomienda una bebida</b> y se despliega al lado de su rostro con <b>realidad aumentada</b>. Implementado en la minicomputadora <b>NVIDIA Jetson AGX Xavier</b>.

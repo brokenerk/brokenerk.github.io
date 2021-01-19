@@ -1,6 +1,6 @@
-Welcome. I'm Enrique Ramos Diaz
-
 Switch to Spanish
+
+Welcome. I'm Enrique Ramos Diaz
 
 Passionate for machine learning.<br/>
 I trust that in the near future the artificial intelligence will be the core of all the world's production systems in every known scope.<br/>
@@ -12,16 +12,13 @@ Love the music, the sports, the art and the cinema.
 Bachelor of Science in Computers Systems Engineering at ESCOM - IPN<br/>
 Technician Degree in Computation at CECyT No. 8 - IPN
 
-My first ever proffesional project. <b>I worked 6 months for the IPN as web developer on its institutional systems</b>. My principal contributions were for the <b>SIG@</b> (Institutional Administrative Management System), where all the mexican IPN offices carry out the registration of information related to the <b>financial, accounting, human capital and material resources processes</b> of the institute. This means working with money, so we had to be very careful.
-I was highly involved on the updates, maintenance and reengineering of the <b>accounting modules</b>, both backend and frontend.
+<b>I worked 6 months for the IPN as web developer on its institutional systems</b>. My principal contributions were for the <b>SIG@</b> (Institutional Administrative Management System), where all the mexican IPN offices carry out the registration of information related to the <b>financial, accounting, human capital and material resources processes</b> of the institute. I was highly involved on the updates, maintenance and reengineering of the <b>accounting modules</b> as fullstack developer.
 
 This is an attempt to implement the first half of the components of a compiler: we implemented a <b>lexical analyzer</b> of Deterministic Finite Automatas through tokens, and 6 parsers: creation of Deterministic Finite Automatas and Grammars using <b>recursive descent analysis, LL(1), LR(0), LR(1) and LALR</b>. Also, we offer <b>operations with Non deterministic Finite Automatas (NFA)</b>. <br/>Each automata will be displayed in its graphic form.
 
 A basic shopping cart: it allows to create an account, edit  personal info such as address, login as an user that can add products to his cart, see and edit the amount of the products on it, remove them, proceed to checkout and even purchase the order. <br/>The system allows real credit cards and make charges, so keep in mind that!
 
-This is a web project where I worked with all of my classmates in the Softare Engineering subject at ESCOM. The purpose was to improve the creation, upgrade and review of universities Academic Programs in the IPN, and it would be for real clients: the head of the Superior Education Directorate (DES in spanish).<br/>
-It allows different types of users, each one with their functionalities. When an Academic Program is ready, the system generates the format in PDF for their publishing in the official IPN tabloid.<br/>
-Tested with SONAR. Full documentation (spanish), backend, frontend and tests repositories above.
+This is a web project where I worked with all of my classmates in the Softare Engineering subject at ESCOM. The purpose was to improve the creation, upgrade and review of universities Academic Programs in the IPN, and it would be for real clients: the head of the Superior Education Directorate (DES in spanish). When an Academic Program is ready, the system generates the format in PDF for their publishing in the official IPN tabloid. Tested with SONAR. Full documentation (spanish), backend, frontend and tests repositories above.
 
 This is the web implementation of the <b>Random Seed Algorithm</b>, used to solve complex linear programming problems.<br/>
 It's a iterative algorithm based on a number of populations, each one of the same size. Therefore, in this tool the populations info, the restrictions and the objective function can be entered.<br/>
@@ -29,7 +26,7 @@ It displays all the iterations and find the most accurate result.
 
 This is a common public chat room that allows to send and receive text messages, images and also file links via multicast. All you have to do is login with an username. <br/>Also, if you want a private chat room, you have to select the user you want to begin the conversation, and a new tab will open. <br/>Dont forget to allow pop-ups!
 
-This is a unfinished project that implements the <b>Brute Force Star Cluster Algorithm</b>. <br/>From a big population of stars in the sky (actually any bunch of points in a 2D space), the algorithm finds the two of them that have the minimum distance between each other. We put an animation of how the algorithm is supossed to be working when it calculates the distance from point to point. <br/>As you can imagine, is zero optimized and takes a lot of time... but looks pretty good at least!
+This is a project that implements the <b>Brute Force Star Cluster Algorithm</b>. <br/>From a big population of stars in the sky (actually any bunch of points in a 2D space), the algorithm finds the two of them that have the minimum distance between each other. We put an animation of how the algorithm is supossed to be working when it calculates the distance from point to point.
 
 A network packet analyzer Java application, better known as sniffer. With the jnetpcap library, the application catches network frames, classifies it with it's corresponding protocol and show it's headers. The application shows a graph with the statics of all the packets caught. <br/>Also, you can configure the network card of your device, set filters and import/export frames in .pcap files.
 
@@ -42,10 +39,15 @@ A basic HTTP server developed in Java that allows GET, POST, HEAD and DELETE req
 This isn't a project like the others showed. In fact, it's a prototype of a joystick for people with only one hand or with a disability that don't let them play videogames in a conventional way. There are a lof of designs of it and has it's own business plan, available for anyone who wants to read it, and even we had created an imaginary company called AllJeux. <br/>We made a little webpage for marketing but only the frontend is finished, check it out!<br/>
 Text is in spanish.
 
-This project is special for me because it was my first ever serious project in the area. It's a scholar excursions manager software for students from the CECyT No. 8 - IPN school that allows to teachers and directives to create and supervise these. When all the information is entered, the system generates all the formats needed by the directorate in Word format.<br/>
-It was a huge idea because before Cobra, all the documents were filled out by hand, making the process so stressful and slow. <br/>Despite being an amateur programation, I'll always have affection for this project.
+A scholar excursions manager software for students from the CECyT No. 8 - IPN school that allows to teachers and directives to create and supervise these. When all the information is entered, the system generates all the formats needed by the directorate in Word format. It was a huge idea because before Cobra, all the documents were filled out by hand, making the process so stressful and slow.
 
 This is an Android app that displays in a mobile device <b>the measurements of ambient temperature and a needle angle sensors in real time</b>. Alongside there's an Arduino program (an Arduino card is connected to the sensors circuit) that receives the analogic signal of the sensors and converts it to a digital ones.  <br/>The communication between the Android device and the Arduino card is via Bluetooth.<br/>
 Circuit, electronic components, application, arduino code and full documentation are available on the GitHub repo.
 
 A 3D Kepler's model of the solar system desktop Java application. <br/>It displays the planets, some moons, comets , asteroids, and of course the sun. <br/>Besides, you can get information from one of the planets or the sun in an HTML tab and a video starts playing when someone of these is selected. <br/>It supports network functions with sockets, so you can stream the application in other devices at the same time, as an exposition for example.
+
+<b>Distributed system</b> that allows viewing the screens of up to 30 remote computers in parallel from a central one. The screenshots update every 5 seconds and the quality of them can be selected. Uses <b>the Request-Responde protocol (improved UDP sockets)</b> so that the information doesn't get lost or repeated, guaranteeing the sending and receipt of the images. Perfect to use in a computer laboratory to monitor all at the same time. Implemented with the <b>web server Moongose</b>.
+
+<b>Distributed system</b> that analyzes books in the spanish language as plain text files. Through 4 different servers extracts all the words from it, counts them and then compares them with the 10 thousand most frequently used words in spanish. The more words from this list the book has, the better percentage of understanding for the reader it will have. Implemented with the <b>web server Moongose and with the Request-Response protocol through improved UDP sockets</b>.
+
+This is a <b>personalized advertising system for the clients</b> of the drinks company <b>BubbleTown</b> using <b>computer vision and deep learning</b>. Through a camera the video from the exterior of the BubbleTown's place is obtained, then its frames are extracted and processed in order to been analyzed with 3 <b>convolutional neuronal networks</b> to detect <b>faces</b> and, from it, <b>the age, the gender and the personality</b> of a potential client. Based on this parameters, a <b>drink is recommended</b> to him or her and it's displayed near to his or her face with <b>augmented reality</b>. Implemented in the minicomputer <b>NVIDIA Jetson AGX Xavier</b>. 
