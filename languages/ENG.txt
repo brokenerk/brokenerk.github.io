@@ -4,7 +4,7 @@ Welcome. I'm Enrique Ramos Diaz
 
 Passionate for machine learning.<br/>
 I trust that in the near future the artificial intelligence will be the core of all the world's production systems in every known scope.<br/>
-Learning and discovering new technologies and different ways to do the same thing is what makes for me the computer systems such an interesting, valuable and exciting field.<br/>
+Learning, discovering new technologies and different ways to do the same thing is what makes for me the computer systems such an interesting, valuable and exciting field.<br/>
 Strongly believer that the natural skill is fine, but hard working and persistente to improve is better.<br/>
 If you want something to be done good, do it by yourself.<br/>
 Love the music, the sports, the art and the cinema.
@@ -54,4 +54,4 @@ This is a <b>personalized advertising system for the clients</b> of the drinks c
 
 These are various exercises with <b>neuronal networks</b> using <b>TensorFlow 2</b> and <b>Keras</b>, mostly of these are <b>convolutional</b>. Some of these are the following: color and geometric shapes classification with a common <b>MLP</b>, descending gradient examples, models using the <b>MNIST dataset</b>, classifiers of fictional characters and typical dishes from the mexican food, and even <b>object detection models</b> such as the <b>Single Shot Detection</b> with personalized re-trainings, that also include its implementation in the <b>TensorRT SDK</b>. Additionaly, the <b>preprocessing</b> of the <b>data</b> to get a more effective training with better results is shown.
 
-These are some practices done with data mining methods, using the libraries <b>Pandas</b> and <b>Scikit-learning</b> in Python. These examples include: implementation of <b>decision trees</b> for classification problems; use of <b>clustering</b> algorithms such as <b>K-Means, MST (Average and Complete Link), BURCH, DBSCAN</b>, among others; analysis of datasets to identify the <b>correlations</b> between its classes and its <b>data distribution</b>; and exercises of <b>linear regressions</b> to predict behaviours. Additionaly, there are included <b>cleaning and preprocessing</b> methods of large datasets, <b>association and decision rules</b>.
+These are some practices done with data mining methods, using the libraries <b>Pandas</b> and <b>Scikit-learning</b> in Python. These examples include: implementation of <b>decision trees</b> for classification problems; use of <b>clustering</b> algorithms such as <b>K-Means, MST (Average and Complete Link), BIRCH, DBSCAN</b>, among others; analysis of datasets to identify the <b>correlations</b> between its classes and its <b>data distribution</b>; and exercises of <b>linear regressions</b> to predict behaviours. Additionaly, there are included <b>cleaning and preprocessing</b> methods of large datasets, <b>association and decision rules</b>.
