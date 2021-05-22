@@ -1,0 +1,24 @@
+{
+	"ENG": {
+		"aboutMe": "About Me",
+		"projects": "Projects",
+		"resume": "Resume",
+		"resumeFile": "cv/resume.pdf",
+		"takeALook": "TAKE A LOOK",
+		"downloadIt": "DOWNLOAD IT",
+		"seeInGithub": "See in GitHub",
+		"moreInfo": "More Info",
+		"switchLanguage": "Switch to Spanish"
+	},
+	"ESP": {
+		"aboutMe": "Sobre m\u00ED",
+		"projects": "Proyectos",
+		"resume": "Curriculum Vitae",
+		"resumeFile": "cv/cv.pdf",
+		"takeALook": "DAR UN VISTAZO",
+		"downloadIt": "DESCARGAR",
+		"seeInGithub": "Ver en GitHub",
+		"moreInfo": "M\u00E1s Info",
+		"switchLanguage": "Cambiar a Ingl\u00E9s"
+	}
+}
