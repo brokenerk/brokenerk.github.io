@@ -45,7 +45,7 @@
       <div class="card-footer text-center">
         <div class="row">
           <!-- MAS INFO -->
-          <div class="col col-btn-card" v-if="project.infoButton">
+          <div class="col" v-if="project.infoButton">
             <a
               :href="project.infoButton"
               :class="'text-' + project.color"
@@ -59,7 +59,7 @@
             </a>
           </div>
           <!-- GITHUB -->
-          <div class="col col-btn-card" v-if="project.githubButton">
+          <div class="col" v-if="project.githubButton">
             <a
               :href="project.githubButton"
               :class="'text-' + project.color"
@@ -73,10 +73,10 @@
             </a>
           </div>
           <!-- TAKE A LOOK -->
-          <div class="col col-btn-card" v-if="project.takeALookButton">
+          <div class="col" v-if="project.takeALookButton">
             <a
               :class="
-                'btn btn-' + project.color + ' text-white btn-take-a-look'
+                'btn btn-' + project.color + ' text-white'
               "
               :href="project.takeALookButton"
               target="_blank"
@@ -86,7 +86,7 @@
         </div>
       </div>
     </div>
-    <br />
+    <br/>
   </div>
 </template>
 
@@ -117,14 +117,14 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .badge {
   margin-right: 4px;
 }
-.btn-take-a-look {
+.btn {
   margin-top: 5px;
 }
-.col-btn-card {
+.col {
   padding: 0px;
 }
 </style>

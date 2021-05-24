@@ -1,88 +1,98 @@
 <template>
-  <div id="aboutMe"></div>
-  <!-- Navbar -->
-  <navbar-custom
-    :about-me="aboutMe"
-    :projects="projectsText"
-    :resume="resume"
-    :resume-file="resumeFile"
-    :language="englishLanguage"
-    @toggle-language="toggleLanguage"
-  ></navbar-custom>
+	<div class="container-fluid">
+		<div id="aboutMe"></div>
+		<!-- Navbar -->
+		<the-navbar
+			:about-me-caption="aboutMeCaption"
+			:projects-caption="projectsCaption"
+			:resume-caption="resumeCaption"
+			:resume-file-name="resumeFileName"
+			:language="englishLanguage"
+			@toggle-language="toggleLanguage"
+		></the-navbar>
 
-  <!-- About Me -->
-  <about-me
-    :welcome="welcome"
-    :introduction="introduction"
-    :header="header"
-    :resume="resume"
-    :resume-file="resumeFile"
-    :language="englishLanguage"
-    @toggle-language="toggleLanguage"
-  ></about-me>
+		<!-- About Me -->
+		<about-me-card
+			:welcome-text="welcomeText"
+			:introduction-text="introductionText"
+			:header-text="headerText"
+			:resume-caption="resumeCaption"
+			:resume-file-name="resumeFileName"
+			:language="englishLanguage"
+			@toggle-language="toggleLanguage"
+		></about-me-card>
 
-  <!-- Projects -->
-  <h1>{{ projectsText }}</h1>
-  <br/>
-  <div class="row">
-    <project-card
-      v-for="project in allProjects"
-      :key="project.id"
-      :project="project"
-      :takeALook="takeALook"
-      :downloadIt="downloadIt"
-      :seeInGithub="seeInGithub"
-      :moreInfo="moreInfo"
-    ></project-card>
-  </div>
-  <br/>
+		<!-- Projects -->
+		<h1>{{ projectsCaption }}</h1>
+		<div class="row">
+			<project-card
+				v-for="project in allProjects"
+				:key="project.id"
+				:project="project"
+				:takeALook="takeALook"
+				:downloadIt="downloadIt"
+				:seeInGithub="seeInGithub"
+				:moreInfo="moreInfo"
+			></project-card>
+		</div>
 
-  <!-- Footer -->
-  <footer class="row py-4 bg-dark">
-    <div class="container-fluid">
-      <p class="m-0 text-center text-white">Devloped by Enrique Ramos - Copyright 2021</p>
-    </div>
-  </footer>
+		<!-- Footer -->
+		<the-footer></the-footer>
+	</div>
 </template>
 
 <script>
+// JSONs
 import common_text from "./assets/texts/common_text.json";
 import ENG from "./assets/texts/ENG.json";
 import ESP from "./assets/texts/ESP.json";
+
+//Components
+import TheNavbar from './components/TheNavbar.vue';
+import AboutMeCard from './components/AboutMe/AboutMeCard.vue';
+import ProjectCard from './components/ProjectCard.vue';
+import TheFooter from './components/TheFooter.vue';
+
 export default {
+	components: {
+		TheNavbar,
+		AboutMeCard,
+		ProjectCard,
+		TheFooter
+	},
   data() {
     return {
       englishLanguage: true,
     };
   },
   computed: {
-    aboutMe() {
+    aboutMeCaption() {
       return this.englishLanguage
         ? common_text.ENG.aboutMe
         : common_text.ESP.aboutMe;
     },
-    projectsText() {
+    projectsCaption() {
       return this.englishLanguage
         ? common_text.ENG.projects
         : common_text.ESP.projects;
     },
-    resume() {
+    resumeCaption() {
       return this.englishLanguage
         ? common_text.ENG.resume
         : common_text.ESP.resume;
     },
-    resumeFile() {
+    resumeFileName() {
       return this.englishLanguage
         ? common_text.ENG.resumeFile
         : common_text.ESP.resumeFile;
     },
-    welcome() {
+    welcomeText() {
       return this.englishLanguage ? ENG.welcome : ESP.welcome;
     },
-    introduction() {
+    introductionText() {
       return this.englishLanguage ? ENG.introduction : ESP.introduction;
     },
-    header() {
+    headerText() {
       return this.englishLanguage ? ENG.header : ESP.header;
     },
     allProjects() {
@@ -117,4 +127,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+#app {
+	padding-top: 90px;
+}
+</style>
