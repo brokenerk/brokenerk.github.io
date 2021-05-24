@@ -54,7 +54,7 @@
               <i
                 class="fa fa-info-circle fa-3x"
                 data-placement="top"
-                :title="moreInfo"
+                :title="moreInfoCaption"
               ></i>
             </a>
           </div>
@@ -68,25 +68,23 @@
               <i
                 class="fa fa-github fa-3x"
                 data-placement="top"
-                :title="seeInGithub"
+                :title="seeInGithubCaption"
               ></i>
             </a>
           </div>
           <!-- TAKE A LOOK -->
           <div class="col" v-if="project.takeALookButton">
             <a
-              :class="
-                'btn btn-' + project.color + ' text-white'
-              "
+              :class="'btn btn-' + project.color + ' text-white'"
               :href="project.takeALookButton"
               target="_blank"
-              >{{ takeALook }}</a
+              >{{ takeALookCaption }}</a
             >
           </div>
         </div>
       </div>
     </div>
-    <br/>
+    <br />
   </div>
 </template>
 
@@ -97,23 +95,23 @@ export default {
       type: Object,
       required: true,
     },
-    takeALook: {
+    takeALookCaption: {
       type: String,
       required: false,
     },
-    downloadIt: {
+    downloadItCaption: {
       type: String,
       required: false,
     },
-    seeInGithub: {
+    seeInGithubCaption: {
       type: String,
       required: false,
     },
-    moreInfo: {
+    moreInfoCaption: {
       type: String,
       required: false,
     },
-  }
+  },
 };
 </script>
 

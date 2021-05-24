@@ -1,44 +1,44 @@
 <template>
-	<div class="container-fluid">
-		<div id="aboutMe"></div>
-		<!-- Navbar -->
-		<the-navbar
-			:about-me-caption="aboutMeCaption"
-			:projects-caption="projectsCaption"
-			:resume-caption="resumeCaption"
-			:resume-file-name="resumeFileName"
-			:language="englishLanguage"
-			@toggle-language="toggleLanguage"
-		></the-navbar>
+  <div class="container-fluid">
+    <div id="aboutMe"></div>
+    <!-- Navbar -->
+    <the-navbar
+      :about-me-caption="aboutMeCaption"
+      :projects-caption="projectsCaption"
+      :resume-caption="resumeCaption"
+      :resume-file-name="resumeFileName"
+      :language="englishLanguage"
+      @toggle-language="toggleLanguage"
+    ></the-navbar>
 
-		<!-- About Me -->
-		<about-me-card
-			:welcome-text="welcomeText"
-			:introduction-text="introductionText"
-			:header-text="headerText"
-			:resume-caption="resumeCaption"
-			:resume-file-name="resumeFileName"
-			:language="englishLanguage"
-			@toggle-language="toggleLanguage"
-		></about-me-card>
+    <!-- About Me -->
+    <about-me-card
+      :welcome-text="welcomeText"
+      :introduction-text="introductionText"
+      :header-text="headerText"
+      :resume-caption="resumeCaption"
+      :resume-file-name="resumeFileName"
+      :language="englishLanguage"
+      @toggle-language="toggleLanguage"
+    ></about-me-card>
 
-		<!-- Projects -->
-		<h1>{{ projectsCaption }}</h1>
-		<div class="row">
-			<project-card
-				v-for="project in allProjects"
-				:key="project.id"
-				:project="project"
-				:takeALook="takeALook"
-				:downloadIt="downloadIt"
-				:seeInGithub="seeInGithub"
-				:moreInfo="moreInfo"
-			></project-card>
-		</div>
+    <!-- Projects -->
+    <h1>{{ projectsCaption }}</h1>
+    <div class="row">
+      <project-card
+        v-for="project in projects"
+        :key="project.id"
+        :project="project"
+        :take-a-look-caption="takeALookCaption"
+        :download-it-caption="downloadItCaption"
+        :see-in-github-caption="seeInGithubCaption"
+        :more-info-caption="moreInfoCaption"
+      ></project-card>
+    </div>
 
-		<!-- Footer -->
-		<the-footer></the-footer>
-	</div>
+    <!-- Footer -->
+    <the-footer></the-footer>
+  </div>
 </template>
 
 <script>
@@ -48,18 +48,18 @@ import ENG from "./assets/texts/ENG.json";
 import ESP from "./assets/texts/ESP.json";
 
 //Components
-import TheNavbar from './components/TheNavbar.vue';
-import AboutMeCard from './components/AboutMe/AboutMeCard.vue';
-import ProjectCard from './components/ProjectCard.vue';
-import TheFooter from './components/TheFooter.vue';
+import TheNavbar from "./components/TheNavbar.vue";
+import AboutMeCard from "./components/AboutMe/AboutMeCard.vue";
+import ProjectCard from "./components/ProjectCard.vue";
+import TheFooter from "./components/TheFooter.vue";
 
 export default {
-	components: {
-		TheNavbar,
-		AboutMeCard,
-		ProjectCard,
-		TheFooter
-	},
+  components: {
+    TheNavbar,
+    AboutMeCard,
+    ProjectCard,
+    TheFooter,
+  },
   data() {
     return {
       englishLanguage: true,
@@ -95,25 +95,25 @@ export default {
     headerText() {
       return this.englishLanguage ? ENG.header : ESP.header;
     },
-    allProjects() {
+    projects() {
       return this.englishLanguage ? ENG.projects : ESP.projects;
     },
-    takeALook() {
+    takeALookCaption() {
       return this.englishLanguage
         ? common_text.ENG.takeALook
         : common_text.ESP.takeALook;
     },
-    downloadIt() {
+    downloadItCaption() {
       return this.englishLanguage
         ? common_text.ENG.downloadIt
         : common_text.ESP.downloadIt;
     },
-    seeInGithub() {
+    seeInGithubCaption() {
       return this.englishLanguage
         ? common_text.ENG.seeInGithub
         : common_text.ESP.seeInGithub;
     },
-    moreInfo() {
+    moreInfoCaption() {
       return this.englishLanguage
         ? common_text.ENG.moreInfo
         : common_text.ESP.moreInfo;
@@ -129,6 +129,6 @@ export default {
 
 <style>
 #app {
-	padding-top: 90px;
+  padding-top: 90px;
 }
 </style>
