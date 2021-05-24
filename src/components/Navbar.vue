@@ -1,11 +1,8 @@
 <template>
   <!-- Navigation -->
-  <nav
-    class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
-    id="aboutMe"
-  >
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
-      <a class="nav-link text-white" href="#aboutMe">
+      <a class="nav-link text-white" href="#">
         <span class="navbar-brand mb-0 h1">brokenerk</span>
       </a>
 
@@ -29,11 +26,11 @@
                 type="checkbox"
                 class="custom-control-input"
                 id="languageSwitch1"
-                @click="toggleLanguage"
+                @click="switchLanguage"
+                :checked="language"
               />
-              <label class="custom-control-label" for="languageSwitch1">{{
-                captionLanguage
-              }}</label>
+              <label class="custom-control-label" for="languageSwitch1">
+                {{ captionLanguage }}</label>
             </div>
           </li>
 
@@ -74,14 +71,19 @@ export default {
 			type: String,
 			required: true
 		},
-    captionLanguage: {
-      type: String,
+    language: {
+      type: Boolean,
       required: true,
     },
   },
+  computed: {
+    captionLanguage() {
+      return this.language ? "Switch to Spanish" : "Cambiar a Ingl\u00E9s";
+    }
+  },
   methods: {
-    toggleLanguage() {
-      this.$emit("switch-language");
+    switchLanguage() {
+      this.$emit("toggle-language", !this.language);
     },
   },
 };

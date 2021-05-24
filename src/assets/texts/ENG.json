@@ -1,0 +1,47 @@
+{
+	"welcome": "Welcome. I'm Enrique Ramos Diaz",
+
+	"introduction": "Passionate for machine learning.<br/> I trust that in the near future the artificial intelligence will be the core of all the world's production systems in every known scope.<br/> Learning, discovering new technologies and different ways to do the same thing is what makes for me the computer systems such an interesting, valuable and exciting field.<br/> Strongly believer that the natural skill is fine, but hard working and persistente to improve is better.<br/> If you want something to be done good, do it by yourself.<br/> Love the music, the sports, the art and the cinema.",
+
+	"header": "Bachelor of Science in Computers Systems Engineering at ESCOM - IPN<br/>Technician Degree in Computation at CECyT No. 8 - IPN",
+	
+	"projects": [
+		{
+			"id": "tt",
+			"icon": "fa fa-smile-o fa-2x",
+			"title": "Personalized Advertising",
+			"description": "This is a <b>personalized advertising system for the clients</b> of the drinks company <b>BubbleTown</b> using <b>computer vision and deep learning</b>. Through a camera the video from the exterior of the BubbleTown's place is obtained, then its frames are extracted and processed in order to been analyzed with 3 <b>convolutional neuronal networks</b> to detect <b>faces</b> and, from it, <b>the age, the gender and the personality</b> of a potential client. Based on this parameters, a <b>drink is recommended</b> to him or her and it's displayed near to his or her face with <b>augmented reality</b>. Implemented in the minicomputer <b>NVIDIA Jetson AGX Xavier</b>.",
+			"badges": ["TensorFlow", "TensorRT", "CNN", "KNN", "SSD", "MobileNet", "RTSP", "Python", "OpenCV", "Augmented Reality", "NumPy", "MongoDB", "NVIDIA", "Jetpack", "Classification", "Regression", "GStreamer"],
+			"authors": ["Arturo Lara", "Victor Morales"],
+			"infoButton": "./projects/TT_II_2019_B059_FIRMADO.pdf",
+			"githubButton": "https://github.com/brokenerk/PublicidadBT",
+			"takeALookButton": "./projects/videoTestRA.mp4",
+			"color": "dark"
+		},
+		{
+			"id": "cnn",
+			"icon": "fa fa-delicious fa-2x",
+			"title": "Neuronal Networks",
+			"description": "These are various exercises with <b>neuronal networks</b> using <b>TensorFlow 2</b> and <b>Keras</b>, mostly of these are <b>convolutional</b>. Some of these are the following: color and geometric shapes classification with a common <b>MLP</b>, descending gradient examples, models using the <b>MNIST dataset</b>, classifiers of fictional characters and typical dishes from the mexican food, and even <b>object detection models</b> such as the <b>Single Shot Detection</b> with personalized re-trainings, that also include its implementation in the <b>TensorRT SDK</b>. Additionaly, the <b>preprocessing</b> of the <b>data</b> to get a more effective training with better results is shown.",
+			"badges": ["TensorFlow", "TensorBoard", "Keras", "Jupyter Notebook", "NumPy", "AutoEncoder", "Scikit Learn", "Classification", "CNN", "MLP", "SSD", "MNIST", "MobileNet", "Data Augmentation", "TensorRT", "COCO"],
+			"githubButton": "https://github.com/brokenerk/Advanced-Neuronal-Networks",
+			"color": "info"
+		},
+		{
+			"id": "data-mining",
+			"icon": "fa fa-table fa-2x",
+			"title": "Data Mining",
+			"description": "These are some practices done with data mining methods, using the libraries <b>Pandas</b> and <b>Scikit-learning</b> in Python. These examples include: implementation of <b>decision trees</b> for classification problems; use of <b>clustering</b> algorithms such as <b>K-Means, MST (Average and Complete Link), BIRCH, DBSCAN</b>, among others; analysis of datasets to identify the <b>correlations</b> between its classes and its <b>data distribution</b>; and exercises of <b>linear regressions</b> to predict behaviours. Additionaly, there are included <b>cleaning and preprocessing</b> methods of large datasets, <b>association and decision rules</b>.",
+			"badges": ["Pandas", "Scikit Learn", "Python", "Jupyter Notebook", "Clustering", "IRIS", "NumPy", "Decision Tree", "Linear Regression", "K-Means"],
+			"githubButton": "https://github.com/brokenerk/DataMining",
+			"color": "danger"
+		}
+	]
+}
+
+
+
+
+
+
+

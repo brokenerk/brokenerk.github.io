@@ -7,18 +7,16 @@
 		"takeALook": "TAKE A LOOK",
 		"downloadIt": "DOWNLOAD IT",
 		"seeInGithub": "See in GitHub",
-		"moreInfo": "More Info",
-		"switchLanguage": "Switch to Spanish"
+		"moreInfo": "More Info"
 	},
 	"ESP": {
 		"aboutMe": "Sobre m\u00ED",
 		"projects": "Proyectos",
 		"resume": "Curriculum Vitae",
 		"resumeFile": "cv/cv.pdf",
-		"takeALook": "DAR UN VISTAZO",
+		"takeALook": "DAR VISTAZO",
 		"downloadIt": "DESCARGAR",
 		"seeInGithub": "Ver en GitHub",
-		"moreInfo": "M\u00E1s Info",
-		"switchLanguage": "Cambiar a Ingl\u00E9s"
+		"moreInfo": "M\u00E1s Info"
 	}
 }
