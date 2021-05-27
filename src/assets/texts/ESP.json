@@ -1,7 +1,7 @@
 {
 	"welcome": "Bienvenido. Soy Enrique Ramos Diaz",
 
-	"introduction": "Apasionado por el machine learning.<br/> Conf&iacute;o que en un futuro cercano la inteligencia artificial ser&aacute; el n&uacute;cleo de todos los sistemas de producci&oacute;n del mundo.<br/>Aprender, descubrir nuevas tecnolog&iacute;as y diferentes formas de hacer una misma cosa es lo que hace para m&iacute; el campo de sistemas computacionales tan interesante, importante y emocionante.<br/> Fuerte creyente de que el talento natural esta bien, pero el trabajo duro y la perseverancia es mejor.<br/> Si quieres que algo este bien hecho, hazlo t&uacute; mismo.<br/>Amo la m&uacute;sica, los deportes, el arte y el cine.",
+	"introduction": "Apasionado por el machine learning.<br/> Conf&iacute;o que en un futuro cercano la inteligencia artificial ser&aacute; el n&uacute;cleo de todos los sistemas de producci&oacute;n en el mundo.<br/>Aprender, descubrir nuevas tecnolog&iacute;as y diferentes formas de hacer una misma cosa es lo que hace para m&iacute; el campo de sistemas computacionales tan interesante, importante y emocionante.<br/> Fuerte creyente de que el talento natural esta bien, pero el trabajo duro y la perseverancia es mejor.<br/> Si quieres que algo este bien hecho, hazlo t&uacute; mismo.<br/>Amo la m&uacute;sica, los deportes, el arte y el cine.",
 
 	"header": "Ingeniero en Sistemas Computacionales egresado de la ESCOM - IPN<br/>T&eacute;cnico en Computaci&oacute;n egresado del CECyT No. 8 - IPN",
 
@@ -33,7 +33,7 @@
 			"id": "data-mining",
 			"icon": "fa fa-table fa-2x",
 			"title": "Miner\u00EDa de Datos",
-			"description": "Algunas pr&aacute;cticas realizadas con m&eacute;todos de <b>miner&iacute;a de datos</b>, utilizando las librer&iacute;as <b>Pandas</b> y <b>Scikit-learning</b> en Python. Entre estos destacan: implementaci&oacute;n de <b>&aacute;rboles de decisi&oacute;n</b> para problemas de clasificaci&oacute;n; uso de algoritmos de <b>clustering</b> como <b>K-Medias, MST (Enlace Promedio y Completo), BIRCH, DBSCAN</b>, entre otros; an&aacute;lisis de conjuntos de datos para identificar las <b>correlaciones</b> entre las clases de este y su <b>distribuci&aacute;n</b>; y ejercicios de <b>regresiones lineales</b> para predecir comportamientos. Tambi&eacute;n se incluyen m&eacute;todos de <b>limpieza y preprocesamiento</b> de grandes conjuntos de datos, <b>reglas de asociaci&oacute;n y de decisi&oacute;n.</b>",
+			"description": "Algunas pr&aacute;cticas realizadas con m&eacute;todos de <b>miner&iacute;a de datos</b>, utilizando las librer&iacute;as <b>Pandas</b> y <b>Scikit-learning</b> en Python. Entre estos destacan: implementaci&oacute;n de <b>&aacute;rboles de decisi&oacute;n</b> para problemas de clasificaci&oacute;n; uso de algoritmos de <b>clustering</b> como <b>K-Medias, MST (Enlace Promedio y Completo), BIRCH, DBSCAN</b>, entre otros; an&aacute;lisis de conjuntos de datos para identificar las <b>correlaciones</b> entre las clases de este y su <b>distribuci&oacute;n</b>; y ejercicios de <b>regresiones lineales</b> para predecir comportamientos. Tambi&eacute;n se incluyen m&eacute;todos de <b>limpieza y preprocesamiento</b> de grandes conjuntos de datos, <b>reglas de asociaci&oacute;n y de decisi&oacute;n.</b>",
 			"badges": ["Pandas", "Scikit Learn", "Python", "Jupyter Notebook", "Clustering", "IRIS", "NumPy", "Decision Tree", "Linear Regression", "K-Means"],
 			"githubButton": "https://github.com/brokenerk/DataMining",
 			"color": "danger"
@@ -42,7 +42,7 @@
 			"id": "siga",
 			"icon": "fa fa-usd fa-2x",
 			"title": "IPN SIG@ Contable",
-			"description": "<b>Trabaj&eacute; 6 meses para el IPN como desarrollador web en sus sistemas institucionales</b>. Mis principales contribuciones fueron en <b>SIG@</b> (Sistema Institucional de Gesti&oacute;n Administrativa), en donde todas las dependencias mexicanas del IPN llevan a cabo el registro de la informaci&oacute;n relacionado a los <b>procesos financieros, contables, de capital humano y recursos materiales</b> del instituto. Estuve altamente involucrado en las actualizaciones, mantenimiento y reingenier&iacute;a del <b>m&oacute;dulo de contabilidad</b> como desarrollador fullstack.",
+			"description": "<b>Trabaj&eacute; 6 meses para el IPN como desarrollador web en sus sistemas institucionales</b>. Mis principales contribuciones fueron en <b>SIG@</b> (Sistema Institucional de Gesti&oacute;n Administrativa), en donde todas las dependencias mexicanas del IPN llevan a cabo el registro de la informaci&oacute;n relacionada a los <b>procesos financieros, contables, de capital humano y recursos materiales</b> del instituto. Estuve altamente involucrado en las actualizaciones, mantenimiento y reingenier&iacute;a del <b>m&oacute;dulo de contabilidad</b> como desarrollador fullstack.",
 			"badges": ["ColdFusion", "jQuery", "JavaScript", "Bootstrap", "Datatables", "Select2", "HTML-CSS", "Oracle", "MVC", "SweetAlert2"],
 			"takeALookButton": "https://www.siga.ipn.mx/",
 			"color": "success"
@@ -64,7 +64,6 @@
 			"title": "Carrito de compras",
 			"description": "Un carrito de compras b&aacute;sico: permite crear una cuenta, editar informaci&oacute;n personal como lo es el domicilio, acceder como un usuario que puede agregar productos a su carrito, ver y editar la cantidad de estos, removerlos del carrito, proceder al pago e incluso comprar la orden.<br/> El sistema permite tarjetas de cr&eacute;dito reales y realizar cargos, ¡as&iacute; que t&eacute;ngalo en mente!",
 			"badges": ["Hibernate", "Spring", "Struts2", "Conekta", "Bootstrap", "JSP", "PostgreSQL", "MVC"],
-			"authors": ["Abigail Nicolas", "Randy Guzman"],
 			"githubButton": "https://github.com/brokenerk/Shopping-Cart",
 			"takeALookButton": "https://shopping-cart-wad.herokuapp.com/products",
 			"color": "dark"
@@ -84,7 +83,7 @@
 			"id": "chat",
 			"icon": "fa fa-comments fa-2x",
 			"title": "Chat Multicast",
-			"description": "Esta es una sala de chat p&uacute;blica com&uacute;n que permite enviar y recibir mensajes de texto, im&aacute;genes e incluso links de archivos via multicast. Todo lo que se debe de hacer es acceder con un nombre de usuario. <br/> Incluso, si se desea una sala de chat privada, puede seleccionar al usuario con el que se quiera iniciar dicha conversaci&oacute;n, y una nueva ventana se abrir&aacute;.<br/> ¡No olvide permitir los pop-ups!",
+			"description": "Esta es una sala de chat p&uacute;blica com&uacute;n que permite enviar y recibir mensajes de texto, im&aacute;genes e incluso links de archivos v&iacute;a multicast. Todo lo que se debe de hacer es acceder con un nombre de usuario. <br/> Incluso, si se desea una sala de chat privada, puede seleccionar al usuario con el que se quiera iniciar dicha conversaci&oacute;n, y una nueva ventana se abrir&aacute;.<br/> ¡No olvide permitir los pop-ups!",
 			"badges": ["Node.js", "jQuery", "JavaScript", "Socket.IO", "HTML-CSS", "Socket.IO-File-Upload"],
 			"authors": ["Abigail Nicolas"],
 			"githubButton": "https://github.com/brokenerk/Chat-Multicast",
@@ -156,7 +155,7 @@
 			"id": "saeeb",
 			"icon": "fa fa-graduation-cap fa-2x",
 			"title": "SAEEB",
-			"description": "Este es un prototipo de sistema web para la administraci&oacute;n de estudiantes de escuelas secundarias en M&eacute;xico. <br/> La intenci&oacute;n es que la cuenta creada sea utilizada por los padres del alumno y permitir&aacute; agendar citas con los profesores, revisar las calificaciones del alumno, enviar emails, avisos o recados entre padres de familia y profesores, actualizar la infomaci&oacute;n acad&eacute;mica y personal del estudiante, e incluso generar la boleta global de calificaciones del alumno en PDF.",
+			"description": "Este es un prototipo de un sistema web para la administraci&oacute;n de estudiantes de escuelas secundarias en M&eacute;xico. <br/> La intenci&oacute;n es que la cuenta creada sea utilizada por los padres del alumno y permitir&aacute; agendar citas con los profesores, revisar las calificaciones del alumno, enviar emails, avisos o recados entre padres de familia y profesores, actualizar la infomaci&oacute;n acad&eacute;mica y personal del estudiante, e incluso generar la boleta global de calificaciones del alumno en PDF.",
 			"badges": ["PHP", "MySQL", "HTML-CSS", "JavaScript"],
 			"authors": ["Abigail Nicolas", "Yahir Carillo"],
 			"githubButton": "https://github.com/abiisnn/SAEEB",
@@ -166,7 +165,7 @@
 			"id": "server",
 			"icon": "fa fa-server fa-2x",
 			"title": "Servidor HTTP",
-			"description": "Un servidor HTTP b&aacute;sico desarrollado en Java que acepta y maneja peticiones GET, POST, HEAD y DELETE devolviendo sus respuestas con sus respectivas cabeceras; cada una de estas contiene los datos necesarios como lo son el estado de la respuesta, la fecha de la respuesta y el tipo MIME si la petici&oacute;n se trata de un recurso, como archivos, pdfs, im&aacute;genes, m&uacute;sica, videos, etc. <br/> Emplea los c&oacute;digos de error 404, 403 y 501. <br/> El servidor posee un balanceador de cargas.",
+			"description": "Un servidor HTTP b&aacute;sico desarrollado en Java que acepta y maneja peticiones GET, POST, HEAD y DELETE devolviendo sus respuestas con sus correspondientes cabeceras; cada una de estas contiene los datos necesarios, como lo son: el estado de la respuesta, la fecha de la respuesta y el tipo MIME si la petici&oacute;n se trata de un recurso, como archivos, pdfs, im&aacute;genes, m&uacute;sica, videos, etc. <br/> Emplea los c&oacute;digos de error 404, 403 y 501. <br/> El servidor posee un balanceador de cargas.",
 			"badges": ["Java", "Sockets", "HTTP", "MIME-Type"],
 			"authors": ["Abigail Nicolas"],
 			"githubButton": "https://github.com/brokenerk/Apps-Comun-Red/tree/master/Practica4",
@@ -176,7 +175,7 @@
 			"id": "allJeux",
 			"icon": "fa fa-gamepad fa-2x",
 			"title": "Control AllJeux",
-			"description": "Este no es un proyecto como los mostrados anteriormente. De hecho, este es un prototipo de un joystick para gente con una sola mano o con alguna otra incapacidad que les impide jugar videojuegos de forma convencional. Hay varios diseños de &eacute;ste e incluso tiene su propio plan de negocios, disponible para cualquier persona que desee leerlo, tambi&eacute;n hemos creado una empresa imaginaria llamada AllJeux. <br/> Hicimos una pequeña p&aacute;gina web para marketing pero solamente el frontend est&aacute; terminado, !dale un vistazo!<br/> El texto est&aacute; en espa&ntilde;ol.",
+			"description": "Este no es un proyecto como los mostrados anteriormente. De hecho, este es un prototipo de un joystick para gente con una sola mano o con alguna otra incapacidad que les impida jugar videojuegos de forma convencional. Hay varios diseños de &eacute;ste e incluso tiene su propio plan de negocios, disponible para cualquier persona que desee leerlo; tambi&eacute;n hemos creado una empresa imaginaria llamada AllJeux. <br/> Hicimos una pequeña p&aacute;gina web para marketing, aunque solamente el frontend est&aacute; terminado, !dale un vistazo!<br/> El texto est&aacute; en espa&ntilde;ol.",
 			"badges": ["Prototype", "Controller-Device", "Videogames", "HTML-CSS"],
 			"authors": ["Enrique Romero", "Abigail Nicolas"],
 			"infoButton": "./projects/allJeux.pdf",
@@ -187,7 +186,7 @@
 			"id": "cobra",
 			"icon": "fa fa-window-restore fa-2x",
 			"title": "Cobra 4.3",
-			"description": "Un software de gestor de visitas para alumnos del CECyT No. 8 - IPN que permite a los maestros y directivos crear y supervisar dichas excursiones. Cuando toda la informaci&oacute;n es ingresada, el sistema genera todos los formatos necesitados por la direcci&oacute;n en formato de Word. Fue una gran idea porque antes de Cobra, todos los documentos eran llenados a mano, haciendo este proceso muy estresante y lento.",
+			"description": "Un software de gestor de visitas para alumnos del CECyT No. 8 - IPN que permite a los maestros y directivos crear y supervisar dichas excursiones. Cuando toda la informaci&oacute;n es ingresada, el sistema genera todos los formatos necesitados por la direcci&oacute;n en formato de Word. Fue una gran idea porque antes de Cobra, todos los documentos eran llenados a mano, haciendo este proceso muy estresante, lento y repleto de errores.",
 			"badges": ["VisualBasic", "Office Word", "Office Access"],
 			"authors": ["Maeli Dueñas", "Cesar Coronado", "Saul Garcia", "Tonathiu Cruz"],
 			"githubButton": "https://github.com/brokenerk/Cobra-4.3",
