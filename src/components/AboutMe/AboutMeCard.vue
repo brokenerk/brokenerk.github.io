@@ -30,7 +30,7 @@
           <!--Resume button-->
           <div class="col-12 col-sm-12 col-md-3 col-lg-3">
             <generic-button
-              :href="resumeFile"
+              :href="resumeFileName"
               :color="'dark'"
               :caption="resumeCaption"
             ></generic-button>
