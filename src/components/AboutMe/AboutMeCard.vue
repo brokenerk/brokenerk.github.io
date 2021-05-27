@@ -14,46 +14,26 @@
           </div>
           <!--Switch language-->
           <div class="col-12 col-sm-3 col-md-3 col-lg-3">
-            <div class="custom-control custom-switch">
-              <input
-                type="checkbox"
-                class="custom-control-input languageSwitch"
-                id="languageSwitch2"
-                @click="switchLanguage"
-                :checked="language"
-              />
-              <label class="custom-control-label" for="languageSwitch2">
-                {{ languageCaption }}
-              </label>
-            </div>
+            <slot></slot>
           </div>
         </div>
 
         <!--Introduction Text-->
-        <div class="row">
-          <div class="col-12 col-sm-12 col-md-9 col-lg-9">
-            <p v-html="introductionText"></p>
-          </div>
-        </div>
+        <p v-html="introductionText"></p>
 
         <!--Header Text-->
-        <div class="row">
-          <div class="col-12 col-sm-12 col-md-9 col-lg-9">
-            <p v-html="headerText"></p>
-          </div>
-        </div>
+        <p v-html="headerText"></p>
 
         <div class="row">
           <!--Social networks icons -->
-          <social-networks-icons></social-networks-icons>
+          <social-networks></social-networks>
           <!--Resume button-->
           <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-            <a
-              class="btn btn-dark btn-resume"
-              :href="resumeFileName"
-              target="_blank"
-              >{{ resumeCaption }}</a
-            >
+            <generic-button
+              :href="resumeFile"
+              :color="'dark'"
+              :caption="resumeCaption"
+            ></generic-button>
           </div>
         </div>
       </div>
@@ -63,48 +43,22 @@
 </template>
 
 <script>
-import SocialNetworksIcons from "./SocialNetworksIcons.vue";
+import SocialNetworks from "./SocialNetworks.vue";
+import GenericButton from "../UI/GenericButton.vue";
 
 export default {
   components: {
-    SocialNetworksIcons,
+    SocialNetworks,
+    GenericButton
   },
-  props: {
-    welcomeText: {
-      type: String,
-      required: true,
-    },
-    introductionText: {
-      type: String,
-      required: true,
-    },
-    headerText: {
-      type: String,
-      required: true,
-    },
-    resumeCaption: {
-      type: String,
-      required: true,
-    },
-    resumeFileName: {
-      type: String,
-      required: true,
-    },
-    language: {
-      type: Boolean,
-      required: true,
-    },
-  },
-  computed: {
-    languageCaption() {
-      return this.language ? "Switch to Spanish" : "Cambiar a Ingl\u00E9s";
-    },
-  },
-  methods: {
-    switchLanguage() {
-      this.$emit("toggle-language", !this.language);
-    },
-  },
+  props: [
+    "welcomeText",
+    "introductionText",
+    "headerText",
+    "resumeCaption",
+    "resumeFileName",
+    "language"
+  ]
 };
 </script>
 

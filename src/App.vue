@@ -7,9 +7,13 @@
       :projects-caption="projectsCaption"
       :resume-caption="resumeCaption"
       :resume-file-name="resumeFileName"
-      :language="englishLanguage"
-      @toggle-language="toggleLanguage"
-    ></the-navbar>
+    >
+      <language-switch
+        id="languageSwitch1"
+        :language="englishLanguage"
+        v-model="englishLanguage"
+      ></language-switch>
+    </the-navbar>
 
     <!-- About Me -->
     <about-me-card
@@ -18,9 +22,13 @@
       :header-text="headerText"
       :resume-caption="resumeCaption"
       :resume-file-name="resumeFileName"
-      :language="englishLanguage"
-      @toggle-language="toggleLanguage"
-    ></about-me-card>
+    >
+      <language-switch
+        id="languageSwitch2"
+        :language="englishLanguage"
+        v-model="englishLanguage"
+      ></language-switch>
+    </about-me-card>
 
     <!-- Projects -->
     <h1>{{ projectsCaption }}</h1>
@@ -37,7 +45,10 @@
     </div>
 
     <!-- Footer -->
-    <the-footer></the-footer>
+    <the-footer
+      :developedByCaption="developedByCaption"
+      :poweredByCaption="poweredByCaption"
+    ></the-footer>
   </div>
 </template>
 
@@ -48,10 +59,11 @@ import ENG from "./assets/texts/ENG.json";
 import ESP from "./assets/texts/ESP.json";
 
 //Components
-import TheNavbar from "./components/TheNavbar.vue";
+import TheNavbar from "./components/UI/TheNavbar.vue";
 import AboutMeCard from "./components/AboutMe/AboutMeCard.vue";
-import ProjectCard from "./components/ProjectCard.vue";
-import TheFooter from "./components/TheFooter.vue";
+import ProjectCard from "./components/Projects/ProjectCard.vue";
+import TheFooter from "./components/UI/TheFooter.vue";
+import LanguageSwitch from "./components/UI/SwitchLanguageControl.vue";
 
 export default {
   components: {
@@ -59,6 +71,7 @@ export default {
     AboutMeCard,
     ProjectCard,
     TheFooter,
+    LanguageSwitch,
   },
   data() {
     return {
@@ -118,6 +131,16 @@ export default {
         ? common_text.ENG.moreInfo
         : common_text.ESP.moreInfo;
     },
+    developedByCaption() {
+      return this.englishLanguage
+        ? common_text.ENG.developed
+        : common_text.ESP.developed;
+    },
+    poweredByCaption() {
+      return this.englishLanguage
+        ? common_text.ENG.powered
+        : common_text.ESP.powered;
+    },
   },
   methods: {
     toggleLanguage(newLanguage) {
@@ -129,6 +152,6 @@ export default {
 
 <style>
 #app {
-  padding-top: 90px;
+  padding-top: 95px;
 }
 </style>

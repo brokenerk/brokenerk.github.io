@@ -3,20 +3,24 @@
 		"aboutMe": "About Me",
 		"projects": "Projects",
 		"resume": "Resume",
-		"resumeFile": "cv/resume.pdf",
+		"resumeFile": "./cv/resume.pdf",
 		"takeALook": "TAKE A LOOK",
 		"downloadIt": "DOWNLOAD IT",
 		"seeInGithub": "See in GitHub",
-		"moreInfo": "More Info"
+		"moreInfo": "More Info",
+		"developed": "Developed by",
+		"powered": "Powered by"
 	},
 	"ESP": {
 		"aboutMe": "Sobre m\u00ED",
 		"projects": "Proyectos",
 		"resume": "Curriculum Vitae",
-		"resumeFile": "cv/cv.pdf",
+		"resumeFile": "./cv/cv.pdf",
 		"takeALook": "DAR VISTAZO",
 		"downloadIt": "DESCARGAR",
 		"seeInGithub": "Ver en GitHub",
-		"moreInfo": "M\u00E1s Info"
+		"moreInfo": "M\u00E1s Info",
+		"developed": "Desarrollado por",
+		"powered": "Creado con"
 	}
 }

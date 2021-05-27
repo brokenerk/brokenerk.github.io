@@ -25,6 +25,8 @@
 			"description": "These are various exercises with <b>neuronal networks</b> using <b>TensorFlow 2</b> and <b>Keras</b>, mostly of these are <b>convolutional</b>. Some of these are the following: color and geometric shapes classification with a common <b>MLP</b>, descending gradient examples, models using the <b>MNIST dataset</b>, classifiers of fictional characters and typical dishes from the mexican food, and even <b>object detection models</b> such as the <b>Single Shot Detection</b> with personalized re-trainings, that also include its implementation in the <b>TensorRT SDK</b>. Additionaly, the <b>preprocessing</b> of the <b>data</b> to get a more effective training with better results is shown.",
 			"badges": ["TensorFlow", "TensorBoard", "Keras", "Jupyter Notebook", "NumPy", "AutoEncoder", "Scikit Learn", "Classification", "CNN", "MLP", "SSD", "MNIST", "MobileNet", "Data Augmentation", "TensorRT", "COCO"],
 			"githubButton": "https://github.com/brokenerk/Advanced-Neuronal-Networks",
+			"branchButton": "https://github.com/brokenerk/TRT-SSD-MobileNetV2",
+			"branchButtonTitle": "SSD+MobileNet TensorRT",
 			"color": "info"
 		},
 		{
@@ -35,6 +37,183 @@
 			"badges": ["Pandas", "Scikit Learn", "Python", "Jupyter Notebook", "Clustering", "IRIS", "NumPy", "Decision Tree", "Linear Regression", "K-Means"],
 			"githubButton": "https://github.com/brokenerk/DataMining",
 			"color": "danger"
+		},
+		{
+			"id": "siga",
+			"icon": "fa fa-usd fa-2x",
+			"title": "IPN SIG@ Contable",
+			"description": "<b>I worked 6 months for the IPN as web developer on its institutional systems</b>. My principal contributions were for the <b>SIG@</b> (Institutional Administrative Management System), where all the mexican IPN offices carry out the registration of information related to the <b>financial, accounting, human capital and material resources processes</b> of the institute. I was highly involved on the updates, maintenance and reengineering of the <b>accounting modules</b> as fullstack developer.",
+			"badges": ["ColdFusion", "jQuery", "JavaScript", "Bootstrap", "Datatables", "Select2", "HTML-CSS", "Oracle", "MVC", "SweetAlert2"],
+			"takeALookButton": "https://www.siga.ipn.mx/",
+			"color": "success"
+		},
+		{
+			"id": "compiler",
+			"icon": "fa fa-file-code-o fa-2x",
+			"title": "Compiler",
+			"description": "This is an attempt to implement the first half of the components of a compiler: we implemented a <b>lexical analyzer</b> of Deterministic Finite Automatas through tokens, and 6 parsers: creation of Deterministic Finite Automatas and Grammars using <b>recursive descent analysis, LL(1), LR(0), LR(1) and LALR</b>. Also, we offer <b>operations with Non deterministic Finite Automatas (NFA)</b>. <br/>Each automata will be displayed in its graphic form.",
+			"badges": ["Flask", "Python", "jQuery", "Jinja2", "Vis.js", "Materialize"],
+			"authors": ["Abigail Nicolas", "Randy Guzman"],
+			"githubButton": "https://github.com/brokenerk/Compiladores",
+			"takeALookButton": "https://com-piler.herokuapp.com/",
+			"color": "primary"
+		},
+		{
+			"id": "cart",
+			"icon": "fa fa-cart-plus fa-2x",
+			"title": "Shopping Cart",
+			"description": "A basic shopping cart: it allows to create an account, edit  personal info such as address, login as an user that can add products to his cart, see and edit the amount of the products on it, remove them, proceed to checkout and even purchase the order. <br/>The system allows real credit cards and make charges, so keep in mind that!",
+			"badges": ["Hibernate", "Spring", "Struts2", "Conekta", "Bootstrap", "JSP", "PostgreSQL", "MVC"],
+			"authors": ["Abigail Nicolas", "Randy Guzman"],
+			"githubButton": "https://github.com/brokenerk/Shopping-Cart",
+			"takeALookButton": "https://shopping-cart-wad.herokuapp.com/products",
+			"color": "dark"
+		},
+		{
+			"id": "apms",
+			"icon": "fa fa-graduation-cap fa-2x",
+			"title": "Academic Program Management System",
+			"description": "This is a web project where I worked with all of my classmates in the Software Engineering subject at ESCOM. The purpose was to improve the creation, upgrade and review of universities Academic Programs in the IPN, and it would be for real clients: the head of the Superior Education Directorate (DES in spanish). When an Academic Program is ready, the system generates the format in PDF for their publishing in the official IPN tabloid. Tested with SONAR. Full documentation (spanish), backend, frontend and tests repositories above.",
+			"badges": ["Spring", "Angular", "Typescript", "PostgreSQL", "LaTeX", "SONAR"],
+			"authors": ["Sergio Sanchez", "Ivan Hernandez", "Abigail Nicolas"],
+			"githubButton": "https://github.com/SoftwareEngineerESCOM",
+			"takeALookButton": "https://softwareengineerescom.gitlab.io/APMS/public/login",
+			"color": "danger"
+		},
+		{
+			"id": "chat",
+			"icon": "fa fa-comments fa-2x",
+			"title": "Multicast Chat",
+			"description": "This is a common public chat room that allows to send and receive text messages, images and also file links via multicast. All you have to do is login with an username. <br/>Also, if you want a private chat room, you have to select the user you want to begin the conversation, and a new tab will open. <br/>Dont forget to allow pop-ups!",
+			"badges": ["Node.js", "jQuery", "JavaScript", "Socket.IO", "HTML-CSS", "Socket.IO-File-Upload"],
+			"authors": ["Abigail Nicolas"],
+			"githubButton": "https://github.com/brokenerk/Chat-Multicast",
+			"takeALookButton": "https://chat-multicast.herokuapp.com/",
+			"color": "success"
+		},
+		{
+			"id": "rand",
+			"icon": "fa fa-random fa-2x",
+			"title": "Random Seed",
+			"description": "This is the web implementation of the <b>Random Seed Algorithm</b>, used to solve complex linear programming problems.<br/> It's a iterative algorithm based on a number of populations, each one of the same size. Therefore, in this tool the populations info, the restrictions and the objective function can be entered.<br/> It displays all the iterations and find the most accurate result.",
+			"badges": ["Flask", "Jinja2", "Python", "jQuery", "JSON", "Materialize"],
+			"authors": ["Arturo Lara"],
+			"githubButton": "https://github.com/brokenerk/MCTD/",
+			"takeALookButton": "https://random-mctd.herokuapp.com/",
+			"color": "info"
+		},
+		{
+			"id": "stars",
+			"icon": "fa fa-star-half-o fa-2x",
+			"title": "Star Cluster",
+			"description": "This is a project that implements the <b>Brute Force Star Cluster Algorithm</b>. <br/>From a big population of stars in the sky (actually any bunch of points in a 2D space), the algorithm finds the two of them that have the minimum distance between each other. We put an animation of how the algorithm is supossed to be working when it calculates the distance from point to point.",
+			"badges": ["Vis.js", "Anime.js", "jQuery", "JavaScript", "Materialize"],
+			"authors": ["Abigail Nicolas", "Cynthia Parra"],
+			"githubButton": "https://github.com/brokenerk/brokenerk.github.io/tree/master/projects/CumuloEstrellas",
+			"takeALookButton": "./projects/CumuloEstrellas/index.html",
+			"color": "primary"
+		},
+		{
+			"id": "central",
+			"icon": "fa fa-desktop fa-2x",
+			"title": "Remote Visualizer",
+			"description": "<b>Distributed system</b> that allows viewing the screens of up to 30 remote computers in parallel from a central one. The screenshots update every 5 seconds and the quality of them can be selected. Uses <b>the Request-Responde protocol (improved UDP sockets)</b> so that the information doesn't get lost or repeated, guaranteeing the sending and receipt of the images. Perfect to use in a computer laboratory to monitor all at the same time. Implemented with the <b>web server Moongose</b>.",
+			"badges": ["C", "C++", "Mongoose", "Sockets", "JavaScript", "Bootstrap"],
+			"githubButton": "https://github.com/brokenerk/SistemasDistribuidos/tree/master/Proyectos/P3%20-%20CentralLab",
+			"color": "secondary"
+		},
+		{
+			"id": "ukraniofest",
+			"icon": "fa fa-book fa-2x",
+			"title": "Book Analyzer",
+			"description": "<b>Distributed system</b> that analyzes books in the spanish language as plain text files. Through 4 different servers extracts all the words from it, counts them and then compares them with the 10 thousand most frequently used words in spanish. The more words from this list the book has, the better percentage of understanding for the reader it will have. Implemented with the <b>web server Moongose and with the Request-Response protocol through improved UDP sockets</b>.",
+			"badges": ["C", "C++", "Mongoose", "Sockets", "Vue.js", "Vuetify"],
+			"authors": ["Eric Trejo", "Luis Santuario", "Rafael Hernandez", "Ricardo Sagrero"],
+			"githubButton": "https://github.com/brokenerk/LibroUkranioFest",
+			"color": "warning"
+		},
+		{
+			"id": "sniffer",
+			"icon": "fa fa-bar-chart fa-2x",
+			"title": "Sniffer",
+			"description": "A network packet analyzer Java application, better known as sniffer. With the jnetpcap library, the application catches network frames, classifies it with it's corresponding protocol and show it's headers. The application shows a graph with the statics of all the packets caught. <br/>Also, you can configure the network card of your device, set filters and import/export frames in .pcap files.",
+			"badges": ["Java", "jnetpcap", "pcap", "jfreechart"],
+			"authors": ["Victor Morales", "Arturo Lara"],
+			"githubButton": "https://github.com/brokenerk/Redes-1/tree/master/Proyecto%20Sniffer",
+			"color": "secondary"
+		},
+		{
+			"id": "oae",
+			"icon": "fa fa-calendar fa-2x",
+			"title": "Organize An Event",
+			"description": "A web system that controls the assistance and documentation in an academic ceremony. It allows to pass assistance using bar and QR codes. <br/>Additionaly it lets to get the statistics of the event (in PDF), generate the prizes for the guests in PDF as well, send their invitations via email, and to have differents types fo users (normal and admins).",
+			"badges": ["React", "Typescript", "Node.js", "Materialize", "PHP", "MySQL", "MVC"],
+			"authors": ["Oscar Rosas", "Abigail Nicolas"],
+			"githubButton": "https://github.com/SoyOscarRH/OrganizeAnEvent",
+			"color": "dark"
+		},
+		{
+			"id": "saeeb",
+			"icon": "fa fa-graduation-cap fa-2x",
+			"title": "SAEEB",
+			"description": "This is a web system prototype for academic managing of students from elementary schools in Mexico. <br/>The intention is that the account created will be used by the student's parents and it will allows to schedule appoinments with the teachers, check the student grades, send emails or notes between de teachers and parents, update the student academic and personal info, and also generate the student's global grades in PDF.",
+			"badges": ["PHP", "MySQL", "HTML-CSS", "JavaScript"],
+			"authors": ["Abigail Nicolas", "Yahir Carillo"],
+			"githubButton": "https://github.com/abiisnn/SAEEB",
+			"color": "danger"
+		},
+		{
+			"id": "server",
+			"icon": "fa fa-server fa-2x",
+			"title": "HTTP Server",
+			"description": "A basic HTTP server developed in Java that allows GET, POST, HEAD and DELETE requests and give their responses with it's respective headers; each one of them contains appropiate data such as the response state, the date of response, and the MIME type if the petition is a resource, such as files, pdfs, images, music, videos, etc. <br/>It manages error codes like 404, 403 and 501. <br/>The server has a load balancer.",
+			"badges": ["Java", "Sockets", "HTTP", "MIME-Type"],
+			"authors": ["Abigail Nicolas"],
+			"githubButton": "https://github.com/brokenerk/Apps-Comun-Red/tree/master/Practica4",
+			"color": "warning"
+		},
+		{
+			"id": "allJeux",
+			"icon": "fa fa-gamepad fa-2x",
+			"title": "AllJeux Controller",
+			"description": "This isn't a project like the others showed. In fact, it's a prototype of a joystick for people with only one hand or with a disability that don't let them play videogames in a conventional way. There are a lof of designs of it and has it's own business plan, available for anyone who wants to read it, and even we had created an imaginary company called AllJeux. <br/>We made a little webpage for marketing but only the frontend is finished, check it out!<br/> Text is in spanish.",
+			"badges": ["Prototype", "Controller-Device", "Videogames", "HTML-CSS"],
+			"authors": ["Enrique Romero", "Abigail Nicolas"],
+			"infoButton": "./projects/allJeux.pdf",
+			"takeALookButton": "./projects/AllJeux/index.html",
+			"color": "info"
+		},
+		{
+			"id": "cobra",
+			"icon": "fa fa-window-restore fa-2x",
+			"title": "Cobra 4.3",
+			"description": "A scholar excursions manager software for students from the CECyT No. 8 - IPN school that allows to teachers and directives to create and supervise these. When all the information is entered, the system generates all the formats needed by the directorate in Word format. It was a huge idea because before Cobra, all the documents were filled out by hand, making the process so stressful and slow.",
+			"badges": ["VisualBasic", "Office Word", "Office Access"],
+			"authors": ["Maeli Dueñas", "Cesar Coronado", "Saul Garcia", "Tonathiu Cruz"],
+			"githubButton": "https://github.com/brokenerk/Cobra-4.3",
+			"downloadItButton": "./projects/cobra4.3-installer.zip",
+			"color": "primary"
+		},
+		{
+			"id": "sensor",
+			"icon": "fa fa-android fa-2x",
+			"title": "Measurement Sensors",
+			"description": "This is an Android app that displays in a mobile device <b>the measurements of ambient temperature and a needle angle sensors in real time</b>. Alongside there's an Arduino program (an Arduino card is connected to the sensors circuit) that receives the analogic signal of the sensors and converts it to a digital ones.  <br/>The communication between the Android device and the Arduino card is via Bluetooth.<br/> Circuit, electronic components, application, arduino code and full documentation are available on the GitHub repo.",
+			"badges": ["Arduino", "Android", "Bluetooth", "MIT App Inventor"],
+			"authors": ["Victor Morales"],
+			"githubButton": "https://github.com/brokenerk/Instrumentacion/tree/master/P8%20CAD%20%2B%20Arduino%20%2B%20Bluetooth",
+			"downloadItButton": "./projects/sensors.zip",
+			"color": "dark"
+		},
+		{
+			"id": "solar",
+			"icon": "fa fa-sun-o fa-2x",
+			"title": "3D Solar System",
+			"description": "A 3D Kepler's model of the solar system desktop Java application. <br/>It displays the planets, some moons, comets , asteroids, and of course the sun. <br/>Besides, you can get information from one of the planets or the sun in an HTML tab and a video starts playing when someone of these is selected. <br/>It supports network functions with sockets, so you can stream the application in other devices at the same time, as an exposition for example.",
+			"badges": ["Java", "Java3D", "Sockets", "VLC", "HTML-CSS"],
+			"authors": ["Victor Morales", "Arturo Lara"],
+			"githubButton": "https://github.com/brokenerk/Sistema-Solar-POO",
+			"color": "warning"
 		}
 	]
 }
