@@ -69,14 +69,13 @@
 			"color": "dark"
 		},
 		{
-			"id": "apms",
+			"id": "saeeb",
 			"icon": "fa fa-graduation-cap fa-2x",
-			"title": "Sistema de Administraci\u00F3n de Programas Acad\u00E9micos",
-			"description": "Este es un proyecto web en donde trabaj&eacute; con todos mis compa&ntilde;eros de la materia de Ingenier&iacute;a de Software en ESCOM. El objetivo era mejorar la creaci&oacute;n, actualizaci&oacute;n y revisi&oacute;n de los Programas Acad&eacute;micos de las escuelas de nivel superior del IPN, y era destinado a clientes reales: el encargado de la Direcci&oacute;n de Educaci&oacute;n Superior (DES). Cuando un Programa Acad&eacute;mico esta listo, el sistema genera su formato en PDF para su publicaci&oacute;n en la Gaceta Polit&eacute;cnica. Probado con SONAR. Los repositorios con la documentaci&oacute;n completa (espa&ntilde;ol), backend, frontend y pruebas disponibles a continuaci&oacute;n.",
-			"badges": ["Spring", "Angular", "Typescript", "PostgreSQL", "LaTeX", "SONAR"],
-			"authors": ["Sergio Sanchez", "Ivan Hernandez", "Abigail Nicolas"],
-			"githubButton": "https://github.com/SoftwareEngineerESCOM",
-			"takeALookButton": "https://softwareengineerescom.gitlab.io/APMS/public/login",
+			"title": "SAEEB",
+			"description": "Este es un prototipo de un sistema web para la administraci&oacute;n de estudiantes de escuelas secundarias en M&eacute;xico. <br/> La intenci&oacute;n es que la cuenta creada sea utilizada por los padres del alumno y permitir&aacute; agendar citas con los profesores, revisar las calificaciones del alumno, enviar emails, avisos o recados entre padres de familia y profesores, actualizar la infomaci&oacute;n acad&eacute;mica y personal del estudiante, e incluso generar la boleta global de calificaciones del alumno en PDF.",
+			"badges": ["PHP", "MySQL", "HTML-CSS", "JavaScript"],
+			"authors": ["Abigail Nicolas", "Yahir Carillo"],
+			"githubButton": "https://github.com/abiisnn/SAEEB",
 			"color": "danger"
 		},
 		{
@@ -132,16 +131,6 @@
 			"color": "warning"
 		},
 		{
-			"id": "sniffer",
-			"icon": "fa fa-bar-chart fa-2x",
-			"title": "Sniffer",
-			"description": "Una aplicaci&oacute;n analizadora de paquetes de red en Java, mejor conocida como sniffer. Con ayuda de la librer&iacute;a jnetpcap, la aplicaci&oacute;n captura tramas de red, las clasifica por su protocolo y muestra sus cabeceras. La aplicaci&oacute;n muestra una gr&aacute;fica con las estad&iacute;sticas de todos los paquetes capturados. <br/> Adem&aacute;s se puede configurar la tarjeta de red del dispositivo, establecer filtros e importar/exportar tramas en archivos con formato .pcap.",
-			"badges": ["Java", "jnetpcap", "pcap", "jfreechart"],
-			"authors": ["Victor Morales", "Arturo Lara"],
-			"githubButton": "https://github.com/brokenerk/Redes-1/tree/master/Proyecto%20Sniffer",
-			"color": "secondary"
-		},
-		{
 			"id": "oae",
 			"icon": "fa fa-calendar fa-2x",
 			"title": "Organizador de Eventos",
@@ -152,35 +141,15 @@
 			"color": "dark"
 		},
 		{
-			"id": "saeeb",
+			"id": "apms",
 			"icon": "fa fa-graduation-cap fa-2x",
-			"title": "SAEEB",
-			"description": "Este es un prototipo de un sistema web para la administraci&oacute;n de estudiantes de escuelas secundarias en M&eacute;xico. <br/> La intenci&oacute;n es que la cuenta creada sea utilizada por los padres del alumno y permitir&aacute; agendar citas con los profesores, revisar las calificaciones del alumno, enviar emails, avisos o recados entre padres de familia y profesores, actualizar la infomaci&oacute;n acad&eacute;mica y personal del estudiante, e incluso generar la boleta global de calificaciones del alumno en PDF.",
-			"badges": ["PHP", "MySQL", "HTML-CSS", "JavaScript"],
-			"authors": ["Abigail Nicolas", "Yahir Carillo"],
-			"githubButton": "https://github.com/abiisnn/SAEEB",
+			"title": "Sistema de Administraci\u00F3n de Programas Acad\u00E9micos",
+			"description": "Este es un proyecto web en donde trabaj&eacute; con todos mis compa&ntilde;eros de la materia de Ingenier&iacute;a de Software en ESCOM. El objetivo era mejorar la creaci&oacute;n, actualizaci&oacute;n y revisi&oacute;n de los Programas Acad&eacute;micos de las escuelas de nivel superior del IPN, y era destinado a clientes reales: el encargado de la Direcci&oacute;n de Educaci&oacute;n Superior (DES). Cuando un Programa Acad&eacute;mico esta listo, el sistema genera su formato en PDF para su publicaci&oacute;n en la Gaceta Polit&eacute;cnica. Probado con SONAR. Los repositorios con la documentaci&oacute;n completa (espa&ntilde;ol), backend, frontend y pruebas disponibles a continuaci&oacute;n.",
+			"badges": ["Spring", "Angular", "Typescript", "PostgreSQL", "LaTeX", "SONAR"],
+			"authors": ["Sergio Sanchez", "Ivan Hernandez", "Abigail Nicolas"],
+			"githubButton": "https://github.com/SoftwareEngineerESCOM",
+			"takeALookButton": "https://softwareengineerescom.gitlab.io/APMS/public/login",
 			"color": "danger"
-		},
-		{
-			"id": "server",
-			"icon": "fa fa-server fa-2x",
-			"title": "Servidor HTTP",
-			"description": "Un servidor HTTP b&aacute;sico desarrollado en Java que acepta y maneja peticiones GET, POST, HEAD y DELETE devolviendo sus respuestas con sus correspondientes cabeceras; cada una de estas contiene los datos necesarios, como lo son: el estado de la respuesta, la fecha de la respuesta y el tipo MIME si la petici&oacute;n se trata de un recurso, como archivos, pdfs, im&aacute;genes, m&uacute;sica, videos, etc. <br/> Emplea los c&oacute;digos de error 404, 403 y 501. <br/> El servidor posee un balanceador de cargas.",
-			"badges": ["Java", "Sockets", "HTTP", "MIME-Type"],
-			"authors": ["Abigail Nicolas"],
-			"githubButton": "https://github.com/brokenerk/Apps-Comun-Red/tree/master/Practica4",
-			"color": "warning"
-		},
-		{
-			"id": "allJeux",
-			"icon": "fa fa-gamepad fa-2x",
-			"title": "Control AllJeux",
-			"description": "Este no es un proyecto como los mostrados anteriormente. De hecho, este es un prototipo de un joystick para gente con una sola mano o con alguna otra incapacidad que les impida jugar videojuegos de forma convencional. Hay varios diseños de &eacute;ste e incluso tiene su propio plan de negocios, disponible para cualquier persona que desee leerlo; tambi&eacute;n hemos creado una empresa imaginaria llamada AllJeux. <br/> Hicimos una pequeña p&aacute;gina web para marketing, aunque solamente el frontend est&aacute; terminado, !dale un vistazo!<br/> El texto est&aacute; en espa&ntilde;ol.",
-			"badges": ["Prototype", "Controller-Device", "Videogames", "HTML-CSS"],
-			"authors": ["Enrique Romero", "Abigail Nicolas"],
-			"infoButton": "./projects/allJeux.pdf",
-			"takeALookButton": "./projects/AllJeux/index.html",
-			"color": "info"
 		},
 		{
 			"id": "cobra",
@@ -192,27 +161,6 @@
 			"githubButton": "https://github.com/brokenerk/Cobra-4.3",
 			"downloadItButton": "./projects/cobra4.3-installer.zip",
 			"color": "primary"
-		},
-		{
-			"id": "sensor",
-			"icon": "fa fa-android fa-2x",
-			"title": "Sensores de medición",
-			"description": "Esta es una aplicaci&oacute;n para Android que muestra en un dispositivo m&oacute;vil (celular) <b>medidas de sensores para la temperatura ambiental y el &aacute;ngulo de una aguja en tiempo real</b>. Junto a este hay un programa en Arduino (una tarjeta Arduino esta conectada a los sensores) que recibe las se&ntilde;ales anal&oacute;gicas de los sensores y las convierte en digitales. <br/> La comunicaci&oacute;n entre el dispositivo Android y la tarjeta Arduino es mediante Bluetooth.<br/> El circuito, los componentes eletr&oacute;nicos, la aplicaci&oacute;n, el c&oacute;digo en Arduino y la documentaci&oacute;n completa estan disponibles en el repositorio de GitHub.",
-			"badges": ["Arduino", "Android", "Bluetooth", "MIT App Inventor"],
-			"authors": ["Victor Morales"],
-			"githubButton": "https://github.com/brokenerk/Instrumentacion/tree/master/P8%20CAD%20%2B%20Arduino%20%2B%20Bluetooth",
-			"downloadItButton": "./projects/sensors.zip",
-			"color": "dark"
-		},
-		{
-			"id": "solar",
-			"icon": "fa fa-sun-o fa-2x",
-			"title": "Sistema Solar 3D",
-			"description": "Una aplicaci&oacute;n de escritorio en Java con el modelo del sistema solar de Kepler en 3D. <br/> Muestra los planetas, algunas lunas, cometas, asteroides y por supuesto el Sol. <br/> Se puede obtener informaci&oacute;n relacionado a un planeta o al Sol en un panel HTML y un video comenzar&aacute; a reproducirse cuando alguno de estos es seleccionado. <br/> Soporta funcionalidades de red con sockets, por lo que se puede transmitir la aplicaci&oacute;n en otros dispositivos al mismo tiempo, para una exposici&oacute;n por ejemplo.",
-			"badges": ["Java", "Java3D", "Sockets", "VLC", "HTML-CSS"],
-			"authors": ["Victor Morales", "Arturo Lara"],
-			"githubButton": "https://github.com/brokenerk/Sistema-Solar-POO",
-			"color": "warning"
 		}
 	]
 }

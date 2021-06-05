@@ -1,0 +1,119 @@
+{
+	"id": "sniffer",
+	"icon": "fa fa-bar-chart fa-2x",
+	"title": "Sniffer",
+	"description": "A network packet analyzer Java application, better known as sniffer. With the jnetpcap library, the application catches network frames, classifies it with its corresponding protocol and show its headers. The application shows a graph with the statics of all the packets caught. <br/>Also, you can configure the network card of your device, set filters and import/export frames in .pcap files.",
+	"badges": ["Java", "jnetpcap", "pcap", "jfreechart"],
+	"authors": ["Victor Morales", "Arturo Lara"],
+	"githubButton": "https://github.com/brokenerk/Redes-1/tree/master/Proyecto%20Sniffer",
+	"color": "secondary"
+},{
+	"id": "server",
+	"icon": "fa fa-server fa-2x",
+	"title": "HTTP Server",
+	"description": "A basic HTTP server developed in Java that allows GET, POST, HEAD and DELETE requests and give their responses with its corresponding headers; each one of them contains appropiate data such as the response state, the date of response, and the MIME type if the petition is a resource, such as files, pdfs, images, music, videos, etc. <br/>It manages error codes like 404, 403 and 501. <br/>The server has a load balancer.",
+	"badges": ["Java", "Sockets", "HTTP", "MIME-Type"],
+	"authors": ["Abigail Nicolas"],
+	"githubButton": "https://github.com/brokenerk/Apps-Comun-Red/tree/master/Practica4",
+	"color": "warning"
+},{
+	"id": "allJeux",
+	"icon": "fa fa-gamepad fa-2x",
+	"title": "AllJeux Controller",
+	"description": "This isn't a project like the others showed. In fact, it's a prototype of a joystick for people with only one hand or with a disability that don't let them play videogames in a conventional way. There are a lof of designs of it and has its own business plan, available for anyone who wants to read it, and even we had created an imaginary company called AllJeux. <br/>We made a little webpage for marketing, but only the frontend is finished, check it out!<br/> Text is in spanish.",
+	"badges": ["Prototype", "Controller-Device", "Videogames", "HTML-CSS"],
+	"authors": ["Enrique Romero", "Abigail Nicolas"],
+	"infoButton": "./projects/allJeux.pdf",
+	"takeALookButton": "./projects/AllJeux/index.html",
+	"color": "info"
+},{
+	"id": "sensor",
+	"icon": "fa fa-android fa-2x",
+	"title": "Measurement Sensors",
+	"description": "This is an Android app that displays in a mobile device <b>the measurements of ambient temperature and a needle angle sensors in real time</b>. Alongside there's an Arduino program (an Arduino card is connected to the sensors circuit) that receives the analogic signal of the sensors and converts it to a digital ones.  <br/>The communication between the Android device and the Arduino card is via Bluetooth.<br/> Circuit, electronic components, application, arduino code and full documentation are available on the GitHub repo.",
+	"badges": ["Arduino", "Android", "Bluetooth", "MIT App Inventor"],
+	"authors": ["Victor Morales"],
+	"githubButton": "https://github.com/brokenerk/Instrumentacion/tree/master/P8%20CAD%20%2B%20Arduino%20%2B%20Bluetooth",
+	"downloadItButton": "./projects/sensors.zip",
+	"color": "dark"
+},
+{
+	"id": "solar",
+	"icon": "fa fa-sun-o fa-2x",
+	"title": "3D Solar System",
+	"description": "A 3D Kepler's model of the solar system desktop Java application. <br/>It displays the planets, some moons, comets , asteroids, and of course the sun. <br/>Besides, you can get information from one of the planets or the sun in an HTML tab and a video starts playing when someone of these is selected. <br/>It supports network functions with sockets, so you can stream the application in other devices at the same time, as an exposition for example.",
+	"badges": ["Java", "Java3D", "Sockets", "VLC", "HTML-CSS"],
+	"authors": ["Victor Morales", "Arturo Lara"],
+	"githubButton": "https://github.com/brokenerk/Sistema-Solar-POO",
+	"color": "warning"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+	"id": "sniffer",
+	"icon": "fa fa-bar-chart fa-2x",
+	"title": "Sniffer",
+	"description": "Una aplicaci&oacute;n analizadora de paquetes de red en Java, mejor conocida como sniffer. Con ayuda de la librer&iacute;a jnetpcap, la aplicaci&oacute;n captura tramas de red, las clasifica por su protocolo y muestra sus cabeceras. La aplicaci&oacute;n muestra una gr&aacute;fica con las estad&iacute;sticas de todos los paquetes capturados. <br/> Adem&aacute;s se puede configurar la tarjeta de red del dispositivo, establecer filtros e importar/exportar tramas en archivos con formato .pcap.",
+	"badges": ["Java", "jnetpcap", "pcap", "jfreechart"],
+	"authors": ["Victor Morales", "Arturo Lara"],
+	"githubButton": "https://github.com/brokenerk/Redes-1/tree/master/Proyecto%20Sniffer",
+	"color": "secondary"
+},
+{
+	"id": "server",
+	"icon": "fa fa-server fa-2x",
+	"title": "Servidor HTTP",
+	"description": "Un servidor HTTP b&aacute;sico desarrollado en Java que acepta y maneja peticiones GET, POST, HEAD y DELETE devolviendo sus respuestas con sus correspondientes cabeceras; cada una de estas contiene los datos necesarios, como lo son: el estado de la respuesta, la fecha de la respuesta y el tipo MIME si la petici&oacute;n se trata de un recurso, como archivos, pdfs, im&aacute;genes, m&uacute;sica, videos, etc. <br/> Emplea los c&oacute;digos de error 404, 403 y 501. <br/> El servidor posee un balanceador de cargas.",
+	"badges": ["Java", "Sockets", "HTTP", "MIME-Type"],
+	"authors": ["Abigail Nicolas"],
+	"githubButton": "https://github.com/brokenerk/Apps-Comun-Red/tree/master/Practica4",
+	"color": "warning"
+},
+{
+	"id": "allJeux",
+	"icon": "fa fa-gamepad fa-2x",
+	"title": "Control AllJeux",
+	"description": "Este no es un proyecto como los mostrados anteriormente. De hecho, este es un prototipo de un joystick para gente con una sola mano o con alguna otra incapacidad que les impida jugar videojuegos de forma convencional. Hay varios diseños de &eacute;ste e incluso tiene su propio plan de negocios, disponible para cualquier persona que desee leerlo; tambi&eacute;n hemos creado una empresa imaginaria llamada AllJeux. <br/> Hicimos una pequeña p&aacute;gina web para marketing, aunque solamente el frontend est&aacute; terminado, !dale un vistazo!<br/> El texto est&aacute; en espa&ntilde;ol.",
+	"badges": ["Prototype", "Controller-Device", "Videogames", "HTML-CSS"],
+	"authors": ["Enrique Romero", "Abigail Nicolas"],
+	"infoButton": "./projects/allJeux.pdf",
+	"takeALookButton": "./projects/AllJeux/index.html",
+	"color": "info"
+},
+{
+	"id": "sensor",
+	"icon": "fa fa-android fa-2x",
+	"title": "Sensores de medición",
+	"description": "Esta es una aplicaci&oacute;n para Android que muestra en un dispositivo m&oacute;vil (celular) <b>medidas de sensores para la temperatura ambiental y el &aacute;ngulo de una aguja en tiempo real</b>. Junto a este hay un programa en Arduino (una tarjeta Arduino esta conectada a los sensores) que recibe las se&ntilde;ales anal&oacute;gicas de los sensores y las convierte en digitales. <br/> La comunicaci&oacute;n entre el dispositivo Android y la tarjeta Arduino es mediante Bluetooth.<br/> El circuito, los componentes eletr&oacute;nicos, la aplicaci&oacute;n, el c&oacute;digo en Arduino y la documentaci&oacute;n completa estan disponibles en el repositorio de GitHub.",
+	"badges": ["Arduino", "Android", "Bluetooth", "MIT App Inventor"],
+	"authors": ["Victor Morales"],
+	"githubButton": "https://github.com/brokenerk/Instrumentacion/tree/master/P8%20CAD%20%2B%20Arduino%20%2B%20Bluetooth",
+	"downloadItButton": "./projects/sensors.zip",
+	"color": "dark"
+},
+{
+	"id": "solar",
+	"icon": "fa fa-sun-o fa-2x",
+	"title": "Sistema Solar 3D",
+	"description": "Una aplicaci&oacute;n de escritorio en Java con el modelo del sistema solar de Kepler en 3D. <br/> Muestra los planetas, algunas lunas, cometas, asteroides y por supuesto el Sol. <br/> Se puede obtener informaci&oacute;n relacionado a un planeta o al Sol en un panel HTML y un video comenzar&aacute; a reproducirse cuando alguno de estos es seleccionado. <br/> Soporta funcionalidades de red con sockets, por lo que se puede transmitir la aplicaci&oacute;n en otros dispositivos al mismo tiempo, para una exposici&oacute;n por ejemplo.",
+	"badges": ["Java", "Java3D", "Sockets", "VLC", "HTML-CSS"],
+	"authors": ["Victor Morales", "Arturo Lara"],
+	"githubButton": "https://github.com/brokenerk/Sistema-Solar-POO",
+	"color": "warning"
+}

@@ -30,6 +30,7 @@ export default {
           link: "https://www.linkedin.com/in/eramosd/",
           icon: "fa fa-linkedin-square fa-3x",
         },
+        /*
         {
           id: "whatsapp",
           link: "https://api.whatsapp.com/send?phone=5215583903993",
@@ -40,6 +41,7 @@ export default {
           link: "mailto: e_ramosdiaz_",
           icon: "fa fa-envelope fa-3x",
         },
+        */
       ],
     };
   }

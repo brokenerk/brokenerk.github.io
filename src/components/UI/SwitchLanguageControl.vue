@@ -15,16 +15,18 @@
 
 <script>
 export default {
-	props: ['id', 'language', 'modelValue'],
-  emits: ['update:modelValue'],
+	props: ['id'],
 	computed: {
+		language() {
+			return this.$store.state.englishLanguage;
+		},
     languageCaption() {
       return this.language ? "Switch to Spanish" : "Cambiar a Ingl\u00E9s";
     },
 	},
 	methods: {
     switchLanguage() {
-			this.$emit('update:modelValue', !this.language);
+			this.$store.commit('switchLanguage', { language: !this.language })
     }
 	}
 };

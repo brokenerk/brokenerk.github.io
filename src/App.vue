@@ -10,8 +10,6 @@
     >
       <language-switch
         id="languageSwitch1"
-        :language="englishLanguage"
-        v-model="englishLanguage"
       ></language-switch>
     </the-navbar>
 
@@ -25,8 +23,6 @@
     >
       <language-switch
         id="languageSwitch2"
-        :language="englishLanguage"
-        v-model="englishLanguage"
       ></language-switch>
     </about-me-card>
 
@@ -73,78 +69,76 @@ export default {
     TheFooter,
     LanguageSwitch,
   },
-  data() {
-    return {
-      englishLanguage: true,
-    };
-  },
   computed: {
+    language() {
+      return this.$store.state.englishLanguage;
+    },
     aboutMeCaption() {
-      return this.englishLanguage
+      return this.language
         ? common_text.ENG.aboutMe
         : common_text.ESP.aboutMe;
     },
     projectsCaption() {
-      return this.englishLanguage
+      return this.language
         ? common_text.ENG.projects
         : common_text.ESP.projects;
     },
     resumeCaption() {
-      return this.englishLanguage
+      return this.language
         ? common_text.ENG.resume
         : common_text.ESP.resume;
     },
     resumeFileName() {
-      return this.englishLanguage
+      return this.language
         ? common_text.ENG.resumeFile
         : common_text.ESP.resumeFile;
     },
     welcomeText() {
-      return this.englishLanguage ? ENG.welcome : ESP.welcome;
+      return this.language ? ENG.welcome : ESP.welcome;
     },
     introductionText() {
-      return this.englishLanguage ? ENG.introduction : ESP.introduction;
+      return this.language ? ENG.introduction : ESP.introduction;
     },
     headerText() {
-      return this.englishLanguage ? ENG.header : ESP.header;
+      return this.language ? ENG.header : ESP.header;
     },
     projects() {
-      return this.englishLanguage ? ENG.projects : ESP.projects;
+      return this.language ? ENG.projects : ESP.projects;
     },
     takeALookCaption() {
-      return this.englishLanguage
+      return this.language
         ? common_text.ENG.takeALook
         : common_text.ESP.takeALook;
     },
     downloadItCaption() {
-      return this.englishLanguage
+      return this.language
         ? common_text.ENG.downloadIt
         : common_text.ESP.downloadIt;
     },
     seeInGithubCaption() {
-      return this.englishLanguage
+      return this.language
         ? common_text.ENG.seeInGithub
         : common_text.ESP.seeInGithub;
     },
     moreInfoCaption() {
-      return this.englishLanguage
+      return this.language
         ? common_text.ENG.moreInfo
         : common_text.ESP.moreInfo;
     },
     developedByCaption() {
-      return this.englishLanguage
+      return this.language
         ? common_text.ENG.developed
         : common_text.ESP.developed;
     },
     poweredByCaption() {
-      return this.englishLanguage
+      return this.language
         ? common_text.ENG.powered
         : common_text.ESP.powered;
     },
   },
   methods: {
     toggleLanguage(newLanguage) {
-      this.englishLanguage = newLanguage;
+      this.language = newLanguage;
     },
   },
 };

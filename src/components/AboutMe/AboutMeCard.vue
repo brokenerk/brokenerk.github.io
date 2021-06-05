@@ -56,8 +56,7 @@ export default {
     "introductionText",
     "headerText",
     "resumeCaption",
-    "resumeFileName",
-    "language"
+    "resumeFileName"
   ]
 };
 </script>
