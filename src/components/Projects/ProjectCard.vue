@@ -28,7 +28,8 @@
         <div class="mt-auto">
           <!-- TECNOLOGIAS -->
           <span
-            :class="'badge badge-' + checkColor"
+            :class="'badge text-' + checkTextColor"
+            :style="{ backgroundColor: checkColor }"
             v-for="badge in project.badges"
             :key="badge"
             >{{ badge }}</span
@@ -111,9 +112,15 @@ export default {
   ],
   computed: {
     checkColor() {
-      return this.project.color === "secondary" ? "light" : this.project.color;
+      return this.project.color === "#6c757d" ? "#f8f9fa" : this.project.color;
     },
-  }
+    checkTextColor() {
+      return this.project.color === "#6c757d" ||
+        this.project.color === "#ffc107"
+        ? "black"
+        : "white";
+    },
+  },
 };
 </script>
 

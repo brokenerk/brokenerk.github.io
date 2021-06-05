@@ -16,7 +16,7 @@
 			"infoButton": "./projects/TT_II_2019_B059_FIRMADO.pdf",
 			"githubButton": "https://github.com/brokenerk/PublicidadBT",
 			"takeALookButton": "./projects/videoTestRA.mp4",
-			"color": "dark"
+			"color": "#343a40"
 		},
 		{
 			"id": "cnn",
@@ -27,7 +27,7 @@
 			"githubButton": "https://github.com/brokenerk/Advanced-Neuronal-Networks",
 			"branchButton": "https://github.com/brokenerk/TRT-SSD-MobileNetV2",
 			"branchButtonTitle": "SSD+MobileNet TensorRT",
-			"color": "info"
+			"color": "#17a2b8"
 		},
 		{
 			"id": "data-mining",
@@ -45,7 +45,7 @@
 			"description": "<b>Trabaj&eacute; 6 meses para el IPN como desarrollador web en sus sistemas institucionales</b>. Mis principales contribuciones fueron en <b>SIG@</b> (Sistema Institucional de Gesti&oacute;n Administrativa), en donde todas las dependencias mexicanas del IPN llevan a cabo el registro de la informaci&oacute;n relacionada a los <b>procesos financieros, contables, de capital humano y recursos materiales</b> del instituto. Estuve altamente involucrado en las actualizaciones, mantenimiento y reingenier&iacute;a del <b>m&oacute;dulo de contabilidad</b> como desarrollador fullstack.",
 			"badges": ["ColdFusion", "jQuery", "JavaScript", "Bootstrap", "Datatables", "Select2", "HTML-CSS", "Oracle", "MVC", "SweetAlert2"],
 			"takeALookButton": "https://www.siga.ipn.mx/",
-			"color": "success"
+			"color": "#28a745"
 		},
 		{
 			"id": "compiler",
@@ -56,7 +56,7 @@
 			"authors": ["Abigail Nicolas", "Randy Guzman"],
 			"githubButton": "https://github.com/brokenerk/Compiladores",
 			"takeALookButton": "https://com-piler.herokuapp.com/",
-			"color": "primary"
+			"color": "#007bff"
 		},
 		{
 			"id": "cart",
@@ -66,7 +66,16 @@
 			"badges": ["Hibernate", "Spring", "Struts2", "Conekta", "Bootstrap", "JSP", "PostgreSQL", "MVC"],
 			"githubButton": "https://github.com/brokenerk/Shopping-Cart",
 			"takeALookButton": "https://shopping-cart-wad.herokuapp.com/products",
-			"color": "dark"
+			"color": "#343a40"
+		},
+		{
+			"id": "papplus",
+			"icon": "fa fa-usd fa-2x",
+			"title": "Columbia PapPlus ",
+			"description": "gggggggggggggggggggggggggggggggggggg",
+			"badges": ["jQuery", "JavaScript", "Bootstrap", "HTML-CSS"],
+			"infoButton": "https://gcolumbia.com/columbia-diagnostics",
+			"color": "#E8318B"
 		},
 		{
 			"id": "saeeb",
@@ -76,7 +85,7 @@
 			"badges": ["PHP", "MySQL", "HTML-CSS", "JavaScript"],
 			"authors": ["Abigail Nicolas", "Yahir Carillo"],
 			"githubButton": "https://github.com/abiisnn/SAEEB",
-			"color": "danger"
+			"color": "#E89980"
 		},
 		{
 			"id": "chat",
@@ -87,7 +96,7 @@
 			"authors": ["Abigail Nicolas"],
 			"githubButton": "https://github.com/brokenerk/Chat-Multicast",
 			"takeALookButton": "https://chat-multicast.herokuapp.com/",
-			"color": "success"
+			"color": "#527A7A"
 		},
 		{
 			"id": "rand",
@@ -98,7 +107,7 @@
 			"authors": ["Arturo Lara"],
 			"githubButton": "https://github.com/brokenerk/MCTD/",
 			"takeALookButton": "https://random-mctd.herokuapp.com/",
-			"color": "info"
+			"color": "#17a2b8"
 		},
 		{
 			"id": "stars",
@@ -109,7 +118,7 @@
 			"authors": ["Abigail Nicolas", "Cynthia Parra"],
 			"githubButton": "https://github.com/brokenerk/brokenerk.github.io/tree/master/projects/CumuloEstrellas",
 			"takeALookButton": "./projects/CumuloEstrellas/index.html",
-			"color": "primary"
+			"color": "#007bff"
 		},
 		{
 			"id": "central",
@@ -118,7 +127,7 @@
 			"description": "<b>Sistema distribuido</b> que permite visualizar las pantallas de hasta 30 computadoras remotas en paralelo desde un equipo central. Las capturas de pantalla se actualizan cada 5 segundos y se puede seleccionar su calidad. Utiliza <b>el protocolo Solicitud-Respuesta (sockets UDP mejorados)</b> para que la informaci&oacute;n no se pierda ni llegue repetida, garantizando el envio y recibo de las im&aacute;genes. Perfecto para utilizarse en laboratorios de computadoras para monitorear todas al mismo tiempo. Implementado con el <b>servidor web Mongoose</b>.",
 			"badges": ["C", "C++", "Mongoose", "Sockets", "JavaScript", "Bootstrap"],
 			"githubButton": "https://github.com/brokenerk/SistemasDistribuidos/tree/master/Proyectos/P3%20-%20CentralLab",
-			"color": "secondary"
+			"color": "#6c757d"
 		},
 		{
 			"id": "ukraniofest",
@@ -128,7 +137,7 @@
 			"badges": ["C", "C++", "Mongoose", "Sockets", "Vue.js", "Vuetify"],
 			"authors": ["Eric Trejo", "Luis Santuario", "Rafael Hernandez", "Ricardo Sagrero"],
 			"githubButton": "https://github.com/brokenerk/LibroUkranioFest",
-			"color": "warning"
+			"color": "#ffc107"
 		},
 		{
 			"id": "oae",
@@ -138,18 +147,7 @@
 			"badges": ["React", "Typescript", "Node.js", "Materialize", "PHP", "MySQL", "MVC"],
 			"authors": ["Oscar Rosas", "Abigail Nicolas"],
 			"githubButton": "https://github.com/SoyOscarRH/OrganizeAnEvent",
-			"color": "dark"
-		},
-		{
-			"id": "apms",
-			"icon": "fa fa-graduation-cap fa-2x",
-			"title": "Sistema de Administraci\u00F3n de Programas Acad\u00E9micos",
-			"description": "Este es un proyecto web en donde trabaj&eacute; con todos mis compa&ntilde;eros de la materia de Ingenier&iacute;a de Software en ESCOM. El objetivo era mejorar la creaci&oacute;n, actualizaci&oacute;n y revisi&oacute;n de los Programas Acad&eacute;micos de las escuelas de nivel superior del IPN, y era destinado a clientes reales: el encargado de la Direcci&oacute;n de Educaci&oacute;n Superior (DES). Cuando un Programa Acad&eacute;mico esta listo, el sistema genera su formato en PDF para su publicaci&oacute;n en la Gaceta Polit&eacute;cnica. Probado con SONAR. Los repositorios con la documentaci&oacute;n completa (espa&ntilde;ol), backend, frontend y pruebas disponibles a continuaci&oacute;n.",
-			"badges": ["Spring", "Angular", "Typescript", "PostgreSQL", "LaTeX", "SONAR"],
-			"authors": ["Sergio Sanchez", "Ivan Hernandez", "Abigail Nicolas"],
-			"githubButton": "https://github.com/SoftwareEngineerESCOM",
-			"takeALookButton": "https://softwareengineerescom.gitlab.io/APMS/public/login",
-			"color": "danger"
+			"color": "#243547"
 		},
 		{
 			"id": "cobra",
@@ -160,7 +158,7 @@
 			"authors": ["Maeli Dueñas", "Cesar Coronado", "Saul Garcia", "Tonathiu Cruz"],
 			"githubButton": "https://github.com/brokenerk/Cobra-4.3",
 			"downloadItButton": "./projects/cobra4.3-installer.zip",
-			"color": "primary"
+			"color": "#007bff"
 		}
 	]
 }

@@ -31,7 +31,7 @@
           <div class="col-12 col-sm-12 col-md-3 col-lg-3">
             <generic-button
               :href="resumeFileName"
-              :color="'dark'"
+              :color="'#343a40'"
               :caption="resumeCaption"
             ></generic-button>
           </div>

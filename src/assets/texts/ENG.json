@@ -16,7 +16,7 @@
 			"infoButton": "./projects/TT_II_2019_B059_FIRMADO.pdf",
 			"githubButton": "https://github.com/brokenerk/PublicidadBT",
 			"takeALookButton": "./projects/videoTestRA.mp4",
-			"color": "dark"
+			"color": "#343a40"
 		},
 		{
 			"id": "cnn",
@@ -27,7 +27,7 @@
 			"githubButton": "https://github.com/brokenerk/Advanced-Neuronal-Networks",
 			"branchButton": "https://github.com/brokenerk/TRT-SSD-MobileNetV2",
 			"branchButtonTitle": "SSD+MobileNet TensorRT",
-			"color": "info"
+			"color": "#17a2b8"
 		},
 		{
 			"id": "data-mining",
@@ -45,7 +45,7 @@
 			"description": "<b>I worked 6 months for the IPN as web developer on its institutional systems</b>. My principal contributions were for the <b>SIG@</b> (Institutional Administrative Management System), where all the mexican IPN offices carry out the registration of information related to the <b>financial, accounting, human capital and material resources processes</b> of the institute. I was highly involved on the updates, maintenance and reengineering of the <b>accounting modules</b> as fullstack developer.",
 			"badges": ["ColdFusion", "jQuery", "JavaScript", "Bootstrap", "Datatables", "Select2", "HTML-CSS", "Oracle", "MVC", "SweetAlert2"],
 			"takeALookButton": "https://www.siga.ipn.mx/",
-			"color": "success"
+			"color": "#28a745"
 		},
 		{
 			"id": "compiler",
@@ -56,7 +56,7 @@
 			"authors": ["Abigail Nicolas", "Randy Guzman"],
 			"githubButton": "https://github.com/brokenerk/Compiladores",
 			"takeALookButton": "https://com-piler.herokuapp.com/",
-			"color": "primary"
+			"color": "#007bff"
 		},
 		{
 			"id": "cart",
@@ -66,7 +66,16 @@
 			"badges": ["Hibernate", "Spring", "Struts2", "Conekta", "Bootstrap", "JSP", "PostgreSQL", "MVC"],
 			"githubButton": "https://github.com/brokenerk/Shopping-Cart",
 			"takeALookButton": "https://shopping-cart-wad.herokuapp.com/products",
-			"color": "dark"
+			"color": "#343a40"
+		},
+		{
+			"id": "papplus",
+			"icon": "fa fa-usd fa-2x",
+			"title": "Columbia PapPlus ",
+			"description": "gggggggggggggggggggggggggggggggggggg",
+			"badges": ["jQuery", "JavaScript", "Bootstrap", "HTML-CSS"],
+			"infoButton": "https://gcolumbia.com/columbia-diagnostics",
+			"color": "#E8318B"
 		},
 		{
 			"id": "saeeb",
@@ -76,7 +85,7 @@
 			"badges": ["PHP", "MySQL", "HTML-CSS", "JavaScript"],
 			"authors": ["Abigail Nicolas", "Yahir Carillo"],
 			"githubButton": "https://github.com/abiisnn/SAEEB",
-			"color": "danger"
+			"color": "#E89980"
 		},
 		{
 			"id": "chat",
@@ -87,7 +96,7 @@
 			"authors": ["Abigail Nicolas"],
 			"githubButton": "https://github.com/brokenerk/Chat-Multicast",
 			"takeALookButton": "https://chat-multicast.herokuapp.com/",
-			"color": "success"
+			"color": "#52987A"
 		},
 		{
 			"id": "rand",
@@ -98,7 +107,7 @@
 			"authors": ["Arturo Lara"],
 			"githubButton": "https://github.com/brokenerk/MCTD/",
 			"takeALookButton": "https://random-mctd.herokuapp.com/",
-			"color": "info"
+			"color": "#17a2b8"
 		},
 		{
 			"id": "stars",
@@ -109,7 +118,7 @@
 			"authors": ["Abigail Nicolas", "Cynthia Parra"],
 			"githubButton": "https://github.com/brokenerk/brokenerk.github.io/tree/master/projects/CumuloEstrellas",
 			"takeALookButton": "./projects/CumuloEstrellas/index.html",
-			"color": "primary"
+			"color": "#007bff"
 		},
 		{
 			"id": "central",
@@ -118,7 +127,7 @@
 			"description": "<b>Distributed system</b> that allows viewing the screens of up to 30 remote computers in parallel from a central one. The screenshots update every 5 seconds and the quality of them can be selected. Uses <b>the Request-Responde protocol (improved UDP sockets)</b> so that the information doesn't get lost or repeated, guaranteeing the sending and receipt of the images. Perfect to use in a computer laboratory to monitor all at the same time. Implemented with the <b>web server Moongose</b>.",
 			"badges": ["C", "C++", "Mongoose", "Sockets", "JavaScript", "Bootstrap"],
 			"githubButton": "https://github.com/brokenerk/SistemasDistribuidos/tree/master/Proyectos/P3%20-%20CentralLab",
-			"color": "secondary"
+			"color": "#6c757d"
 		},
 		{
 			"id": "ukraniofest",
@@ -128,7 +137,7 @@
 			"badges": ["C", "C++", "Mongoose", "Sockets", "Vue.js", "Vuetify"],
 			"authors": ["Eric Trejo", "Luis Santuario", "Rafael Hernandez", "Ricardo Sagrero"],
 			"githubButton": "https://github.com/brokenerk/LibroUkranioFest",
-			"color": "warning"
+			"color": "#ffc107"
 		},
 		{
 			"id": "oae",
@@ -138,18 +147,7 @@
 			"badges": ["React", "Typescript", "Node.js", "Materialize", "PHP", "MySQL", "MVC"],
 			"authors": ["Oscar Rosas", "Abigail Nicolas"],
 			"githubButton": "https://github.com/SoyOscarRH/OrganizeAnEvent",
-			"color": "dark"
-		},
-		{
-			"id": "apms",
-			"icon": "fa fa-graduation-cap fa-2x",
-			"title": "Academic Program Management System",
-			"description": "This is a web project where I worked with all of my classmates in the Software Engineering subject at ESCOM. The purpose was to improve the creation, upgrade and review of universities Academic Programs in the IPN, and it would be for real clients: the head of the Superior Education Directorate (DES in spanish). When an Academic Program is ready, the system generates the format in PDF for their publishing in the official IPN tabloid. Tested with SONAR. Full documentation (spanish), backend, frontend and tests repositories above.",
-			"badges": ["Spring", "Angular", "Typescript", "PostgreSQL", "LaTeX", "SONAR"],
-			"authors": ["Sergio Sanchez", "Ivan Hernandez", "Abigail Nicolas"],
-			"githubButton": "https://github.com/SoftwareEngineerESCOM",
-			"takeALookButton": "https://softwareengineerescom.gitlab.io/APMS/public/login",
-			"color": "danger"
+			"color": "#243547"
 		},
 		{
 			"id": "cobra",
@@ -160,7 +158,7 @@
 			"authors": ["Maeli Dueñas", "Cesar Coronado", "Saul Garcia", "Tonathiu Cruz"],
 			"githubButton": "https://github.com/brokenerk/Cobra-4.3",
 			"downloadItButton": "./projects/cobra4.3-installer.zip",
-			"color": "primary"
+			"color": "#007bff"
 		}
 	]
 }

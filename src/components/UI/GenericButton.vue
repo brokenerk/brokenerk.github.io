@@ -1,6 +1,7 @@
 <template>
   <a
-    :class="'btn btn-' + color + ' text-white'"
+    class="btn text-white"
+    :style="{ backgroundColor: color, borderColor: color }"
     :href="href"
     target="_blank"
     >{{ caption }}</a
