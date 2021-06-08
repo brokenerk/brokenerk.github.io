@@ -35,6 +35,14 @@
             >{{ badge }}</span
           >
           <br />
+          <!-- POSICIONES-ROLES -->
+          <span
+            class="badge badge-roles"
+            v-for="role in project.roles"
+            :key="role"
+            >{{ role }}</span
+          >
+          <br />
           <!-- AUTORES -->
           <span
             class="badge badge-secondary"
@@ -101,14 +109,14 @@ import GenericButton from "../UI/GenericButton.vue";
 export default {
   components: {
     IconButton,
-    GenericButton
+    GenericButton,
   },
   props: [
     "project",
     "takeALookCaption",
     "downloadItCaption",
     "seeInGithubCaption",
-    "moreInfoCaption"
+    "moreInfoCaption",
   ],
   computed: {
     checkColor() {
@@ -127,6 +135,9 @@ export default {
 <style scoped>
 .badge {
   margin-right: 3px;
+}
+.badge-roles {
+  background-color: #fff176;
 }
 .col {
   padding: 0px;

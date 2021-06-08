@@ -10,6 +10,16 @@ const store = createStore({
 		switchLanguage(state, payload) {
 			state.englishLanguage = payload.language;
 		}
+	},
+	actions: {
+		switchLanguage(context, payload) {
+			context.commit('switchLanguage', payload);
+		}
+	},
+	getters: {
+		englishLanguage(state) {
+			return state.englishLanguage;
+		}
 	}
 });
 

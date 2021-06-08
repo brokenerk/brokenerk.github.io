@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <!--Brokenerk-->
       <a class="nav-link text-white" href="#">
-        <span class="navbar-brand mb-0 h1">brokenerk</span>
+        <span class="navbar-brand mb-0 h1">Enrique Ramos</span>
       </a>
       <!--Boton responsive-->
       <button class="navbar-toggler" @click="collapseNavbarList">
@@ -43,13 +43,13 @@
 import NavbarItem from "./NavbarItem.vue";
 export default {
   components: {
-    NavbarItem
+    NavbarItem,
   },
   props: [
     "aboutMeCaption",
     "projectsCaption",
     "resumeCaption",
-    "resumeFileName"
+    "resumeFileName",
   ],
   data() {
     return {
@@ -62,6 +62,6 @@ export default {
         ? (this.collapseClass = "block")
         : (this.collapseClass = "none");
     },
-  }
+  },
 };
 </script>

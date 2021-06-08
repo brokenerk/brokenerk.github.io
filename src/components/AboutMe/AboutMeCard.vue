@@ -49,15 +49,15 @@ import GenericButton from "../UI/GenericButton.vue";
 export default {
   components: {
     SocialNetworks,
-    GenericButton
+    GenericButton,
   },
   props: [
     "welcomeText",
     "introductionText",
     "headerText",
     "resumeCaption",
-    "resumeFileName"
-  ]
+    "resumeFileName",
+  ],
 };
 </script>
 

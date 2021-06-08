@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  props: ["href", "color", "caption"]
+  props: ["href", "color", "caption"],
 };
 </script>
 

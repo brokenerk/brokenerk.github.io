@@ -8,9 +8,7 @@
       :resume-caption="resumeCaption"
       :resume-file-name="resumeFileName"
     >
-      <language-switch
-        id="languageSwitch1"
-      ></language-switch>
+      <language-switch id="languageSwitch1"></language-switch>
     </the-navbar>
 
     <!-- About Me -->
@@ -21,9 +19,7 @@
       :resume-caption="resumeCaption"
       :resume-file-name="resumeFileName"
     >
-      <language-switch
-        id="languageSwitch2"
-      ></language-switch>
+      <language-switch id="languageSwitch2"></language-switch>
     </about-me-card>
 
     <!-- Projects -->
@@ -71,12 +67,10 @@ export default {
   },
   computed: {
     language() {
-      return this.$store.state.englishLanguage;
+      return this.$store.getters.englishLanguage;
     },
     aboutMeCaption() {
-      return this.language
-        ? common_text.ENG.aboutMe
-        : common_text.ESP.aboutMe;
+      return this.language ? common_text.ENG.aboutMe : common_text.ESP.aboutMe;
     },
     projectsCaption() {
       return this.language
@@ -84,9 +78,7 @@ export default {
         : common_text.ESP.projects;
     },
     resumeCaption() {
-      return this.language
-        ? common_text.ENG.resume
-        : common_text.ESP.resume;
+      return this.language ? common_text.ENG.resume : common_text.ESP.resume;
     },
     resumeFileName() {
       return this.language
@@ -131,9 +123,7 @@ export default {
         : common_text.ESP.developed;
     },
     poweredByCaption() {
-      return this.language
-        ? common_text.ENG.powered
-        : common_text.ESP.powered;
+      return this.language ? common_text.ENG.powered : common_text.ESP.powered;
     },
   },
   methods: {

@@ -1,9 +1,9 @@
 {
-	"welcome": "Welcome. I'm Enrique Ramos Diaz",
+	"welcome": "Welcome, I'm Enrique Ramos Diaz",
 
 	"introduction": "Passionate for machine learning.<br/> I trust that in the near future the artificial intelligence will be the core of all the world's production systems in every known scope.<br/> Learning, discovering new technologies and different ways to do the same thing is what makes for me the computer systems such an interesting, valuable and exciting field.<br/> Strongly believer that the natural skill is fine, but hard working and persistence to improve is better.<br/> If you want something to be done good, do it by yourself.<br/> Love the music, the sports, the art and the cinema.",
 
-	"header": "Bachelor of Science in Computers Systems Engineering at ESCOM - IPN<br/>Technician Degree in Computation at CECyT No. 8 - IPN",
+	"header": "<b>Full Stack Developer at NCR Corporation</b><br/>Bachelor of Science in Computers Systems Engineering graduated at ESCOM - IPN<br/>Technician Degree in Computation graduated at CECyT No. 8 - IPN<br/>",
 	
 	"projects": [
 		{
@@ -12,6 +12,7 @@
 			"title": "Personalized Advertising",
 			"description": "This is a <b>personalized advertising system for the clients</b> of the drinks company <b>BubbleTown</b> using <b>computer vision and deep learning</b>. Through a camera the video from the exterior of the BubbleTown's place is obtained, then its frames are extracted and processed in order to been analyzed with 3 <b>convolutional neuronal networks</b> to detect <b>faces</b> and, from it, <b>the age, the gender and the personality</b> of a potential client. Based on this parameters, a <b>drink is recommended</b> to him or her and it's displayed near to his or her face with <b>augmented reality</b>. Implemented in the minicomputer <b>NVIDIA Jetson AGX Xavier</b>.",
 			"badges": ["TensorFlow", "TensorRT", "CNN", "KNN", "SSD", "MobileNet", "RTSP", "Python", "OpenCV", "Augmented Reality", "NumPy", "MongoDB", "NVIDIA", "Jetpack", "Classification", "Regression", "GStreamer"],
+			"roles": ["Deep Learning Developer", "Computer Vision Developer"],
 			"authors": ["Arturo Lara", "Victor Morales"],
 			"infoButton": "./projects/TT_II_2019_B059_FIRMADO.pdf",
 			"githubButton": "https://github.com/brokenerk/PublicidadBT",
@@ -23,7 +24,7 @@
 			"icon": "fa fa-delicious fa-2x",
 			"title": "Neuronal Networks",
 			"description": "These are various exercises with <b>neuronal networks</b> using <b>TensorFlow 2</b> and <b>Keras</b>, mostly <b>convolutional</b>. Some of these are the following: color and geometric shapes classification with a common <b>MLP</b>, descending gradient examples, models using the <b>MNIST dataset</b>, classifiers of fictional characters and typical dishes from the mexican food, and even <b>object detection models</b> such as the <b>Single Shot Detection</b> with personalized re-trainings, that also include its implementation in the <b>TensorRT SDK</b>. Additionaly, the <b>preprocessing</b> of the <b>data</b> to get a more effective training with better results is shown.",
-			"badges": ["TensorFlow", "TensorBoard", "Keras", "Jupyter Notebook", "NumPy", "AutoEncoder", "Scikit Learn", "Classification", "CNN", "MLP", "SSD", "MNIST", "MobileNet", "Data Augmentation", "TensorRT", "COCO"],
+			"badges": ["TensorFlow", "TensorBoard", "Keras", "Python", "Jupyter Notebook", "NumPy", "AutoEncoder", "Scikit Learn", "CNN", "MLP", "SSD", "MNIST", "MobileNet", "Data Augmentation", "TensorRT", "COCO"],
 			"githubButton": "https://github.com/brokenerk/Advanced-Neuronal-Networks",
 			"branchButton": "https://github.com/brokenerk/TRT-SSD-MobileNetV2",
 			"branchButtonTitle": "SSD+MobileNet TensorRT",
@@ -36,46 +37,51 @@
 			"description": "These are some practices done with data mining methods, using the libraries <b>Pandas</b> and <b>Scikit-learning</b> in Python. These examples include: implementation of <b>decision trees</b> for classification problems; use of <b>clustering</b> algorithms such as <b>K-Means, MST (Average and Complete Link), BIRCH, DBSCAN</b>, among others; analysis of datasets to identify the <b>correlations</b> between its classes and its <b>data distribution</b>; and exercises of <b>linear regressions</b> to predict behaviours. Additionaly, there are included <b>cleaning and preprocessing</b> methods of large datasets, <b>association and decision rules</b>.",
 			"badges": ["Pandas", "Scikit Learn", "Python", "Jupyter Notebook", "Clustering", "IRIS", "NumPy", "Decision Tree", "Linear Regression", "K-Means"],
 			"githubButton": "https://github.com/brokenerk/DataMining",
-			"color": "danger"
+			"color": "#dc3545"
 		},
 		{
 			"id": "siga",
 			"icon": "fa fa-usd fa-2x",
 			"title": "IPN SIG@ Contable",
 			"description": "<b>I worked 6 months for the IPN as web developer on its institutional systems</b>. My principal contributions were for the <b>SIG@</b> (Institutional Administrative Management System), where all the mexican IPN offices carry out the registration of information related to the <b>financial, accounting, human capital and material resources processes</b> of the institute. I was highly involved on the updates, maintenance and reengineering of the <b>accounting modules</b> as fullstack developer.",
-			"badges": ["ColdFusion", "jQuery", "JavaScript", "Bootstrap", "Datatables", "Select2", "HTML-CSS", "Oracle", "MVC", "SweetAlert2"],
+			"badges": ["ColdFusion", "jQuery", "JavaScript", "Bootstrap", "Datatables", "Select2", "SweetAlert2", "HTML-CSS", "Oracle", "MVC"],
+			"roles": ["Full Stack Developer"],
 			"takeALookButton": "https://www.siga.ipn.mx/",
 			"color": "#28a745"
+		},
+		{
+			"id": "papplus",
+			"icon": "fa fa-female fa-2x",
+			"title": "Columbia PapPlus ",
+			"description": "<b>Grupo Columbia</B> asked us this website for marketing and promotion of its product <b>PapPlus</B>, which helps to detect the <b>Human papillomavirus (HPV)</b> on <b>mexican women</b>. Includes 2 sections: one for the public in general and another for medic, each one with its respective modules according to the company's requirements. Offers user accounts management, infographics and data about HPV, the Grupo Columbia's products catalogue, a directory of specialized doctors, schedules of meetings with them and an informative blog.",
+			"badges": ["jQuery", "JavaScript", "Bootstrap", "HTML-CSS"],
+			"roles": ["Frontend Developer"],
+			"infoButton": "https://gcolumbia.com/",
+			"color": "#E8318B"
 		},
 		{
 			"id": "compiler",
 			"icon": "fa fa-file-code-o fa-2x",
 			"title": "Compiler",
 			"description": "This is an attempt to implement the first half of the components from a compiler: we implemented a <b>lexical analyzer</b> of Deterministic Finite Automatas through tokens, and 6 parsers: creation of Deterministic Finite Automatas and Grammars using <b>recursive descent analysis, LL(1), LR(0), LR(1) and LALR</b>. Also, we offer <b>operations with Non deterministic Finite Automatas (NFA)</b>. <br/>Each automata is displayed in its graphic form.",
-			"badges": ["Flask", "Python", "jQuery", "Jinja2", "Vis.js", "Materialize"],
+			"badges": ["Python", "Flask", "jQuery", "Jinja2", "Vis.js", "Materialize"],
+			"roles": ["Full Stack Developer", "UI Developer"],
 			"authors": ["Abigail Nicolas", "Randy Guzman"],
 			"githubButton": "https://github.com/brokenerk/Compiladores",
 			"takeALookButton": "https://com-piler.herokuapp.com/",
 			"color": "#007bff"
 		},
 		{
-			"id": "cart",
-			"icon": "fa fa-cart-plus fa-2x",
-			"title": "Shopping Cart",
-			"description": "A basic shopping cart: it allows to create an account, edit  personal info such as address, login as an user that can add products to his or her cart, see and edit the amount of the products on it, remove them, proceed to checkout and even purchase the order. <br/>The system allows real credit cards and make charges, so keep in mind that!",
-			"badges": ["Hibernate", "Spring", "Struts2", "Conekta", "Bootstrap", "JSP", "PostgreSQL", "MVC"],
-			"githubButton": "https://github.com/brokenerk/Shopping-Cart",
-			"takeALookButton": "https://shopping-cart-wad.herokuapp.com/products",
-			"color": "#343a40"
-		},
-		{
-			"id": "papplus",
-			"icon": "fa fa-usd fa-2x",
-			"title": "Columbia PapPlus ",
-			"description": "gggggggggggggggggggggggggggggggggggg",
-			"badges": ["jQuery", "JavaScript", "Bootstrap", "HTML-CSS"],
-			"infoButton": "https://gcolumbia.com/columbia-diagnostics",
-			"color": "#E8318B"
+			"id": "rand",
+			"icon": "fa fa-random fa-2x",
+			"title": "Random Seed",
+			"description": "This is the web implementation of the <b>Random Seed Algorithm</b>, used to solve complex linear programming problems.<br/> It's a iterative algorithm based on a number of populations, each one of the same size. Therefore, in this tool the populations info, the restrictions and the objective function can be entered.<br/> It displays all the iterations and find the most accurate result.",
+			"badges": ["Python", "Flask", "Jinja2", "jQuery", "JavaScript", "Materialize"],
+			"roles": ["Frontend Developer", "UI Developer"],
+			"authors": ["Arturo Lara"],
+			"githubButton": "https://github.com/brokenerk/MCTD/",
+			"takeALookButton": "https://random-mctd.herokuapp.com/",
+			"color": "#17a2b8"
 		},
 		{
 			"id": "saeeb",
@@ -83,9 +89,21 @@
 			"title": "SAEEB",
 			"description": "This is a web system prototype for academic managing of students from elementary schools in Mexico. <br/>The intention is that the account created will be used by the student's parents and it will allows to schedule appoinments with the teachers, check the student's grades, send emails or notes between de teachers and parents, update the student's academic and personal info, and also generate their global grades in PDF.",
 			"badges": ["PHP", "MySQL", "HTML-CSS", "JavaScript"],
+			"roles": ["Backend Developer", "Database Manager"],
 			"authors": ["Abigail Nicolas", "Yahir Carillo"],
 			"githubButton": "https://github.com/abiisnn/SAEEB",
 			"color": "#E89980"
+		},
+		{
+			"id": "cart",
+			"icon": "fa fa-cart-plus fa-2x",
+			"title": "Shopping Cart",
+			"description": "A basic shopping cart: it allows to create an account, edit  personal info such as address, login as an user that can add products to his or her cart, see and edit the amount of the products on it, remove them, proceed to checkout and even purchase the order. <br/>The system allows real credit cards and make charges, so keep in mind that!",
+			"badges": ["Java", "Hibernate", "Spring", "Struts2", "Conekta", "Bootstrap", "JSP", "PostgreSQL", "MVC"],
+			"roles": ["Full Stack Developer", "Database Manager", "UI Developer"],
+			"githubButton": "https://github.com/brokenerk/Shopping-Cart",
+			"takeALookButton": "https://shopping-cart-wad.herokuapp.com/products",
+			"color": "#343a40"
 		},
 		{
 			"id": "chat",
@@ -93,39 +111,19 @@
 			"title": "Multicast Chat",
 			"description": "This is a common public chat room that allows to send and receive text messages, images and also file links via multicast. All you have to do is login with an username. <br/>Also, if you want a private chat room, you have to select the user with whom you want to begin the conversation, and a new tab will open. <br/>Dont forget to allow pop-ups!",
 			"badges": ["Node.js", "jQuery", "JavaScript", "Socket.IO", "HTML-CSS", "Socket.IO-File-Upload"],
+			"roles": ["Frontend Developer"],
 			"authors": ["Abigail Nicolas"],
 			"githubButton": "https://github.com/brokenerk/Chat-Multicast",
 			"takeALookButton": "https://chat-multicast.herokuapp.com/",
 			"color": "#52987A"
 		},
 		{
-			"id": "rand",
-			"icon": "fa fa-random fa-2x",
-			"title": "Random Seed",
-			"description": "This is the web implementation of the <b>Random Seed Algorithm</b>, used to solve complex linear programming problems.<br/> It's a iterative algorithm based on a number of populations, each one of the same size. Therefore, in this tool the populations info, the restrictions and the objective function can be entered.<br/> It displays all the iterations and find the most accurate result.",
-			"badges": ["Flask", "Jinja2", "Python", "jQuery", "JSON", "Materialize"],
-			"authors": ["Arturo Lara"],
-			"githubButton": "https://github.com/brokenerk/MCTD/",
-			"takeALookButton": "https://random-mctd.herokuapp.com/",
-			"color": "#17a2b8"
-		},
-		{
-			"id": "stars",
-			"icon": "fa fa-star-half-o fa-2x",
-			"title": "Star Cluster",
-			"description": "This is a project that implements the <b>Brute Force Star Cluster Algorithm</b>. <br/>From a big population of stars in the sky (actually a bunch of points in a 2D space), the algorithm finds the two of them that have the minimum distance between each other. We put an animation of how the algorithm is supossed to be working when it calculates the distance from point to point.",
-			"badges": ["Vis.js", "Anime.js", "jQuery", "JavaScript", "Materialize"],
-			"authors": ["Abigail Nicolas", "Cynthia Parra"],
-			"githubButton": "https://github.com/brokenerk/brokenerk.github.io/tree/master/projects/CumuloEstrellas",
-			"takeALookButton": "./projects/CumuloEstrellas/index.html",
-			"color": "#007bff"
-		},
-		{
 			"id": "central",
 			"icon": "fa fa-desktop fa-2x",
 			"title": "Remote Visualizer",
 			"description": "<b>Distributed system</b> that allows viewing the screens of up to 30 remote computers in parallel from a central one. The screenshots update every 5 seconds and the quality of them can be selected. Uses <b>the Request-Responde protocol (improved UDP sockets)</b> so that the information doesn't get lost or repeated, guaranteeing the sending and receipt of the images. Perfect to use in a computer laboratory to monitor all at the same time. Implemented with the <b>web server Moongose</b>.",
-			"badges": ["C", "C++", "Mongoose", "Sockets", "JavaScript", "Bootstrap"],
+			"badges": ["C", "C++", "Mongoose", "Sockets", "jQuery", "JavaScript", "Bootstrap"],
+			"roles": ["Full Stack Developer", "UI Developer"],
 			"githubButton": "https://github.com/brokenerk/SistemasDistribuidos/tree/master/Proyectos/P3%20-%20CentralLab",
 			"color": "#6c757d"
 		},
@@ -135,16 +133,30 @@
 			"title": "Book Analyzer",
 			"description": "<b>Distributed system</b> that analyzes books in the spanish language as plain text files. Through 4 different servers extracts all the words from it, counts them and then compares them with the 10 thousand most frequently used words in spanish. The more words from this list the book has, the better percentage of understanding for the reader it will have. Implemented with the <b>web server Moongose and with the Request-Response protocol through improved UDP sockets</b>.",
 			"badges": ["C", "C++", "Mongoose", "Sockets", "Vue.js", "Vuetify"],
+			"roles": ["Backend Developer"],
 			"authors": ["Eric Trejo", "Luis Santuario", "Rafael Hernandez", "Ricardo Sagrero"],
 			"githubButton": "https://github.com/brokenerk/LibroUkranioFest",
 			"color": "#ffc107"
+		},
+		{
+			"id": "stars",
+			"icon": "fa fa-star-half-o fa-2x",
+			"title": "Star Cluster",
+			"description": "This is a project that implements the <b>Brute Force Star Cluster Algorithm</b>. <br/>From a big population of stars in the sky (actually a bunch of points in a 2D space), the algorithm finds the two of them that have the minimum distance between each other. We put an animation of how the algorithm is supossed to be working when it calculates the distance from point to point.",
+			"badges": ["Vis.js", "Anime.js", "jQuery", "JavaScript", "Materialize"],
+			"roles": ["Frontend Developer", "UI Developer"],
+			"authors": ["Abigail Nicolas", "Cynthia Parra"],
+			"githubButton": "https://github.com/brokenerk/brokenerk.github.io/tree/master/projects/CumuloEstrellas",
+			"takeALookButton": "./projects/CumuloEstrellas/index.html",
+			"color": "#007bff"
 		},
 		{
 			"id": "oae",
 			"icon": "fa fa-calendar fa-2x",
 			"title": "Organize An Event",
 			"description": "A web system that controls the assistance and documentation in an academic ceremony. It allows to pass assistance using bar and QR codes. <br/>Additionaly it lets to get the statistics of the event (in PDF), generate the prizes for the guests in PDF as well, send their invitations via email, and to have differents types fo users (normal and admins).",
-			"badges": ["React", "Typescript", "Node.js", "Materialize", "PHP", "MySQL", "MVC"],
+			"badges": ["PHP", "React.js", "Typescript",  "Materialize", "NPM", "MySQL", "MVC"],
+			"roles": ["Backend Developer", "Database Manager"],
 			"authors": ["Oscar Rosas", "Abigail Nicolas"],
 			"githubButton": "https://github.com/SoyOscarRH/OrganizeAnEvent",
 			"color": "#243547"
@@ -155,10 +167,11 @@
 			"title": "Cobra 4.3",
 			"description": "A scholar excursions manager software for students from the CECyT No. 8 - IPN school that allows to teachers and directives to create and supervise these. When all the information is entered, the system generates all the formats needed by the directorate in Word format. It was a huge idea because before Cobra, all the documents were filled out by hand, making the process so stressful, slow and full of errors.",
 			"badges": ["VisualBasic", "Office Word", "Office Access"],
+			"roles": ["Backend Developer", "Database Manager"],
 			"authors": ["Maeli Dueñas", "Cesar Coronado", "Saul Garcia", "Tonathiu Cruz"],
 			"githubButton": "https://github.com/brokenerk/Cobra-4.3",
 			"downloadItButton": "./projects/cobra4.3-installer.zip",
-			"color": "#007bff"
+			"color": "#dc3545"
 		}
 	]
 }

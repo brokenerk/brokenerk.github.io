@@ -8,8 +8,8 @@
         {{ poweredByCaption }}
       </p>
       <p class="m-0 text-center text-white">
-        <img src="./../../assets/images/vuejs.png"/>
-        <img src="./../../assets/images/bootstrap.png"/>
+        <img src="./../../assets/images/vuejs.png" />
+        <img src="./../../assets/images/bootstrap.png" />
       </p>
     </div>
   </footer>
@@ -17,12 +17,12 @@
 
 <script>
 export default {
-  props: ['poweredByCaption', 'developedByCaption'],
+  props: ["poweredByCaption", "developedByCaption"],
   data() {
     return {
       actualYear: new Date().getFullYear(),
     };
-  }
+  },
 };
 </script>
 

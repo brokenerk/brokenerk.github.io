@@ -8,6 +8,6 @@
 
 <script>
 export default {
-  props: ["href", "target", "caption"]
+  props: ["href", "target", "caption"],
 };
 </script>
