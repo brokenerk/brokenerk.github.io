@@ -47,9 +47,7 @@
 <script>
 // JSONs
 import common_text from "./assets/texts/common_text.json";
-import ENG from "./assets/texts/ENG.json";
-import ESP from "./assets/texts/ESP.json";
-
+import projects_text from "./assets/texts/projects_text.json";
 //Components
 import TheNavbar from "./components/UI/TheNavbar.vue";
 import AboutMeCard from "./components/AboutMe/AboutMeCard.vue";
@@ -64,6 +62,11 @@ export default {
     ProjectCard,
     TheFooter,
     LanguageSwitch,
+  },
+  data() {
+    return {
+      projects: projects_text.projects
+    }
   },
   computed: {
     language() {
@@ -86,16 +89,13 @@ export default {
         : common_text.ESP.resumeFile;
     },
     welcomeText() {
-      return this.language ? ENG.welcome : ESP.welcome;
+      return this.language ? common_text.ENG.welcome : common_text.ESP.welcome;
     },
     introductionText() {
-      return this.language ? ENG.introduction : ESP.introduction;
+      return this.language ? common_text.ENG.introduction : common_text.ESP.introduction;
     },
     headerText() {
-      return this.language ? ENG.header : ESP.header;
-    },
-    projects() {
-      return this.language ? ENG.projects : ESP.projects;
+      return this.language ? common_text.ENG.header : common_text.ESP.header;
     },
     takeALookCaption() {
       return this.language

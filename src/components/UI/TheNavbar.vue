@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <!--Brokenerk-->
       <a class="nav-link text-white" href="#">
-        <span class="navbar-brand mb-0 h1">Enrique Ramos</span>
+        <span class="navbar-brand mb-0 h1">Enrique Ramos Diaz</span>
       </a>
       <!--Boton responsive-->
       <button class="navbar-toggler" @click="collapseNavbarList">

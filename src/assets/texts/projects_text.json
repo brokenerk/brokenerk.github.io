@@ -1,0 +1,276 @@
+{
+	"projects": [
+		{
+			"id": "tt",
+			"icon": "fa fa-smile-o fa-2x",
+			"title": {
+				"ENG": "Personalized Advertising",
+				"ESP": "Publicidad Personalizada"
+			},
+			"description": {
+				"ENG": "This is a <b>personalized advertising system for the clients</b> of the drinks company <b>BubbleTown</b> using <b>computer vision and deep learning</b>. Through a camera the video from the exterior of the BubbleTown's place is obtained, then its frames are extracted and processed in order to been analyzed with 3 <b>convolutional neuronal networks</b> to detect <b>faces</b> and, from it, <b>the age, the gender and the personality</b> of a potential client. Based on this parameters, a <b>drink is recommended</b> to him or her and it's displayed near to his or her face with <b>augmented reality</b>. Implemented in the minicomputer <b>NVIDIA Jetson AGX Xavier</b>.",
+				
+				"ESP": "Este es un sistema de <b>publicidad dirigida a clientes</b> de la empresa de bebidas <b>BubbleTown</b> utilizando <b>visi&oacute;n por computadora y aprendizaje profundo</b>. Por medio de una c&aacute;mara se obtiene video del exterior del local de BubbleTown, despu&eacute;s se extraen y procesan im&aacute;genes del mismo para ser analizadas con 3 <b>redes neuronales convolucionales</b> para detectar <b>rostros</b> y, a partir de estos, <b>la edad, el g&eacute;nero y la personalidad</b> de dicho cliente potencial. Con base a estos par&aacute;metros, se le <b>recomienda una bebida</b> y se despliega al lado de su rostro con <b>realidad aumentada</b>. Implementado en la minicomputadora <b>NVIDIA Jetson AGX Xavier</b>."
+			},
+			"badges": ["TensorFlow", "TensorRT", "CNN", "KNN", "SSD", "MobileNet", "RTSP", "Python", "OpenCV", "Augmented Reality", "NumPy", "MongoDB", "NVIDIA", "Jetpack", "Classification", "Regression", "GStreamer"],
+			"roles": ["Deep Learning Developer", "Computer Vision Developer"],
+			"authors": ["Arturo Lara", "Victor Morales"],
+			"infoButton": "./projects/TT_II_2019_B059_FIRMADO.pdf",
+			"githubButton": "https://github.com/brokenerk/PublicidadBT",
+			"takeALookButton": "./projects/videoTestRA.mp4",
+			"color": "#343a40"
+		},
+		{
+			"id": "cnn",
+			"icon": "fa fa-delicious fa-2x",
+			"title": {
+				"ENG": "Neuronal Networks",
+				"ESP": "Redes Neuronales"
+			},
+			"description": {
+				"ENG": "These are various exercises with <b>neuronal networks</b> using <b>TensorFlow 2</b> and <b>Keras</b>, mostly <b>convolutional</b>. Some of these are the following: color and geometric shapes classification with a common <b>MLP</b>, descending gradient examples, models using the <b>MNIST dataset</b>, classifiers of fictional characters and typical dishes from the mexican food, and even <b>object detection models</b> such as the <b>Single Shot Detection</b> with personalized re-trainings, that also include its implementation in the <b>TensorRT SDK</b>. Additionaly, the <b>preprocessing</b> of the <b>data</b> to get a more effective training with better results is shown.",
+
+				"ESP": "Estos son diversos ejercicios con <b>redes neuronales</b> utilizando <b>TensorFlow 2</b> y <b>Keras</b>, principalmente <b>convolucionales</b>. Algunos de estos son: clasificaci&oacute;n de colores y formas geom&eacute;tricas con un <b>MLP</b> com&uacute;n, ejemplos del <b>gradiente descendiente</b>, modelos utilizando el <b>dataset MNIST</b>, clasificadores de personajes de ficci&oacute;n y de platillos t&iacute;picos de comida mexicana, e incluso <b>modelos de detecci&oacute;n de objetos</b> como la <b>Single Shot Detection</b> con reentrenamientos personalizados, que adem&aacute;s incluye su implementaci&oacute;n en <b>TensorRT</b>. Adicionalmente, se muestra el <b>preprocesamiento</b> de los <b>datos</b> para obtener un entrenamiento m&aacute;s eficaz con mejores resultados."
+			} ,
+			"badges": ["TensorFlow", "TensorBoard", "Keras", "Python", "Jupyter Notebook", "NumPy", "AutoEncoder", "Scikit Learn", "CNN", "MLP", "SSD", "MNIST", "MobileNet", "Data Augmentation", "TensorRT", "COCO"],
+			"githubButton": "https://github.com/brokenerk/Advanced-Neuronal-Networks",
+			"branchButton": "https://github.com/brokenerk/TRT-SSD-MobileNetV2",
+			"branchButtonTitle": "SSD+MobileNet TensorRT",
+			"color": "#17a2b8"
+		},
+		{
+			"id": "data-mining",
+			"icon": "fa fa-table fa-2x",
+			"title": {
+				"ENG": "Data Mining",
+				"ESP": "Miner\u00EDa de Datos"
+			},
+			"description": {
+				"ENG": "These are some practices done with data mining methods, using the libraries <b>Pandas</b> and <b>Scikit-learning</b> in Python. These examples include: implementation of <b>decision trees</b> for classification problems; use of <b>clustering</b> algorithms such as <b>K-Means, MST (Average and Complete Link), BIRCH, DBSCAN</b>, among others; analysis of datasets to identify the <b>correlations</b> between its classes and its <b>data distribution</b>; and exercises of <b>linear regressions</b> to predict behaviours. Additionaly, there are included <b>cleaning and preprocessing</b> methods of large datasets, <b>association and decision rules</b>.",
+
+				"ESP": "Algunas pr&aacute;cticas realizadas con m&eacute;todos de <b>miner&iacute;a de datos</b>, utilizando las librer&iacute;as <b>Pandas</b> y <b>Scikit-learning</b> en Python. Entre estos destacan: implementaci&oacute;n de <b>&aacute;rboles de decisi&oacute;n</b> para problemas de clasificaci&oacute;n; uso de algoritmos de <b>clustering</b> como <b>K-Medias, MST (Enlace Promedio y Completo), BIRCH, DBSCAN</b>, entre otros; an&aacute;lisis de conjuntos de datos para identificar las <b>correlaciones</b> entre las clases de este y su <b>distribuci&oacute;n</b>; y ejercicios de <b>regresiones lineales</b> para predecir comportamientos. Tambi&eacute;n se incluyen m&eacute;todos de <b>limpieza y preprocesamiento</b> de grandes conjuntos de datos, <b>reglas de asociaci&oacute;n y de decisi&oacute;n.</b>"
+			},
+			"badges": ["Pandas", "Scikit Learn", "Python", "Jupyter Notebook", "Clustering", "IRIS", "NumPy", "Decision Tree", "Linear Regression", "K-Means"],
+			"githubButton": "https://github.com/brokenerk/DataMining",
+			"color": "#dc3545"
+		},
+		{
+			"id": "siga",
+			"icon": "fa fa-usd fa-2x",
+			"title": {
+				"ENG": "IPN SIG@ Contable",
+				"ESP": "IPN SIG@ Contable"
+			},
+			"description": {
+				"ENG": "<b>I worked 6 months for the IPN as web developer on its institutional systems</b>. My principal contributions were for the <b>SIG@</b> (Institutional Administrative Management System), where all the mexican IPN offices carry out the registration of information related to the <b>financial, accounting, human capital and material resources processes</b> of the institute. I was highly involved on the updates, maintenance and reengineering of the <b>accounting modules</b>.",
+
+				"ESP": "<b>Trabaj&eacute; 6 meses para el IPN como desarrollador web en sus sistemas institucionales</b>. Mis principales contribuciones fueron en <b>SIG@</b> (Sistema Institucional de Gesti&oacute;n Administrativa), en donde todas las dependencias mexicanas del IPN llevan a cabo el registro de la informaci&oacute;n relacionada a los <b>procesos financieros, contables, de capital humano y recursos materiales</b> del instituto. Estuve altamente involucrado en las actualizaciones, mantenimiento y reingenier&iacute;a del <b>m&oacute;dulo de contabilidad</b>."
+			},
+			"badges": ["ColdFusion", "jQuery", "JavaScript", "Bootstrap", "Datatables", "Select2", "SweetAlert2", "HTML-CSS", "Oracle", "MVC"],
+			"roles": ["Full Stack Developer"],
+			"takeALookButton": "https://www.siga.ipn.mx/",
+			"color": "#28a745"
+		},
+		{
+			"id": "papplus",
+			"icon": "fa fa-female fa-2x",
+			"title": {
+				"ENG": "Columbia PapPlus",
+				"ESP": "Columbia PapPlus"
+			},
+			"description": {
+				"ENG": "<b>Grupo Columbia</B> asked us this website for marketing and promotion of its product <b>PapPlus</B>, which helps to detect the <b>Human papillomavirus (HPV)</b> on <b>mexican women</b>. Includes 2 sections: one for the public in general and another for medic, each one with its respective modules according to the company's requirements. Offers user accounts management, infographics and data about HPV, the Grupo Columbia's products catalogue, a directory of specialized doctors, schedules of meetings with them and an informative blog.",
+
+				"ESP": "<b>Grupo Columbia</b> nos solicit&oacute; este sitio web para marketing y promoci&oacute;n de su producto <b>PapPlus</b>, el cual ayuda a detectar el <b>Virus del Papiloma Humano (VPH)</b> en <b>mujeres mexicanas</b>. Incluye 2 secciones: una para el p&uacute;blico en general y otra para m&eacute;dicos, cada una con sus respectivos m&oacute;dulos segun los requerimientos de la empresa. Ofrece el manejo de cuentas de usuario, infograf&iacute;as y datos sobre el VPH, el cat&aacute;logo de productos de Grupo Columbia, un directorio de doctores especializados, agenda de citas con estos y un blog informativo."
+			},
+			"badges": ["jQuery", "JavaScript", "Bootstrap", "HTML-CSS"],
+			"roles": ["Frontend Developer"],
+			"infoButton": "https://gcolumbia.com/",
+			"color": "#E8318B"
+		},
+		{
+			"id": "compiler",
+			"icon": "fa fa-file-code-o fa-2x",
+			"title": {
+				"ENG": "Compiler",
+				"ESP": "Compilador"
+			},
+			"description": {
+				"ENG": "This is an attempt to implement the first half of the components from a compiler: we implemented a <b>lexical analyzer</b> of Deterministic Finite Automatas through tokens, and 6 parsers: creation of Deterministic Finite Automatas and Grammars using <b>recursive descent analysis, LL(1), LR(0), LR(1) and LALR</b>. Also, we offer <b>operations with Non deterministic Finite Automatas (NFA)</b>. <br/>Each automata is displayed in its graphic representation.",
+
+				"ESP": "Esta es una implementaci&oacute;n tentativa de la primera mitad de los componentes de un compilador: implementamos un <b>analizador l&eacute;xico</b> de Aut&oacute;matas Finitos Deterministas por medio de tokens, y 6 analizadores sint&aacute;cticos: creaci&oacute;n de Aut&oacute;matas Finitos Deterministas y Gram&aacute;ticas utilizando <b>an&aacute;lisis descendiente recursivo, LL(1), LR(0), LR(1) y LALR</b>. Adem&aacute;s, brindamos <b>operaciones con Aut&oacute;matas Finitos No Deterministas (NFA)</b>.<br/> Cada aut&oacute;mata se despliega en su representaci&oacute;n gr&aacute;fica."
+			},
+			"badges": ["Python", "Flask", "jQuery", "Jinja2", "Vis.js", "Materialize"],
+			"roles": ["Full Stack Developer", "UI Developer"],
+			"authors": ["Abigail Nicolas", "Randy Guzman"],
+			"githubButton": "https://github.com/brokenerk/Compiladores",
+			"takeALookButton": "https://com-piler.herokuapp.com/",
+			"color": "#007bff"
+		},
+		{
+			"id": "rand",
+			"icon": "fa fa-random fa-2x",
+			"title": {
+				"ENG": "Random Seed",
+				"ESP": "Semilla Aleatoria"
+			},
+			"description": {
+				"ENG": "This is the web implementation of the <b>Random Seed Algorithm</b>, that is used to solve complex linear programming problems.<br/> It's a iterative algorithm based on a number of populations, each one of the same size. Therefore, in this tool the populations info, the restrictions and the objective function can be entered.<br/> It displays all the iterations and find the most accurate result.",
+
+				"ESP": "Esta es la implementaci&oacute;n web del <b>Algoritmo de Semilla Aleatoria</b>, que es utilizado para resolver problemas complejos de programaci&oacute;n lineal.<br/> Es un algoritmo iterativo basado en un n&uacute;mero de poblaciones, cada una del mismo tama&ntilde;o. Por lo tanto, en esta herramienta se puede ingresar la infomaci&oacute;n de las poblaciones, las restricciones y la funci&oacute;n objetivo.<br/> Muestra todas las iteraciones y encuentra el resultado m&aacute;s preciso."
+			},
+			"badges": ["Python", "Flask", "Jinja2", "jQuery", "JavaScript", "Materialize"],
+			"roles": ["Frontend Developer", "UI Developer"],
+			"authors": ["Arturo Lara"],
+			"githubButton": "https://github.com/brokenerk/MCTD/",
+			"takeALookButton": "https://random-mctd.herokuapp.com/",
+			"color": "#17a2b8"
+		},
+		{
+			"id": "saeeb",
+			"icon": "fa fa-graduation-cap fa-2x",
+			"title": {
+				"ENG": "SAEEB",
+				"ESP": "SAEEB"
+			},
+			"description": {
+				"ENG": "This is a web system prototype for academic managing of students from elementary schools in Mexico. <br/>The intention is that the account created will be used by the student's parents or tutors and it will allows to schedule appoinments with the teachers, check the student's grades, send emails or notes between de teachers and parents, update the student's academic and personal info, and also generate their global grades in PDF.",
+
+				"ESP": "Este es un prototipo de un sistema web para la administraci&oacute;n de estudiantes de escuelas secundarias en M&eacute;xico. <br/> La intenci&oacute;n es que la cuenta creada sea utilizada por los padres o tutores del alumno y permitir&aacute; agendar citas con los profesores, revisar las calificaciones del alumno, enviar emails, avisos o recados entre padres de familia y profesores, actualizar la infomaci&oacute;n acad&eacute;mica y personal del estudiante, e incluso generar la boleta global de calificaciones del alumno en PDF."
+			},
+			"badges": ["PHP", "MySQL", "HTML-CSS", "JavaScript"],
+			"roles": ["Backend Developer", "Database Manager"],
+			"authors": ["Abigail Nicolas", "Yahir Carillo"],
+			"githubButton": "https://github.com/abiisnn/SAEEB",
+			"color": "#E89980"
+		},
+		{
+			"id": "cart",
+			"icon": "fa fa-cart-plus fa-2x",
+			"title": {
+				"ENG": "Shopping Cart",
+				"ESP": "Carrito de compras"
+			},
+			"description": {
+				"ENG": "A basic shopping cart: it allows to create an account, edit  personal info such as address, login as an user that can add products to his or her cart, see and edit the amount of the products on it, remove them, proceed to checkout and even purchase the order. <br/>The system allows real credit cards and make charges with the help of the Conekta API, so keep in mind that!",
+
+				"ESP": "Un carrito de compras b&aacute;sico: permite crear una cuenta, editar informaci&oacute;n personal como lo es el domicilio, acceder como un usuario que puede agregar productos a su carrito, ver y editar la cantidad de estos, removerlos del carrito, proceder al pago e incluso comprar la orden.<br/> El sistema admite tarjetas de cr&eacute;dito reales y realiza cargos con ayuda de la API Conekta, ¡as&iacute; que t&eacute;ngalo en mente!"
+			},
+			"badges": ["Java", "Hibernate", "Spring", "Struts2", "Conekta", "Bootstrap", "JSP", "PostgreSQL", "MVC"],
+			"roles": ["Full Stack Developer", "Database Manager", "UI Developer"],
+			"githubButton": "https://github.com/brokenerk/Shopping-Cart",
+			"takeALookButton": "https://shopping-cart-wad.herokuapp.com/products",
+			"color": "#343a40"
+		},
+		{
+			"id": "chat",
+			"icon": "fa fa-comments fa-2x",
+			"title": {
+				"ENG": "Multicast Chat",
+				"ESP": "Chat Multicast"
+			},
+			"description": {
+				"ENG": "This is a common public chat room that allows to send and receive text messages, images and also file links via multicast. All you have to do is login with an username. <br/>Also, if you want a private chat room, you have to select the user with whom you want to begin the conversation, and a new tab will open. <br/>Dont forget to allow pop-ups!",
+
+				"ESP": "Esta es una sala de chat p&uacute;blica com&uacute;n que permite enviar y recibir mensajes de texto, im&aacute;genes e incluso links de archivos v&iacute;a multicast. Todo lo que se debe de hacer es acceder con un nombre de usuario. <br/> Incluso, si se desea una sala de chat privada, puede seleccionar al usuario con el que se quiera iniciar dicha conversaci&oacute;n, y una nueva ventana se abrir&aacute;.<br/> ¡No olvide permitir los pop-ups!"
+			},
+			"badges": ["Node.js", "jQuery", "JavaScript", "Socket.IO", "HTML-CSS", "Socket.IO-File-Upload"],
+			"roles": ["Frontend Developer"],
+			"authors": ["Abigail Nicolas"],
+			"githubButton": "https://github.com/brokenerk/Chat-Multicast",
+			"takeALookButton": "https://chat-multicast.herokuapp.com/",
+			"color": "#52987A"
+		},
+		{
+			"id": "central",
+			"icon": "fa fa-desktop fa-2x",
+			"title": {
+				"ENG": "Remote Visualizer",
+				"ESP": "Visualizador Remoto"
+			},
+			"description": {
+				"ENG": "<b>Distributed system</b> that allows viewing the screens of up to 30 remote computers in parallel from a central one. The screenshots update every 5 seconds and the quality of them can be selected. Uses <b>the Request-Responde protocol (improved UDP sockets)</b> so that the information doesn't get lost or repeated, guaranteeing the sending and receipt of the images. Perfect to use in a computer laboratory to monitor all at the same time. Implemented with the <b>web server Moongose</b>.",
+
+				"ESP": "<b>Sistema distribuido</b> que permite visualizar las pantallas de hasta 30 computadoras remotas en paralelo desde un equipo central. Las capturas de pantalla se actualizan cada 5 segundos y se puede seleccionar su calidad. Utiliza <b>el protocolo Solicitud-Respuesta (sockets UDP mejorados)</b> para que la informaci&oacute;n no se pierda ni llegue repetida, garantizando el envio y recibo de las im&aacute;genes. Perfecto para utilizarse en laboratorios de computadoras para monitorear todas al mismo tiempo. Implementado con el <b>servidor web Mongoose</b>."
+			},
+			"badges": ["C", "C++", "Mongoose", "Sockets", "jQuery", "JavaScript", "Bootstrap"],
+			"roles": ["Full Stack Developer", "UI Developer"],
+			"githubButton": "https://github.com/brokenerk/SistemasDistribuidos/tree/master/Proyectos/P3%20-%20CentralLab",
+			"color": "#6c757d"
+		},
+		{
+			"id": "ukraniofest",
+			"icon": "fa fa-book fa-2x",
+			"title": {
+				"ENG": "Book Analyzer",
+				"ESP": "Analizador de Libros"
+			},
+			"description": {
+				"ENG": "<b>Distributed system</b> that analyzes books in the spanish language as plain text files. Through 4 different servers extracts all the words from it, counts them and then compares them with the 10 thousand most frequently used words in spanish. The more words from this list the book has, the better percentage of understanding for the reader it will have. Implemented with the <b>web server Moongose and with the Request-Response protocol through improved UDP sockets</b>.",
+
+				"ESP": "<b>Sistema distribuido</b> que analiza libros en el idioma espa&ntilde;ol en forma de archivos de texto plano. Por medio de 4 servidores distintos extrae todas las palabras de &eacute;ste, las contabiliza y despu&eacute;s las compara con las 10 mil palabras más frecuentes utilizadas en el espa&ntilde;ol. Mientras m&aacute;s palabras de este listado tenga el libro, mejor porcentaje de comprensi&oacute;n para el lector tendr&aacute;. Implementado con el <b>servidor web Mongoose y el protocolo Solicitud-Respuesta por medio de sockets UDP mejorados</b>."
+			},
+			"badges": ["C", "C++", "Mongoose", "Sockets", "Vue.js", "Vuetify"],
+			"roles": ["Backend Developer"],
+			"authors": ["Eric Trejo", "Luis Santuario", "Rafael Hernandez", "Ricardo Sagrero"],
+			"githubButton": "https://github.com/brokenerk/LibroUkranioFest",
+			"color": "#ffc107"
+		},
+		{
+			"id": "stars",
+			"icon": "fa fa-star-half-o fa-2x",
+			"title": {
+				"ENG": "Star Cluster",
+				"ESP": "C\u00FAmulo de Estrellas"
+			},
+			"description": {
+				"ENG": "This is a project that implements the <b>Brute Force Star Cluster Algorithm</b>. <br/>From a big population of stars in the sky (actually a bunch of points in a 2D space), the algorithm finds the two of them that have the minimum distance between each other. We put an animation of how the algorithm is supossed to be working when it calculates the distance from point to point.",
+
+				"ESP": "Este es un proyecto que implementa el <b>Algoritmo de C&uacute;mulo de Estrellas por Fuerza Bruta</b>. <br/> De una gran cantidad de estrellas en el cielo (que realmente son una gran cantidad de puntos en un espacio 2D), el algoritmo encuentra aquellas dos de entre todas que tengan la distancia minima entre ellas. Pusimos una animaci&oacute;n de como el algoritmo deber&iacute;a trabajar cuando calcula la distancia entre cada uno de los puntos."
+			},
+			"badges": ["Vis.js", "Anime.js", "jQuery", "JavaScript", "Materialize"],
+			"roles": ["Frontend Developer", "UI Developer"],
+			"authors": ["Abigail Nicolas", "Cynthia Parra"],
+			"githubButton": "https://github.com/brokenerk/brokenerk.github.io/tree/master/projects/CumuloEstrellas",
+			"takeALookButton": "./projects/CumuloEstrellas/index.html",
+			"color": "#007bff"
+		},
+		{
+			"id": "oae",
+			"icon": "fa fa-calendar fa-2x",
+			"title": {
+				"ENG": "Organize An Event",
+				"ESP": "Organizador de Eventos"
+			},
+			"description": {
+				"ENG": "A web system that controls the assistance and documentation in an academic ceremony. It allows to pass assistance using bar and QR codes. <br/>Additionaly it lets to get the statistics of the event (in PDF), generate the prizes for the guests in PDF as well, send their invitations via email, and to have differents types fo users (standard and administrators).",
+
+				"ESP": "Un sistema web para controlar la asistencia y la documentaci&oacute;n en una ceremonia acad&eacute;mica. Permite pasar asistencia utilizando c&oacute;digos de barras y QR. <br/> Adicionalmente permite obtener las estad&iacute;sticas del evento (en PDF), generar los reconocimientos para los invitados tambi&eacute;n en PDF, enviarles sus invitaciones via email, y tener diferentes tipos de usuarios (est&aacute;ndares y administradores)."
+			},
+			"badges": ["PHP", "React.js", "Typescript",  "Materialize", "NPM", "MySQL", "MVC"],
+			"roles": ["Backend Developer", "Database Manager"],
+			"authors": ["Oscar Rosas", "Abigail Nicolas"],
+			"githubButton": "https://github.com/SoyOscarRH/OrganizeAnEvent",
+			"color": "#243547"
+		},
+		{
+			"id": "cobra",
+			"icon": "fa fa-window-restore fa-2x",
+			"title": {
+				"ENG": "Cobra 4.3",
+				"ESP": "Cobra 4.3"
+			},
+			"description": {
+				"ENG": 			"A scholar excursions manager software for students from the CECyT No. 8 - IPN school that allows to teachers and directives to create and supervise these. When all the information is entered, the system generates all the formats needed by the directorate in Word format. It was a huge idea because before Cobra, all the documents were filled out by hand, making the process so stressful, slow and full of errors.",
+
+				"ESP": "Un software de gestor de visitas para alumnos del CECyT No. 8 - IPN que permite a los maestros y directivos crear y supervisar dichas excursiones. Cuando toda la informaci&oacute;n es ingresada, el sistema genera todos los formatos necesitados por la direcci&oacute;n en formato de Word. Fue una gran idea porque antes de Cobra, todos los documentos eran llenados a mano, haciendo este proceso muy estresante, lento y repleto de errores."
+			},
+			"badges": ["VisualBasic", "Office Word", "Office Access"],
+			"roles": ["Backend Developer", "Database Manager"],
+			"authors": ["Maeli Dueñas", "Cesar Coronado", "Saul Garcia", "Tonathiu Cruz"],
+			"githubButton": "https://github.com/brokenerk/Cobra-4.3",
+			"downloadItButton": "./projects/cobra4.3-installer.zip",
+			"color": "#dc3545"
+		}
+	]
+}

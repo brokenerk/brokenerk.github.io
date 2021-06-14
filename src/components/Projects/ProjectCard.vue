@@ -18,12 +18,12 @@
             class="col-10 col-sm-10 col-md-10 col-lg-10"
             style="padding-top: 0.2rem"
           >
-            <h5 class="card-title">{{ project.title }}</h5>
+            <h5 class="card-title">{{ projectTitle }}</h5>
           </div>
         </div>
 
         <!-- DESCRIPCION -->
-        <p class="card-text" v-html="project.description"></p>
+        <p class="card-text" v-html="projectDescription"></p>
 
         <div class="mt-auto">
           <!-- TECNOLOGIAS -->
@@ -119,6 +119,15 @@ export default {
     "moreInfoCaption",
   ],
   computed: {
+    language() {
+      return this.$store.getters.englishLanguage;
+    },
+    projectTitle() {
+      return this.language ? this.project.title.ENG : this.project.title.ESP;
+    },
+    projectDescription() {
+      return this.language ? this.project.description.ENG : this.project.description.ESP;
+    },
     checkColor() {
       return this.project.color === "#6c757d" ? "#f8f9fa" : this.project.color;
     },
