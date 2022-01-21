@@ -7,6 +7,8 @@ npm run build
 cd dist
 
 git init
+git config user.name "brokenerk"
+git config user.email "e_ramosdiaz_@outlook.com"
 git add -A
 git commit -m 'deploy'
 
