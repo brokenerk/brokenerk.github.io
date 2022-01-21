@@ -16,4 +16,4 @@ git commit -m 'deploy'
 git push -f https://github.com/brokenerk/brokenerk.github.io.git master
 
 cd ..
-rm -r dist
+rm -r -f dist
