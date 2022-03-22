@@ -20,11 +20,13 @@ export default {
           link: "https://github.com/brokenerk",
           icon: "fa fa-github fa-3x",
         },
+        /*
         {
           id: "facebook",
           link: "https://www.facebook.com/brokenerk",
           icon: "fa fa-facebook-square fa-3x",
         },
+        */
         {
           id: "linkedin",
           link: "https://www.linkedin.com/in/eramosd/",
@@ -36,12 +38,12 @@ export default {
           link: "https://api.whatsapp.com/send?phone=5215583903993",
           icon: "fa fa-whatsapp fa-3x",
         },
+        */
         {
           id: "email",
-          link: "mailto: e_ramosdiaz_",
+          link: "mailto: e_ramosdiaz_@outlook.com",
           icon: "fa fa-envelope fa-3x",
         },
-        */
       ],
     };
   },
