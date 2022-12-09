@@ -17,7 +17,6 @@
 			"authors": ["Arturo Lara", "Victor Morales", "Marco A. Moreno", "Carlos A. Duchanoy", "Hiram Calvo"],
 			"infoButton": "https://www.mdpi.com/1424-8220/22/1/63",
 			"githubButton": "https://github.com/vicleo14/PublicidadBT",
-			"takeALookButton": "https://drive.google.com/file/d/1XNv5YwEVTe7iRh6umMDjqvnvmCyIbu6f/view",
 			"color": "#343a40"
 		},
 		{
@@ -70,23 +69,6 @@
 			"roles": ["Full Stack Developer"],
 			"takeALookButton": "https://www.siga.ipn.mx/",
 			"color": "#28a745"
-		},
-		{
-			"id": "papplus",
-			"icon": "fa fa-female fa-2x",
-			"title": {
-				"ENG": "Columbia PapPlus",
-				"ESP": "Columbia PapPlus"
-			},
-			"description": {
-				"ENG": "<b>Grupo Columbia</B> asked us this website for marketing and promotion of its product <b>PapPlus</B>, which helps to detect the <b>Human papillomavirus (HPV)</b> on <b>mexican women</b>. Includes 2 sections: one for the public in general and another for medic, each one with its respective modules according to the company's requirements. Offers user accounts management, infographics and data about HPV, the Grupo Columbia's products catalogue, a directory of specialized doctors, schedules of meetings with them and an informative blog.",
-
-				"ESP": "<b>Grupo Columbia</b> nos solicit&oacute; este sitio web para marketing y promoci&oacute;n de su producto <b>PapPlus</b>, el cual ayuda a detectar el <b>Virus del Papiloma Humano (VPH)</b> en <b>mujeres mexicanas</b>. Incluye 2 secciones: una para el p&uacute;blico en general y otra para m&eacute;dicos, cada una con sus respectivos m&oacute;dulos segun los requerimientos de la empresa. Ofrece el manejo de cuentas de usuario, infograf&iacute;as y datos sobre el VPH, el cat&aacute;logo de productos de Grupo Columbia, un directorio de doctores especializados, agenda de citas con estos y un blog informativo."
-			},
-			"badges": ["jQuery", "JavaScript", "Bootstrap", "HTML-CSS"],
-			"roles": ["Frontend Developer"],
-			"infoButton": "https://gcolumbia.com/",
-			"color": "#E8318B"
 		},
 		{
 			"id": "compiler",
