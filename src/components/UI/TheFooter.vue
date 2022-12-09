@@ -2,7 +2,7 @@
   <footer class="row py-4 bg-dark">
     <div class="container-fluid">
       <p class="m-0 text-center text-white">
-        {{ developedByCaption }} Enrique Ramos Diaz - Copyright {{ actualYear }}
+        {{ developedByCaption }} Enrique Ramos - Copyright {{ actualYear }}
       </p>
       <p class="m-0 text-center text-white">
         {{ poweredByCaption }}

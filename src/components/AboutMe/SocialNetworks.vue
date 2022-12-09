@@ -29,7 +29,7 @@ export default {
         */
         {
           id: "linkedin",
-          link: "https://www.linkedin.com/in/eramosd/",
+          link: "https://www.linkedin.com/in/enrique-ramos-07a9425c/",
           icon: "fa fa-linkedin-square fa-3x",
         },
         /*
