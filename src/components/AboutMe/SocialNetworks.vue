@@ -20,28 +20,14 @@ export default {
           link: "https://github.com/brokenerk",
           icon: "fa fa-github fa-3x",
         },
-        /*
-        {
-          id: "facebook",
-          link: "https://www.facebook.com/brokenerk",
-          icon: "fa fa-facebook-square fa-3x",
-        },
-        */
         {
           id: "linkedin",
-          link: "https://www.linkedin.com/in/enrique-ramos-07a9425c/",
+          link: "https://www.linkedin.com/in/eramos-/",
           icon: "fa fa-linkedin-square fa-3x",
         },
-        /*
-        {
-          id: "whatsapp",
-          link: "https://api.whatsapp.com/send?phone=5215583903993",
-          icon: "fa fa-whatsapp fa-3x",
-        },
-        */
         {
           id: "email",
-          link: "mailto: e_ramosdiaz_@outlook.com",
+          link: "mailto: er204863@outlook.com",
           icon: "fa fa-envelope fa-3x",
         },
       ],

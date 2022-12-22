@@ -2,10 +2,13 @@
   <div class="jumbotron">
     <div class="row">
       <!--Foto-->
-      <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-        <img src="./../../assets/images/photo.jpg" class="img-fluid" />
+      <div class="col-12 col-sm-12 col-md-1 col-lg-1">
       </div>
-      <div class="col-12 col-sm-12 col-md-9 col-lg-9">
+      <div class="col-12 col-sm-12 col-md-2 col-lg-2">
+        <br /><br />
+        <img src="./../../assets/images/photo.jpeg" class="img-fluid rounded-circle" />
+      </div>
+      <div class="col-12 col-sm-12 col-md-8 col-lg-8">
         <br />
         <div class="row">
           <!--Welcome Text-->

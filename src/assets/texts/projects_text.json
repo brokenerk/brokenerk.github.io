@@ -243,7 +243,7 @@
 				"ESP": "Cobra 4.3"
 			},
 			"description": {
-				"ENG": 			"A scholar excursions manager software for students from the CECyT No. 8 - IPN school that allows to teachers and directives to create and supervise these. When all the information is entered, the system generates all the formats needed by the directorate in Word format. It was a huge idea because before Cobra, all the documents were filled out by hand, making the process so stressful, slow and full of errors.",
+				"ENG": "A scholar excursions manager software for students from the CECyT No. 8 - IPN school that allows to teachers and directives to create and supervise these. When all the information is entered, the system generates all the formats needed by the directorate in Word format. It was a huge idea because before Cobra, all the documents were filled out by hand, making the process so stressful, slow and full of errors.",
 
 				"ESP": "Un software de gestor de visitas para alumnos del CECyT No. 8 - IPN que permite a los maestros y directivos crear y supervisar dichas excursiones. Cuando toda la informaci&oacute;n es ingresada, el sistema genera todos los formatos necesitados por la direcci&oacute;n en formato de Word. Fue una gran idea porque antes de Cobra, todos los documentos eran llenados a mano, haciendo este proceso muy estresante, lento y repleto de errores."
 			},
@@ -251,7 +251,6 @@
 			"roles": ["Backend Developer", "Database Manager"],
 			"authors": ["Maeli Dueñas", "Cesar Coronado", "Saul Garcia", "Tonathiu Cruz"],
 			"githubButton": "https://github.com/brokenerk/Cobra-4.3",
-			"downloadItButton": "./projects/cobra4.3-installer.zip",
 			"color": "#dc3545"
 		}
 	]
