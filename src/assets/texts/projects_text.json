@@ -86,7 +86,7 @@
 			"roles": ["Full Stack Developer", "UI Developer"],
 			"authors": ["Abigail Nicolas", "Randy Guzman"],
 			"githubButton": "https://github.com/brokenerk/Compiladores",
-			"takeALookButton": "https://com-piler.herokuapp.com/",
+			"takeALookButton": "https://com-piler.up.railway.app/",
 			"color": "#007bff"
 		},
 		{
@@ -105,7 +105,7 @@
 			"roles": ["Frontend Developer", "UI Developer"],
 			"authors": ["Arturo Lara"],
 			"githubButton": "https://github.com/brokenerk/MCTD/",
-			"takeALookButton": "https://random-mctd.herokuapp.com/",
+			"takeALookButton": "https://random-mctd.up.railway.app/",
 			"color": "#17a2b8"
 		},
 		{
@@ -141,7 +141,7 @@
 			"badges": ["Java", "Hibernate", "Spring", "Struts2", "Conekta", "Bootstrap", "JSP", "PostgreSQL", "MVC"],
 			"roles": ["Full Stack Developer", "Database Manager", "UI Developer"],
 			"githubButton": "https://github.com/brokenerk/Shopping-Cart",
-			"takeALookButton": "https://shopping-cart-wad.herokuapp.com/products",
+			"takeALookButton": "#",
 			"color": "#343a40"
 		},
 		{
@@ -160,7 +160,7 @@
 			"roles": ["Frontend Developer"],
 			"authors": ["Abigail Nicolas"],
 			"githubButton": "https://github.com/brokenerk/Chat-Multicast",
-			"takeALookButton": "https://chat-multicast.herokuapp.com/",
+			"takeALookButton": "https://chat-multicast.up.railway.app/",
 			"color": "#52987A"
 		},
 		{
