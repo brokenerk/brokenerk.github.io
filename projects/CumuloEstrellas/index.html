@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cúmulo de estrellas</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="./assets/css/estilo.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="./css/estilos.css">
+	<link rel="stylesheet" href="./css/code.css">
+	<link rel="stylesheet" href="./materialize/css/materialize.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="./materialize/js/materialize.min.js"></script>
+	<script src="./vis-4.21.0/dist/vis.min.js"></script>
+	<script src="./anime/anime.min.js"></script>
+	<script src="./js/math.min.js"></script>
+	<script src="./js/cumulo.js"></script>
+	<script>
+		function isNumberKey(evt)
+      	{
+         	var charCode = (evt.which) ? evt.which : event.keyCode
+         	if (charCode > 31 && (charCode < 48 || charCode > 57))
+            	return false;
+        return true;
+      	}
+	</script>
+		
+
+            
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+</head>
+<body>
+	<!-------------------------------------------------------->
+	<!---------------- Sección del Titulo -------------------->
+	<!-------------------------------------------------------->
+	<div> 
+
+	</div>
+
+	<!-------------------------------------------------------->
+	<!----------------- Sección de Desarrollo ---------------->
+	<!-------------------------------------------------------->
+
+	<div>
+		<div class="cols">
+
+			<!------------------------------------------------>
+			<!------------------ Animación -------------------> 
+			<!------------------------------------------------>
+			<div class="col">
+				
+				<!-------------------------------------------->
+				<!----------------- Titulo -------------------> 
+				<!-------------------------------------------->
+				<div class="row">
+					<span class="white-text text-darken-2"><font face="Comic Sans MS"><h3>Cúmulo de estrellas</h3></font></span>
+				</div>
+				<!-------------------------------------------->
+				<!----------------- Puntos -------------------> 
+				<!-------------------------------------------->
+				<div class="row">
+					<!--<canvas id="canvas"></canvas>-->
+	
+					<div id="mynetwork" style="height: 500px; width: 600px" class='mynetwork'></div>
+
+				</div>
+			</div>
+
+			<!------------------------------------------------>
+			<!-------------- Control general -----------------> 
+			<!------------------------------------------------>
+			<div class="col">
+
+				<!-------------------------------------------->
+				<!------- Botones Iniciar/ Bruta / DyV --------> 
+				<!-------------------------------------------->
+				<div class="container">
+
+					<!-------------------------------------------->
+					<!---- Modal Explicación Divide y venceras --->
+					<!-------------------------------------------->
+					
+					<div id="modal1" class="modal">
+						<div class="modal-content">
+							<font face="Comic Sans MS"><h3>Divide y vencerás</h3></font>
+							<p id="dyvDesc"></p>
+						</div>
+						<div class="modal-footer">
+							<a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok!</a>
+						</div>
+					</div>
+
+					<!-------------------------------------------->
+					<!------ Modal Descripcion del problema ------>
+					<!-------------------------------------------->
+
+					<div id="modal2" class="modal">
+						<div class="modal-content">
+							<font face="Comic Sans MS"><h3>Problema</h3></font>
+							<p id="problemaDesc"></p>
+						</div>
+						<div class="modal-footer">
+							<a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok!</a>
+						</div>
+					</div>
+					<div class="container">
+						<font size=4 color="white"><span> Ver información sobre:</span></font>						
+					</div>
+					<div class="container">
+						<a class="waves-effect waves-light btn modal-trigger pulse" href="#modal1">DyV</a>
+						<a class="waves-effect waves-light btn modal-trigger pulse" href="#modal2">Problema</a>
+					</div>
+
+					<div class="container input-field">
+							<input required id="N" name="N" type="text" class="validate" maxlength="5" onkeypress="return isNumberKey(event)">
+							<label for="N">Número de estrellas</label>
+							<button type='button' id="cargar" class="waves-effect waves-light btn blue"><i class="material-icons">done</i>
+							<button type='button' id="limpiar" class="waves-effect waves-light btn green"><i class="material-icons">settings_backup_restore</i>
+					</div>
+					<!------- Botones para Bruta / Dyv ------->
+					<div class="container">		
+						<button type='button' id="bruta" class="waves-effect waves-light btn red">Fuerza Bruta</button>
+						<button type='button' id="dyv" class="waves-effect waves-light btn green">Divide y Vencerás</button>
+					</div>
+					<label for="domAttributes">Distancia mínima entre 2 estrellas</label>
+					<div id="domAttributes"> 
+						<input type = "text" value="0.0" readonly> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-------------------------------------------------------->
+	<!-------------- Sección de Pie de página ---------------->
+	<!-------------------------------------------------------->
+	<div> 
+
+	</div>
+
+<script src="./js/descripcion.js"></script>
+<script src="./js/problema.js"></script>
+</body>
+</html>
