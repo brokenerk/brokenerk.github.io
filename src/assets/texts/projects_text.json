@@ -71,6 +71,24 @@
 			"color": "#28a745"
 		},
 		{
+			"id": "cart",
+			"icon": "fa fa-cart-plus fa-2x",
+			"title": {
+				"ENG": "E-Commerce",
+				"ESP": "E-Commerce"
+			},
+			"description": {
+				"ENG": "A basic e-commerce website: it allows to create an account, edit  personal info such as address, login as an user that can add products to his or her shopping cart, see and edit the amount of the products on it, remove them, proceed to checkout, add reviews, ask questions, wishlists and even purchase the order. <br/>The system allows real credit cards and make charges with the help of the Paypal API, so keep in mind that!",
+
+				"ESP": "Un sitio de web e-commerce b&aacute;sico: permite crear una cuenta, editar informaci&oacute;n personal como lo es el domicilio, acceder como un usuario que puede agregar productos a su carrito de compras, ver y editar la cantidad de estos, removerlos del carrito, proceder al pago, agregar rese&ntilde;as, hacer preguntas, listas de favoritos e incluso comprar la orden.<br/> El sistema admite tarjetas de cr&eacute;dito reales y realiza cargos con ayuda de la API Paypal, ¡as&iacute; que t&eacute;ngalo en mente!"
+			},
+			"badges": ["Python", "Flask", "Paypal", "Bootstrap", "Vue3", "JavaScript", "PostgreSQL", "Docker"],
+			"roles": ["Full Stack Developer", "Database Manager", "UI Developer", "DevOps"],
+			"githubButton": "https://github.com/brokenerk/e_commerce_api",
+			"takeALookButton": "https://e-commerce-front.up.railway.app/",
+			"color": "#343a40"
+		},
+		{
 			"id": "compiler",
 			"icon": "fa fa-file-code-o fa-2x",
 			"title": {
@@ -127,24 +145,6 @@
 			"color": "#E89980"
 		},
 		{
-			"id": "cart",
-			"icon": "fa fa-cart-plus fa-2x",
-			"title": {
-				"ENG": "Shopping Cart",
-				"ESP": "Carrito de compras"
-			},
-			"description": {
-				"ENG": "A basic shopping cart: it allows to create an account, edit  personal info such as address, login as an user that can add products to his or her cart, see and edit the amount of the products on it, remove them, proceed to checkout and even purchase the order. <br/>The system allows real credit cards and make charges with the help of the Conekta API, so keep in mind that!",
-
-				"ESP": "Un carrito de compras b&aacute;sico: permite crear una cuenta, editar informaci&oacute;n personal como lo es el domicilio, acceder como un usuario que puede agregar productos a su carrito, ver y editar la cantidad de estos, removerlos del carrito, proceder al pago e incluso comprar la orden.<br/> El sistema admite tarjetas de cr&eacute;dito reales y realiza cargos con ayuda de la API Conekta, ¡as&iacute; que t&eacute;ngalo en mente!"
-			},
-			"badges": ["Java", "Hibernate", "Spring", "Struts2", "Conekta", "Bootstrap", "JSP", "PostgreSQL", "MVC"],
-			"roles": ["Full Stack Developer", "Database Manager", "UI Developer"],
-			"githubButton": "https://github.com/brokenerk/Shopping-Cart",
-			"takeALookButton": "#",
-			"color": "#343a40"
-		},
-		{
 			"id": "chat",
 			"icon": "fa fa-comments fa-2x",
 			"title": {
@@ -160,7 +160,7 @@
 			"roles": ["Frontend Developer"],
 			"authors": ["Abigail Nicolas"],
 			"githubButton": "https://github.com/brokenerk/Chat-Multicast",
-			"takeALookButton": "https://chat-multicast.up.railway.app/",
+			"takeALookButton": "#",
 			"color": "#52987A"
 		},
 		{
