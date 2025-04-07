@@ -5,7 +5,7 @@
       <div class="col-12 col-sm-12 col-md-1 col-lg-1">
       </div>
       <div class="col-12 col-sm-12 col-md-2 col-lg-2">
-        <br /><br />
+        <br /><br /><br />
         <img src="./../../assets/images/photo.jpg" class="img-fluid rounded-circle" />
       </div>
       <div class="col-12 col-sm-12 col-md-8 col-lg-8">
@@ -24,6 +24,17 @@
         <div class="row">
           <!--Introduction Text-->
           <p class="col-8 col-sm-12 col-md-8 col-lg-8" v-html="introductionText"/>
+        </div>
+
+        <!--Stack-->
+        <b>Technologies Stack</b>
+        <div class="row pb-4 pt-2">
+          <div class="col-8 col-sm-12 col-md-8 col-lg-8">
+            <technologies-stack/>
+          </div>
+        </div>
+
+        <div class="row">
           <!--Header Text-->
           <p class="col-8 col-sm-12 col-md-8 col-lg-8" v-html="headerText"/>
         </div>
@@ -48,12 +59,14 @@
 
 <script>
 import SocialNetworks from "./SocialNetworks.vue";
+import TechnologiesStack from "./TechnologiesStack.vue";
 import GenericButton from "../UI/GenericButton.vue";
 
 export default {
   components: {
     SocialNetworks,
     GenericButton,
+    TechnologiesStack,
   },
   props: [
     "welcomeText",
