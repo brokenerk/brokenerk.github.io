@@ -6,7 +6,7 @@
       </div>
       <div class="col-12 col-sm-12 col-md-2 col-lg-2">
         <br /><br />
-        <img src="./../../assets/images/photo.jpeg" class="img-fluid rounded-circle" />
+        <img src="./../../assets/images/photo.jpg" class="img-fluid rounded-circle" />
       </div>
       <div class="col-12 col-sm-12 col-md-8 col-lg-8">
         <br />
@@ -21,11 +21,12 @@
           </div>
         </div>
 
-        <!--Introduction Text-->
-        <p v-html="introductionText"></p>
-
-        <!--Header Text-->
-        <p v-html="headerText"></p>
+        <div class="row">
+          <!--Introduction Text-->
+          <p class="col-8 col-sm-12 col-md-8 col-lg-8" v-html="introductionText"/>
+          <!--Header Text-->
+          <p class="col-8 col-sm-12 col-md-8 col-lg-8" v-html="headerText"/>
+        </div>
 
         <div class="row">
           <!--Social networks icons -->
