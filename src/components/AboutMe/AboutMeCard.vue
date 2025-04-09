@@ -28,7 +28,7 @@
 
         <!--Stack-->
         <b>Technologies Stack</b>
-        <div class="row pb-4 pt-2">
+        <div class="row">
           <div class="col-8 col-sm-12 col-md-8 col-lg-8">
             <technologies-stack/>
           </div>
